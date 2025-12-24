@@ -2,6 +2,8 @@
 
 A Next.js website that presents GDT (Growth Diagnosis Tool) analysis results in a magazine-style editorial format. Currently featuring Espolón Tequila USA analysis.
 
+**Repository**: https://github.com/tomsuharto-git/gdt-website
+
 ## Getting Started
 
 ```bash
@@ -165,7 +167,53 @@ interface WSN {
 
 ---
 
-## Recent Changes (2025-12-22)
+## Recent Changes (2025-12-24)
+
+### Component Deep Dives - Major Redesign
+- **Header layout**: Icon + Component name on same line, score/pill on right
+  - Icon in pink accent color (28px)
+  - Component name in display font (text-4xl)
+  - Score with tier pill aligned to right
+  - Description below component name, indented to align under text (40px margin-left)
+- **WSN headline styling**: Removed box/background, now styled like section headlines
+  - Display font (text-2xl md:text-3xl)
+  - Subline in base text below
+- **What/So What/Now What**: Changed from stacked sections to 3-column card grid
+  - Each card has pink uppercase label at top
+  - Clean card layout matching Growth Solution cards
+  - Evidence line conditionally rendered (only if content exists)
+
+### Content Balancing
+- **A1 WSN content tightened** (Option 3 - equal length cards):
+  - **What**: "When asked what makes Espolón special beyond the bottle, most consumers shrug—there's no compelling story beyond aesthetics."
+  - **So What**: "The brand sits uncomfortably between craft authenticity and mass premium, lacking Patron's luxury credibility or Casamigos' celebrity magnetism."
+  - **Now What**: "Define what Espolón owns that competitors can't claim—a single compelling statement people can repeat."
+
+### Component Descriptions Added
+Each component now has a description explaining what it measures:
+- **A1**: "Measures your brand's Meaningful Difference vs. competitors"
+- **A2**: "Evaluates your ability to command premium prices"
+- **A3**: "Assesses revenue and market share trajectory"
+- **B1**: "Measures the depth of emotional bonds with consumers"
+- **B2**: "Evaluates your brand's role in cultural conversations"
+- **B3**: "Assesses quality and consistency of brand touchpoints"
+- **C1**: "Measures recognizability of your brand assets"
+- **C2**: "Evaluates your track record of meaningful innovation"
+- **C3**: "Assesses external pressures requiring brand response"
+
+### Terminology Update
+- **"Customer Connection" → "Audience Connection"** throughout the site
+- Updated subline: "Evaluates the strength of connection between your brand and audience"
+
+### Spacing Refinements
+- Card padding: p-8 → p-6
+- Component header margin: mb-8 (more space between header and content)
+- WSN content spacing: space-y-5
+- Headline margin: mb-1
+
+---
+
+## Changes (2025-12-22)
 
 ### Layout Fixes
 - **Consistent row heights**: Changed from flex-grow to fixed 220px height for predictable layout
