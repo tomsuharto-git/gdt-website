@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+/* =============================================================================
+   GDT DESIGN SYSTEM
+
+   Color scheme adapts per brand via CSS custom properties.
+   Base design is dark, editorial, data-forward.
+============================================================================= */
+
+:root {
+  /* Base palette - dark editorial aesthetic */
+  --gdt-bg-primary: #0C0C0E;
+  --gdt-bg-secondary: #141418;
+  --gdt-bg-tertiary: #1C1C22;
+  --gdt-bg-card: #18181C;
+
+  /* Text hierarchy - cream tones to match illustration */
+  --gdt-text-primary: #EDE8DF;
+  --gdt-text-secondary: #B8B4AC;
+  --gdt-text-muted: #7A776F;
+
+  /* Brand accent - changes per analysis */
+  --gdt-accent: #E54B7B;
+  --gdt-accent-soft: rgba(229, 75, 123, 0.15);
+  --gdt-accent-text: #E54B7B;
+
+  /* Score colors - consistent across brands */
+  --gdt-score-high: #22C55E;
+  --gdt-score-mid: #EAB308;
+  --gdt-score-low: #EF4444;
+
+  /* Functional */
+  --gdt-border: rgba(255, 255, 255, 0.08);
+  --gdt-border-accent: rgba(194, 149, 107, 0.3);
+
+  /* Typography scale */
+  --gdt-text-xs: 0.75rem;
+  --gdt-text-sm: 0.875rem;
+  --gdt-text-base: 1rem;
+  --gdt-text-lg: 1.125rem;
+  --gdt-text-xl: 1.25rem;
+  --gdt-text-2xl: 1.5rem;
+  --gdt-text-3xl: 1.875rem;
+  --gdt-text-4xl: 2.25rem;
+  --gdt-text-5xl: 3rem;
+  --gdt-text-6xl: 3.75rem;
+
+  /* Spacing */
+  --gdt-section-gap: 6rem;
+  --gdt-component-gap: 3rem;
+}
+
+/* Brand color overrides - set via data attribute on body */
+[data-brand="espolon"] {
+  --gdt-accent: #E54B7B;
+  --gdt-accent-soft: rgba(229, 75, 123, 0.15);
+  --gdt-accent-text: #E54B7B;
+}
+
+[data-brand="cava"] {
+  --gdt-accent: #7C9A5E;
+  --gdt-accent-soft: rgba(124, 154, 94, 0.15);
+  --gdt-accent-text: #D4E5C4;
+}
+
+[data-brand="firefox"] {
+  --gdt-accent: #FF7139;
+  --gdt-accent-soft: rgba(255, 113, 57, 0.15);
+  --gdt-accent-text: #FFCBB8;
+}
+
+[data-brand="rivian"] {
+  --gdt-accent: #4ECDC4;
+  --gdt-accent-soft: rgba(78, 205, 196, 0.15);
+  --gdt-accent-text: #B8F0EC;
+}
+
+/* Theme tokens for Tailwind */
+@theme inline {
+  --color-background: var(--gdt-bg-primary);
+  --color-foreground: var(--gdt-text-primary);
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--gdt-bg-primary);
+  color: var(--gdt-text-primary);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utilities */
+.gdt-display {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.gdt-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* Score badge colors */
+.score-high { color: var(--gdt-score-high); }
+.score-mid { color: var(--gdt-score-mid); }
+.score-low { color: var(--gdt-score-low); }
+
+/* Score left border colors */
+.border-l-high { border-left-color: var(--gdt-score-high); }
+.border-l-mid { border-left-color: var(--gdt-score-mid); }
+.border-l-low { border-left-color: var(--gdt-score-low); }
+
+/* Tier badges */
+.tier-badge-high {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: var(--gdt-score-high);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+.tier-badge-mid {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: var(--gdt-score-mid);
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+.tier-badge-low {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--gdt-score-low);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Card styling */
+.gdt-card {
+  background: var(--gdt-bg-card);
+  border: 1px solid var(--gdt-border);
+  border-radius: 0.75rem;
+}
+
+/* Grid item that fills its cell completely */
+.gdt-grid-item {
+  display: grid;
+  grid-template-columns: 4px 1fr;
+  min-height: 0;
+}
+.gdt-grid-item > .accent-bar {
+  /* Accent bar fills full height automatically as grid child */
+}
+.gdt-grid-item > .content {
+  padding: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.gdt-card-accent {
+  background: var(--gdt-bg-card);
+  border: 1px solid var(--gdt-border-accent);
+  border-radius: 0.75rem;
+}
+
+/* Section dividers */
+.gdt-section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gdt-border) 20%,
+    var(--gdt-border) 80%,
+    transparent
+  );
+}
+
+/* Accent highlights */
+.gdt-accent-bg {
+  background: var(--gdt-accent-soft);
+}
+
+.gdt-accent-text {
+  color: var(--gdt-accent);
+}
+
+.gdt-accent-border {
+  border-color: var(--gdt-border-accent);
+}
+
+/* WSN Block styling */
+.wsn-what {
+  font-size: var(--gdt-text-lg);
+  font-weight: 500;
+  color: var(--gdt-text-primary);
+}
+
+.wsn-evidence {
+  font-size: var(--gdt-text-sm);
+  color: var(--gdt-text-muted);
+  font-style: italic;
+}
+
+.wsn-so-what {
+  font-size: var(--gdt-text-base);
+  color: var(--gdt-text-secondary);
+}
+
+.wsn-now-what {
+  font-size: var(--gdt-text-base);
+  color: var(--gdt-accent-text);
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Stagger children */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.8s; }
+.stagger-children > *:nth-child(9) { animation-delay: 0.9s; }
