@@ -1,8 +1,12 @@
 # GDT Website - Growth Diagnosis Tool Presentation Layer
 
-A Next.js website that presents GDT (Growth Diagnosis Tool) analysis results in a magazine-style editorial format. Currently featuring Espolón Tequila USA analysis.
+A Next.js website that presents GDT (Growth Diagnosis Tool) analysis results in a magazine-style editorial format. Multi-brand hub supporting dynamic routing for any brand analysis.
 
 **Repository**: https://github.com/tomsuharto-git/gdt-website
+
+## Current Brands
+- **Zyn** (USA) - Nicotine Pouches - `/zyn`
+- **Espolón** (USA) - Premium Tequila - `/espolon`
 
 ## Getting Started
 
@@ -44,15 +48,25 @@ outputs/espolon-tequila-usa-*/      src/data/espolon.ts   →    src/app/page.ts
 gdt-website/
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx          # Main page - all sections
+│   │   ├── [brand]/
+│   │   │   └── page.tsx      # Dynamic brand page route
+│   │   ├── page.tsx          # Hub page - brand index
 │   │   ├── layout.tsx        # Root layout with fonts
 │   │   └── globals.css       # Design system CSS variables
+│   ├── components/
+│   │   ├── BrandPage.tsx     # Main brand analysis component
+│   │   └── FallbackImage.tsx # Image with fallback handling
 │   ├── data/
+│   │   ├── index.ts          # Data registry for all brands
+│   │   ├── zyn.ts            # Zyn analysis data
 │   │   └── espolon.ts        # Espolón analysis data
 │   └── lib/
 │       └── types.ts          # TypeScript interfaces
 ├── public/
-│   └── espolon-hero.png      # Hero illustration
+│   ├── brands/               # Brand hero images
+│   └── growth-systems/       # Growth profile illustrations
+├── scripts/
+│   └── gdt_converter_v2.py   # GDT output → website data converter
 └── README.md
 ```
 
@@ -164,6 +178,38 @@ interface WSN {
   nowWhat: string;       // Recommended action
 }
 ```
+
+---
+
+## Recent Changes (2025-12-31)
+
+### Multi-Brand Hub Architecture
+- **Dynamic routing**: Added `[brand]/page.tsx` for brand-specific URLs (`/zyn`, `/espolon`)
+- **Hub index page**: New landing page at `/` showing all available brand diagnoses
+- **Data registry**: Centralized brand data export in `src/data/index.ts`
+- **Shared BrandPage component**: Reusable component renders any brand's GDT analysis
+
+### QC Fixes - Zyn
+- **Growth Profile shortDefinition**: Fixed hardcoded definition that incorrectly stated "cultural limitations" for Zyn (B2: 8.3 = Leading, not a limitation)
+- **Data-driven footnote**: Changed from hardcoded text to `{data.growthProfile.shortDefinition}` in BrandPage.tsx
+- **Score references**: Updated definition and implications with accurate component scores (B2: 8.3, A3: 8.2, A1: 6.2)
+
+### QC Fixes - Espolón
+- **Component naming standardization**:
+  - B3: "Brand Experience" → "Experience Excellence"
+  - C1: "Brand Distinctiveness" → "Distinctive Assets"
+  - C3: "Disruption Urgency" → "Market Disruption"
+- **Missing data populated**:
+  - Added `categoryAverage` and `competitorScores` to A3, B2, B3, C1, C2, C3
+  - Added `strengths` and `weaknesses` arrays to A3, B2, B3, C1, C2, C3
+- **WSN content fixes**:
+  - A1: Fixed empty `evidence` field with consumer research context
+  - B3: Fixed `what` field that duplicated headline
+  - C3: Fixed `what` field that duplicated headline
+
+### Type System Updates
+- **GrowthProfile interface**: Added `shortDefinition` field for brand-specific footnote text
+- **Consistent component naming**: All brands now use standard GDT component names
 
 ---
 
