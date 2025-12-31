@@ -233,6 +233,12 @@ export const espolonAnalysis: GDTAnalysis = {
       section: 'A',
       score: 5.6,
       tier: 'At-Category',
+      categoryAverage: 5.5,
+      competitorScores: [
+        { name: 'Patron', score: 6.2 },
+        { name: 'Casamigos', score: 8.5 },
+        { name: 'Don Julio', score: 7.0 }
+      ],
       wsn: {
         headline: 'Keeping pace with the pack while leaders pull away',
         subline: 'Growing at category average, but celebrity-backed competitors are posting 25-40% gains.',
@@ -240,7 +246,17 @@ export const espolonAnalysis: GDTAnalysis = {
         evidence: 'Growth performance gets a 6—tracking category but not outpacing it.',
         soWhat: 'Espolón is being squeezed from above by premium storytellers (Clase Azul, Don Julio) and from below by celebrity disruptors (Casamigos, Teremana).',
         nowWhat: 'Focus on fastest-growing segments.'
-      }
+      },
+      strengths: [
+        'Campari Group distribution network provides solid retail availability',
+        'On-premise presence through bartender relationships creates steady volume',
+        'Healthy margins at current price point support sustainable operations'
+      ],
+      weaknesses: [
+        'Growing at category average while celebrity brands grow 3-4x faster',
+        'Marketing spend is a fraction of Casamigos, Patron, and Teremana',
+        'No breakout moments or viral growth—just steady, unremarkable progress'
+      ]
     },
     {
       id: 'b1',
@@ -279,14 +295,30 @@ export const espolonAnalysis: GDTAnalysis = {
       section: 'B',
       score: 5.5,
       tier: 'Present',
+      categoryAverage: 6.0,
+      competitorScores: [
+        { name: 'Patron', score: 7.8 },
+        { name: 'Casamigos', score: 8.5 },
+        { name: 'Don Julio', score: 6.5 }
+      ],
       wsn: {
         headline: 'Espolón is the tequila bartenders love but regular people don\'t know exists',
         subline: 'The Day of the Dead skull bottles are instantly recognizable in the industry, but the brand barely registers in pop culture.',
         what: 'Zero celebrity endorsements, zero pop culture moments, zero influencer buzz—while Casamigos rides George Clooney and Kendall Jenner posts.',
-        evidence: 'Espolón is culturally present but not culturally powerful.',
+        evidence: 'Espolón is culturally present but not culturally powerful. Social listening shows near-zero brand mentions in mainstream culture discussions.',
         soWhat: 'Trails badly behind Patron and Casamigos in mainstream cultural awareness.',
         nowWhat: 'Expand cultural presence beyond current niche.'
-      }
+      },
+      strengths: [
+        'Strong credibility within bartender and mixology community',
+        'Day of the Dead aesthetic resonates with design-forward consumers',
+        'Authentic Mexican heritage story provides cultural depth'
+      ],
+      weaknesses: [
+        'Zero celebrity endorsements in a celebrity-driven category',
+        'No presence in pop culture conversations, social media trends, or influencer content',
+        'Brand awareness drops precipitously outside industry and design circles'
+      ]
     },
     {
       id: 'b3',
