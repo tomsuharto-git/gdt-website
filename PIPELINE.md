@@ -2,6 +2,10 @@
 
 Complete workflow for converting GDT analysis outputs into a production-ready website.
 
+**Repository**: https://github.com/tomsuharto-git/gdt-website
+**Production URL**: https://gdt-hub.vercel.app
+**Vercel Project**: `gdt-hub` (auto-deploys on push to main)
+
 ---
 
 ## Overview
@@ -37,9 +41,18 @@ Complete workflow for converting GDT analysis outputs into a production-ready we
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                    MANUAL STEPS                                         │
 │  1. Add brand images to public/                                         │
-│  2. Update page.tsx import                                              │
+│  2. Add brand to src/data/index.ts registry                             │
 │  3. Review conversion report, fix any issues                            │
-│  4. npm run dev → verify → deploy                                       │
+│  4. npm run dev → verify locally                                        │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    GIT & DEPLOY                                         │
+│  1. git add -A                                                          │
+│  2. git commit -m "Add [brand] analysis"                                │
+│  3. git push tomsuharto-git main                                        │
+│  4. Vercel auto-deploys → https://gdt-hub.vercel.app                    │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -297,16 +310,22 @@ cat src/data/[brand]-conversion-report.md
 # - public/[brand-id]-cover.png (hero image, ~800x800)
 # - public/growth-systems/[profile-id].png (profile icon, ~400x400)
 
-# 4. Update page.tsx import
-# Edit src/app/page.tsx:
-#   import { [brandName]Analysis } from '@/data/[brand]';
-#   const data = [brandName]Analysis;
+# 4. Add brand to data registry
+# Edit src/data/index.ts:
+#   import { [brandName]Analysis } from './[brand]';
+#   export const brands = { ..., [brandId]: [brandName]Analysis };
 
 # 5. Test locally
 npm run dev
+# Visit http://localhost:3000/[brand-id]
 
-# 6. Deploy
-npm run build && npm run start
+# 6. Commit and push (Vercel auto-deploys)
+git add -A
+git commit -m "Add [brand] analysis to GDT Hub"
+git push tomsuharto-git main
+
+# 7. Verify deployment
+# Wait ~30s, then visit https://gdt-hub.vercel.app/[brand-id]
 ```
 
 ### Handling Incomplete Components
@@ -354,6 +373,59 @@ If the report shows INCOMPLETE or DERIVED components:
 
 ---
 
+## Git & Deployment
+
+### Repository Setup
+
+The gdt-website is connected to GitHub and Vercel for automatic deployment:
+
+- **GitHub**: https://github.com/tomsuharto-git/gdt-website
+- **Vercel Project**: `gdt-hub`
+- **Production URL**: https://gdt-hub.vercel.app
+
+### Important Git Configuration
+
+**Always push to `tomsuharto-git` remote** (not `origin`):
+
+```bash
+# Check remotes
+git remote -v
+
+# Push changes
+git push tomsuharto-git main
+```
+
+### Deployment Workflow
+
+1. **Make changes** (add brand data, images, etc.)
+2. **Test locally** with `npm run dev`
+3. **Commit changes**:
+   ```bash
+   git add -A
+   git commit -m "Add [brand] analysis to GDT Hub"
+   ```
+4. **Push to GitHub**:
+   ```bash
+   git push tomsuharto-git main
+   ```
+5. **Vercel auto-deploys** within ~30 seconds
+6. **Verify** at https://gdt-hub.vercel.app/[brand-id]
+
+### Vercel CLI Commands
+
+```bash
+# Check deployment status
+npx vercel ls
+
+# Force production deploy (if needed)
+npx vercel --prod
+
+# View logs
+npx vercel logs gdt-hub
+```
+
+---
+
 ## Future Automation TODO
 
 To make this 100% turnkey:
@@ -366,17 +438,21 @@ To make this 100% turnkey:
    - Create all 9 profile illustrations upfront
    - Copy from template library
 
-3. **Dynamic routing**
-   - Support `/[brand]` routes without code changes
-   - Load data dynamically from generated files
+3. ~~**Dynamic routing**~~ ✅ DONE
+   - ~~Support `/[brand]` routes without code changes~~
+   - Implemented via `[brand]/page.tsx`
 
-4. **CI/CD pipeline**
-   - GitHub Action that runs converter on new GDT outputs
-   - Auto-deploy on successful conversion
+4. ~~**CI/CD pipeline**~~ ✅ DONE (Partial)
+   - Vercel auto-deploys on GitHub push
+   - TODO: GitHub Action for converter automation
 
 5. **GDT agent output validation**
    - Add validation step to GDT agents
    - Ensure complete output before saving
+
+6. **Agent 12 Integration**
+   - Website Generator agent runs full pipeline
+   - Converter → Images → Registry → Git → Deploy
 
 ---
 
