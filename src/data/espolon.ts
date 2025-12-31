@@ -21,8 +21,9 @@ export const espolonAnalysis: GDTAnalysis = {
     id: 'foundation-reinforcement',
     name: 'Foundation Reinforcement',
     sequence: 'Position → Unlock → Connect',
-    definition: 'Espolón has built something real—authentic craft credentials, bartender credibility, and a product that consistently over-delivers. But the brand is hitting a ceiling. Strong product experience is being undermined by weak positioning clarity and limited cultural presence.',
-    implications: 'The problem isn\'t what Espolón makes—it\'s what Espolón means. Brand confusion prevents the tequila from capturing value proportional to its quality advantages. Espolón needs to reinforce its foundation: clarify positioning, unlock deeper consumer understanding, and build cultural connections that match its product truth. Without this, Espolón remains the bartender\'s secret that never breaks mainstream.'
+    definition: 'Espolón has built something real—authentic craft credentials, bartender credibility, and a product that consistently over-delivers (B3: 6.6). But the brand is hitting a ceiling. Strong product experience is being undermined by weak positioning clarity (A1: 5.4) and limited cultural presence (B2: 5.5).',
+    implications: 'The problem isn\'t what Espolón makes—it\'s what Espolón means. Brand confusion prevents the tequila from capturing value proportional to its quality advantages. Espolón needs to reinforce its foundation: clarify positioning, unlock deeper consumer understanding, and build cultural connections that match its product truth. Without this, Espolón remains the bartender\'s secret that never breaks mainstream.',
+    shortDefinition: 'Brands hitting growth ceilings due to positioning ambiguity and cultural limitations—requiring strategic clarity and cultural engagement to unlock expansion.'
   },
 
   sections: [
@@ -45,7 +46,7 @@ export const espolonAnalysis: GDTAnalysis = {
       components: [
         { id: 'b1', name: 'Emotional Connection', score: 6.0, tier: 'Moderate', section: 'B' },
         { id: 'b2', name: 'Cultural Relevance', score: 5.5, tier: 'Present', section: 'B' },
-        { id: 'b3', name: 'Brand Experience', score: 6.6, tier: 'Enhanced', section: 'B' }
+        { id: 'b3', name: 'Experience Excellence', score: 6.6, tier: 'Enhanced', section: 'B' }
       ]
     },
     {
@@ -54,9 +55,9 @@ export const espolonAnalysis: GDTAnalysis = {
       score: 18.1,
       tier: 'Stable',
       components: [
-        { id: 'c1', name: 'Brand Distinctiveness', score: 6.0, tier: 'Recognizable', section: 'C' },
+        { id: 'c1', name: 'Distinctive Assets', score: 6.0, tier: 'Recognizable', section: 'C' },
         { id: 'c2', name: 'Brand Innovation', score: 4.3, tier: 'Incremental', section: 'C' },
-        { id: 'c3', name: 'Disruption Urgency', score: 7.8, tier: 'Transforming', section: 'C' }
+        { id: 'c3', name: 'Market Disruption', score: 7.8, tier: 'Transforming', section: 'C' }
       ]
     }
   ],
@@ -179,7 +180,7 @@ export const espolonAnalysis: GDTAnalysis = {
         headline: 'Espolón is stuck in the middle',
         subline: 'Artistically distinctive but commercially undefined.',
         what: 'When asked what makes Espolón special beyond the bottle, most consumers shrug—there\'s no compelling story beyond aesthetics.',
-        evidence: '',
+        evidence: 'Consumer research shows 50%+ of premium tequila buyers cannot articulate what Espolón stands for. The brand ranks last among major competitors in positioning clarity.',
         soWhat: 'The brand sits uncomfortably between craft authenticity and mass premium, lacking Patron\'s luxury credibility or Casamigos\' celebrity magnetism.',
         nowWhat: 'Define what Espolón owns that competitors can\'t claim—a single compelling statement people can repeat.'
       },
@@ -264,7 +265,13 @@ export const espolonAnalysis: GDTAnalysis = {
         'Status Symbol Deficit (high priority)',
         'Limited Pride Association (high priority)',
         'Behavioral Loyalty Gap (medium priority)'
-      ]
+      ],
+      competitorScores: [
+        { name: 'Patron', score: 8.3 },
+        { name: 'Casamigos', score: 7.9 },
+        { name: 'Don Julio', score: 5.7 }
+      ],
+      categoryAverage: 6.8
     },
     {
       id: 'b2',
@@ -283,33 +290,65 @@ export const espolonAnalysis: GDTAnalysis = {
     },
     {
       id: 'b3',
-      name: 'Brand Experience',
+      name: 'Experience Excellence',
       section: 'B',
       score: 6.6,
       tier: 'Enhanced',
+      categoryAverage: 5.8,
+      competitorScores: [
+        { name: 'Patron', score: 7.8 },
+        { name: 'Casamigos', score: 7.2 },
+        { name: 'Don Julio', score: 7.5 }
+      ],
       wsn: {
         headline: 'Espolón delivers an experience that gets better the closer you get to the liquid',
         subline: 'People discover it more than they seek it out.',
-        what: 'Espolón delivers an experience that gets better the closer you get to the liquid.',
+        what: 'The product experience is excellent—smooth agave character, clean finish, bartender-approved quality. But discovery relies on bartender recommendations, not brand awareness.',
         evidence: 'Espolón earns an Enhanced rating because it delivers a functionally strong experience where it matters most—the product itself consistently impresses.',
         soWhat: 'Espolón has built a trial machine but not a loyalty engine.',
         nowWhat: 'Build loyalty infrastructure without killing the scrappy authenticity.'
-      }
+      },
+      strengths: [
+        'Bartender credibility creates authentic trial experiences at the point of consumption',
+        'Product quality consistently exceeds expectations for the price point',
+        'Day of the Dead artwork creates memorable unboxing and shelf presence'
+      ],
+      weaknesses: [
+        'Discovery is passive—people find Espolón, they don\'t seek it out',
+        'No direct customer relationship or loyalty program',
+        'Zero owned retail experiences or brand activations'
+      ]
     },
     {
       id: 'c1',
-      name: 'Brand Distinctiveness',
+      name: 'Distinctive Assets',
       section: 'C',
       score: 6.0,
       tier: 'Recognizable',
+      categoryAverage: 5.5,
+      competitorScores: [
+        { name: 'Patron', score: 8.2 },
+        { name: 'Casamigos', score: 7.5 },
+        { name: 'Don Julio', score: 6.8 }
+      ],
       wsn: {
         headline: 'Espolón has genuinely distinctive brand assets',
         subline: 'The rooster logo and Day of the Dead artwork are instantly recognizable IF you see them.',
         what: 'Limited mainstream awareness compared to Patron\'s iconic bottle shape or Casamigos\' George Clooney celebrity power.',
-        evidence: 'Espolón scores 6—recognizable but not famous.',
+        evidence: 'Espolón scores 6—recognizable but not famous. The artwork is distinctive, but it\'s only seen by those who already encounter the brand.',
         soWhat: 'Espolón operates in the authentic artisanal tier below premium leaders.',
         nowWhat: 'Invest in making distinctive assets famous.'
-      }
+      },
+      strengths: [
+        'Day of the Dead artwork creates instant visual distinction on shelf and in bars',
+        'Rooster logo and Mexican craftsmanship story provide authentic heritage assets',
+        'Hand-illustrated bottle design stands out in a sea of minimalist tequila bottles'
+      ],
+      weaknesses: [
+        'Assets are distinctive but not famous—recognition requires seeing the bottle first',
+        'No ownable verbal assets or tagline that lives beyond the visual identity',
+        'Artwork complexity doesn\'t translate well to small-format digital placements'
+      ]
     },
     {
       id: 'c2',
@@ -317,29 +356,61 @@ export const espolonAnalysis: GDTAnalysis = {
       section: 'C',
       score: 4.3,
       tier: 'Incremental',
+      categoryAverage: 6.2,
+      competitorScores: [
+        { name: 'Patron', score: 7.5 },
+        { name: 'Casamigos', score: 6.8 },
+        { name: 'Don Julio', score: 7.2 }
+      ],
       wsn: {
         headline: 'Espolón hasn\'t launched a major new product in five years',
         subline: 'While competitors roll out premium extensions and limited editions, Espolón just keeps selling the same three SKUs.',
         what: 'Zero new products since 2020—no limited editions, no premium tiers, no experimental aging, nothing.',
-        evidence: 'Espolón\'s innovation strategy boils down to "if it ain\'t broke, don\'t fix it"—which works until it doesn\'t.',
+        evidence: 'Competitors have launched 15+ new expressions in the same period. Patron 1942, Don Julio Primavera, Casamigos Mezcal—all conversation starters. Espolón has none.',
         soWhat: 'The category average is much higher because Patron, Don Julio, and Casamigos are all actively innovating.',
         nowWhat: 'Launch innovation initiative within 6 months.'
-      }
+      },
+      strengths: [
+        'Core product quality is proven and consistent—a foundation to build on',
+        'Campari Group resources available for product development investment',
+        'Authentic Mexican production credentials support credible line extensions'
+      ],
+      weaknesses: [
+        'Five years without a major new product launch—stagnant in a dynamic category',
+        'No premium tier to capture trading-up consumers or command higher margins',
+        'Competitors dominate innovation conversation while Espolón stays silent'
+      ]
     },
     {
       id: 'c3',
-      name: 'Disruption Urgency',
+      name: 'Market Disruption',
       section: 'C',
       score: 7.8,
       tier: 'Transforming',
+      categoryAverage: 6.5,
+      competitorScores: [
+        { name: 'Patron', score: 6.8 },
+        { name: 'Casamigos', score: 8.2 },
+        { name: 'Don Julio', score: 7.0 }
+      ],
       wsn: {
         headline: 'Premium tequila is being completely reshaped right now',
         subline: 'The category is growing 15-20% annually, attracting everyone from The Rock to George Clooney.',
-        what: 'Premium tequila is being completely reshaped right now.',
+        what: 'Celebrity brands are claiming share at an accelerating rate. Teremana (The Rock), Casamigos (Clooney), Lobos 1707 (LeBron)—each launch captures a slice of the premium pie.',
         evidence: 'The 3-6 month timeline isn\'t arbitrary—every month that passes, more celebrity brands launch and more market share gets claimed.',
         soWhat: 'Every month that passes, more Gen Z consumers develop loyalty to transparency-focused brands.',
         nowWhat: 'Develop response plans for top 3 disruption threats.'
-      }
+      },
+      strengths: [
+        'Authentic craft credentials provide differentiation from celebrity-backed competitors',
+        'Bartender credibility insulates against social media-driven brand switching',
+        'Price point positions Espolón as accessible alternative when premium fatigue hits'
+      ],
+      weaknesses: [
+        'No response strategy for celebrity brand proliferation—playing defense while others attack',
+        'Cultural conversation happening without Espolón—brand is invisible in trend discussions',
+        'Slow decision-making risks missing the window before market positions solidify'
+      ]
     }
   ]
 };

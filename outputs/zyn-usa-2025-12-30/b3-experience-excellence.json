@@ -1,0 +1,135 @@
+{
+  "finding": {
+    "experience_summary": "Zyn delivers a bifurcated customer experience: exceptional product quality and usage satisfaction paired with significant purchase stage failures due to the 2024 supply crisis. The brand's 77% market share reflects genuine product superiority - FDA-approved, consistent nicotine delivery, premium pouch quality, and smooth flavor profiles that outperform competitors. However, the 80% volume surge in Q1 2024 created nationwide stockouts across New York, New Jersey, and Florida, with retailers implementing purchase limits (10 cans/30 days) that severely damaged purchase accessibility. Digital engagement is paradoxically strong yet uncontrolled - 700 million TikTok views via organic 'Zynfluencer' content that PMI doesn't directly manage, creating brand awareness without formal customer engagement channels. The ZYN Rewards program (15 points/can, up to 900 monthly) drives retention with high-value tech redemptions, but suspended online sales following DC regulatory issues further compound the purchase stage weakness. Competitors aren't capitalizing effectively due to their own limitations, leaving Zyn's dominance intact despite operational failures.",
+    "journey_highlights": {
+      "communication": "Limited formal marketing per FDA commitment (no mass-market TV/radio), but explosive organic TikTok presence (700M+ views) via 'Zynfluencers' creates strong cultural visibility without direct brand control or messaging consistency",
+      "engagement": "Minimal official digital engagement infrastructure - no robust social media community management, customer service touchpoints underdeveloped, relying on organic user-generated content and word-of-mouth rather than brand-initiated interactions",
+      "purchase": "Critical failure point - 2024 supply shortage created nationwide stockouts, purchase limits (10 cans/person/30 days), suspended Zyn.com sales, and retail unavailability despite 58.8% unit share; $800M factory investments won't resolve until 2026",
+      "usage": "Category-leading product experience - FDA-authorized quality, pharmaceutical-grade nicotine, consistent 20-30 minute pouch life, dry format preferred in US, smooth flavor profiles, minimal drip, discreet mini/slim options",
+      "loyalty": "Strong ZYN Rewards program with 15 points per can, redeemable for high-value items (Apple Watch, iPads, Dyson); however, account inactivity expiration (6 months) and suspended online sales create friction points"
+    },
+    "strengths": [
+      {
+        "stage": "Usage",
+        "strength": "FDA-authorized product quality with pharmaceutical-grade nicotine and consistent delivery",
+        "evidence": "First nicotine pouch brand to receive FDA PMTA authorization for 20 products; reviews consistently rate pouch comfort and nicotine consistency as 'best in category'",
+        "impact": "Drives 77% market share through genuine product superiority rather than distribution alone"
+      },
+      {
+        "stage": "Communication",
+        "strength": "Organic cultural penetration via Zynfluencer ecosystem",
+        "evidence": "700 million TikTok views under #ZYN hashtag; 87% of content is humorous, 79% positive tone, creating authentic peer-driven awareness",
+        "impact": "Achieves massive brand visibility without mass-market advertising spend, particularly among 21-35 male demographic"
+      },
+      {
+        "stage": "Loyalty",
+        "strength": "Industry-leading rewards program with high-value redemptions",
+        "evidence": "15 points per can, up to 900 points monthly; catalog includes Apple Watch (10,800 pts), iPad, Samsung TVs, Dyson products - significantly better than competitor offerings",
+        "impact": "Creates strong switching cost through accumulated points; millions of cans scanned in 2024 driving repeat purchases"
+      }
+    ],
+    "weaknesses": [
+      {
+        "stage": "Purchase",
+        "weakness": "Catastrophic supply chain failure during peak demand growth",
+        "evidence": "80% volume surge in Q1 2024 caused nationwide stockouts; retailers implemented 10-can limits; multiple 15-cent price increases exploited scarcity",
+        "priority": "Critical",
+        "impact": "Forced loyal customers to competitors or black markets; damaged brand reliability perception despite product quality"
+      },
+      {
+        "stage": "Purchase",
+        "weakness": "Suspended online direct-to-consumer sales channel",
+        "evidence": "Zyn.com suspended online sales after DC subpoena regarding flavored product sales; company faces potential 'material liability'",
+        "priority": "High",
+        "impact": "Eliminated alternative purchase channel during retail shortages; reduced brand's ability to control customer experience"
+      },
+      {
+        "stage": "Engagement",
+        "weakness": "Underdeveloped owned digital engagement infrastructure",
+        "evidence": "No robust official social media community management; relies entirely on user-generated content; limited customer service touchpoints beyond rewards program",
+        "priority": "Medium",
+        "impact": "Brand perception shaped by uncontrolled third-party content; misses opportunity to build direct customer relationships"
+      }
+    ],
+    "competitive_gaps": "Zyn's purchase stage catastrophically underperforms relative to its market position - while holding 77% share, availability failures pushed customers toward On! (available 'almost everywhere'), Velo (no reported shortages), and Rogue (widely distributed before Zyn existed). However, competitors failed to fully capitalize: On! lacks Zyn's product quality and flavor complexity; Velo suffers from weaker nicotine delivery and quality control issues (ripped pouches, 'LaCroix of nicotine' flavor criticism); Rogue's 6mg cap limits heavy user appeal. The purchase gap is temporary (Colorado factory online 2026) but represents a missed competitive window where On! could have gained permanent converts with superior retail execution.",
+    "strategic_implications": "Zyn's experience excellence paradox - category-best product and loyalty wrapped in category-worst purchase accessibility - demands immediate supply chain prioritization. The $800M factory investments signal awareness, but 18-24 month resolution timeline creates ongoing vulnerability. Strategic imperatives: 1) Restore Zyn.com direct sales to provide purchase alternative during retail shortages; 2) Build owned digital engagement channels to reduce reliance on uncontrolled Zynfluencer content; 3) Leverage ZYN Rewards as customer retention mechanism during supply constraints; 4) Consider regional priority distribution to protect highest-value markets. The brand's product superiority creates loyalty despite purchase friction, but continued supply failures risk permanent defection to improving competitors."
+  },
+  "rating": {
+    "stage_scores": {
+      "communication": 6.5,
+      "engagement": 4.5,
+      "purchase": 4.0,
+      "usage": 8.5,
+      "loyalty": 7.5
+    },
+    "experience_excellence_score": 6.2,
+    "final_rating": 6.2,
+    "interpretation": "Moderate Experience - Strong usage fundamentals undermined by purchase failures",
+    "category_average": 5.8,
+    "competitive_context": [
+      {
+        "competitor_name": "On!",
+        "experience_excellence_score": 6.0,
+        "stage_scores": {
+          "communication": 5.5,
+          "engagement": 5.0,
+          "purchase": 7.5,
+          "usage": 6.5,
+          "loyalty": 5.5
+        }
+      },
+      {
+        "competitor_name": "Velo",
+        "experience_excellence_score": 5.6,
+        "stage_scores": {
+          "communication": 5.5,
+          "engagement": 5.5,
+          "purchase": 7.0,
+          "usage": 5.5,
+          "loyalty": 4.5
+        }
+      },
+      {
+        "competitor_name": "Rogue",
+        "experience_excellence_score": 5.4,
+        "stage_scores": {
+          "communication": 4.5,
+          "engagement": 4.0,
+          "purchase": 6.5,
+          "usage": 7.0,
+          "loyalty": 5.0
+        }
+      }
+    ],
+    "rationale": "Zyn's 6.2 experience score reflects a tale of two brands: exceptional usage (8.5) driven by FDA-authorized pharmaceutical-grade quality, consistent nicotine delivery, and category-leading pouch comfort - substantiated by 77% market share and overwhelmingly positive product reviews. The ZYN Rewards program (7.5) outperforms competitors with high-value tech redemptions that create genuine switching costs. However, the 2024 supply crisis devastates purchase stage scoring (4.0): nationwide stockouts, purchase limits, suspended online sales, and opportunistic price increases directly contradicted availability expectations. Engagement (4.5) suffers from absent owned digital infrastructure - the 700M TikTok views are organic/uncontrolled. Communication (6.5) benefits from Zynfluencer cultural penetration but lacks formal messaging consistency. Category average (5.8) reflects a nascent category where no brand delivers complete journey excellence. Zyn leads despite purchase failures because competitors haven't capitalized - On! (6.0) has better availability but weaker product; Velo (5.6) suffers quality control issues; Rogue (5.4) has limited distribution and strength options.",
+    "recommendations": "Immediate priority: Restore direct-to-consumer sales capability through Zyn.com to provide purchase alternative during ongoing retail constraints. Medium-term: Build owned digital engagement infrastructure (official social channels, community management, customer service chat) to reduce dependency on uncontrolled Zynfluencer content and capture first-party customer data. Long-term: Leverage ZYN Rewards as crisis management tool - consider bonus points or exclusive access for loyal customers during shortage periods. The brand's product superiority protects market share short-term, but 18+ months of purchase friction risks permanent customer defection as competitors improve product quality and capitalize on Zyn's distribution gaps."
+  },
+  "metadata": {
+    "agent": "gdt-b3",
+    "brand": "Zyn",
+    "parent_company": "Swedish Match (Philip Morris International)",
+    "category": "Nicotine Pouches",
+    "market": "USA",
+    "timestamp": "2025-12-30",
+    "methodology": "100% Customer Journey Assessment",
+    "data_sources": [
+      "Bloomberg (supply shortage reporting)",
+      "FDA (PMTA authorization)",
+      "Nicokick/Northerner (market share data)",
+      "TikTok research studies (engagement metrics)",
+      "Trustpilot/Vaping360/consumer reviews",
+      "Philip Morris International investor communications",
+      "Truth Initiative (rewards program analysis)",
+      "Academic research (PMC/PubMed marketing studies)"
+    ],
+    "competitors_analyzed": ["On!", "Velo", "Rogue"],
+    "key_findings": {
+      "market_share": "77% category share (Q3 2023)",
+      "2024_shipments": "580 million cans projected",
+      "supply_crisis": "80% Q1 2024 volume surge caused nationwide stockouts",
+      "tiktok_reach": "700 million views under #ZYN hashtag",
+      "rewards_program": "15 points per can, high-value tech redemptions",
+      "fda_status": "First nicotine pouch brand with PMTA authorization (20 products)"
+    }
+  }
+}

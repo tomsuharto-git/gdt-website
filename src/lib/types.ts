@@ -40,6 +40,12 @@ export interface WSNContent {
   nowWhat: string;
 }
 
+// Competitor score for comparison
+export interface CompetitorScore {
+  name: string;
+  score: number;
+}
+
 // Component deep dive data
 export interface ComponentData {
   id: string;
@@ -54,6 +60,8 @@ export interface ComponentData {
   rationale?: string;
   recommendations?: string;
   scoreBreakdown?: Record<string, number>;
+  competitorScores?: CompetitorScore[];
+  categoryAverage?: number;
 }
 
 // Growth Profile (top of page - the brand narrative)
@@ -63,6 +71,7 @@ export interface GrowthProfile {
   sequence: string; // e.g., "Position → Unlock → Connect"
   definition: string;
   implications: string;
+  shortDefinition: string; // One-line definition for the footnote
 }
 
 // Growth Barrier item

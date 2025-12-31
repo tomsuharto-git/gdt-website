@@ -248,6 +248,63 @@ Each component now has a description explaining what it measures:
 
 ---
 
+## GDT Output Converter
+
+The `scripts/convert-gdt-output.py` script automates conversion from GDT analysis outputs to website data files.
+
+### Usage
+
+```bash
+# Basic usage
+python scripts/convert-gdt-output.py ../outputs/[brand-folder] --accent-color "#HEXCOLOR"
+
+# With custom output path and variable name
+python scripts/convert-gdt-output.py ../outputs/espolon-tequila-usa-2025-12-22 \
+  --accent-color "#E54B7B" \
+  --output src/data/espolon.ts \
+  --var-name espolon
+```
+
+### What It Automates (~85%)
+
+| Section | Source | Automation Level |
+|---------|--------|------------------|
+| Brand config | `gdt-summary-output.json` | 95% (accent color manual) |
+| Total score | JSON | 100% |
+| Growth Profile | JSON | 85% (sequence derived) |
+| Sections | JSON | 100% |
+| Components (basic) | JSON | 100% |
+| Components (WSN) | Markdown files | 90% |
+| Strengths/Weaknesses | Markdown files | 95% |
+| Growth Barrier | JSON | 100% |
+| Growth Solution | JSON | 80% |
+| Growth System | JSON | 70% |
+
+### Manual Curation Still Needed
+
+1. **Accent color**: Edit `accentColor` in the generated data file (template applies it automatically)
+2. **WSN content polish**: Tighten copy for equal-length cards
+3. **Content balance**: Ensure What/So What/Now What cards have similar lengths
+
+### Handled Automatically
+
+- **Tier names**: Pulled from markdown files (e.g., "Value-Justified", "Established")
+- **Section names**: Hardcoded in template ("Audience Connection" instead of "Customer Connection")
+
+### Converter Data Flow
+
+```
+GDT Outputs                    Converter                     Website Data
+─────────────────────────────────────────────────────────────────────────
+gdt-summary-output.json   ─┬─►  convert-gdt-output.py  ─►   src/data/[brand].ts
+a1-brand-positioning.md   ─┤
+a2-pricing-power.md       ─┤
+...                       ─┤
+c3-disruption-urgency.md  ─┘
+```
+
+---
+
 ## Development Notes
 
 - Dev server: `npm run dev` (runs on port 3000)
