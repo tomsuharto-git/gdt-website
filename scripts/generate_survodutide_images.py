@@ -26,10 +26,12 @@ Create an illustration in EXACTLY the same artistic style as this reference imag
 - Same dark charcoal background
 - Same off-white cream linework
 
-COLOR PALETTE (match the reference):
+COLOR PALETTE - CRITICAL:
 - Background: Dark charcoal (#141418)
 - Primary lines: Off-white cream (#EDE8DF)
-- Accent color: {BRAND_ACCENT} (dark forest green) for select highlights (10-15% of elements)
+- Accent color: BRIGHT HOT PINK {BRAND_ACCENT} - use this vibrant pink for 10-15% of elements
+- DO NOT USE GREEN OR TEAL - the accent MUST be HOT PINK/MAGENTA
+- The pink accents should POP against the dark background
 
 Keep the EXACT same line weight, density, and style as the reference. Square format.
 """
