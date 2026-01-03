@@ -121,6 +121,20 @@ export interface GrowthSystem {
   implementationNotes: string;
 }
 
+// Growth Opportunity/Challenge item
+export interface GrowthFactorItem {
+  component: string;
+  name: string;
+  score: number;
+  summary: string;
+}
+
+// Growth Opportunities & Challenges section
+export interface GrowthFactors {
+  opportunities: GrowthFactorItem[];
+  challenges: GrowthFactorItem[];
+}
+
 // Complete GDT analysis data
 export interface GDTAnalysis {
   brand: BrandConfig;
@@ -131,6 +145,7 @@ export interface GDTAnalysis {
   growthBarrier: GrowthBarrier;
   growthSolution: GrowthSolution;
   growthSystem: GrowthSystem;
+  growthFactors?: GrowthFactors;
 }
 
 // Score tier helpers

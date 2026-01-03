@@ -59,7 +59,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       score: 15.5,
       tier: 'Moderate',
       components: [
-        { id: 'c1', name: 'Asset Strategy', score: 3.0, tier: 'Critical Gap', section: 'C' },
+        { id: 'c1', name: 'Asset Recognition', score: 3.0, tier: 'Critical Gap', section: 'C' },
         { id: 'c2', name: 'Innovation Platform', score: 7.0, tier: 'Strong', section: 'C' },
         { id: 'c3', name: 'Competitive Pressure', score: 5.5, tier: 'Moderate', section: 'C' }
       ]
@@ -72,7 +72,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     description: 'Survodutide has real scientific differentiation but literally nothing else. No awareness, no assets, no emotional connection, no experience infrastructure—entering a category with active cultural backlash and 18-24 months before the market floods with competitors.',
     items: [
       {
-        constraint: 'Zero Brand Assets',
+        constraint: 'Zero Asset Recognition',
         component: 'C1',
         score: 3.0,
         evidence: 'Ozempic has 97% unaided awareness. Survodutide has 0%. No logo, no color ownership, no verbal identity. A 6-syllable unfamiliar name. Everything must be built from scratch against entrenched competitors.'
@@ -359,7 +359,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     },
     {
       id: 'c1',
-      name: 'Asset Strategy',
+      name: 'Asset Recognition',
       section: 'C',
       score: 3.0,
       tier: 'Critical Gap',
@@ -453,5 +453,49 @@ export const survodutideAnalysis: GDTAnalysis = {
         { name: 'Saxenda', score: 6.0 }
       ]
     }
-  ]
+  ],
+
+  // Growth Opportunities & Challenges
+  growthFactors: {
+    opportunities: [
+      {
+        component: 'C2',
+        name: 'Innovation Platform',
+        score: 7.0,
+        summary: 'Glucagon/GLP-1 dual agonism is genuine mechanism differentiation—not marketing spin. Clinical data supports metabolic health benefits (44% liver fat reduction, lipid improvements) that pure GLP-1s can\'t claim. This is the one real asset to build everything else on.'
+      },
+      {
+        component: 'A3',
+        name: 'Market Opportunity',
+        score: 7.0,
+        summary: 'The $100B+ market is real with <5% penetration. 110M eligible Americans, only 4M on therapy. The opportunity exists independent of Survodutide\'s readiness—the question is execution speed before the 2027-2028 competitor flood.'
+      },
+      {
+        component: 'A1',
+        name: 'Positioning White Space',
+        score: 5.5,
+        summary: 'The "metabolic health transformation" positioning is unclaimed territory. Dual agonist mechanism supports a story beyond weight loss that neither Wegovy nor Zepbound can credibly tell. But white space is opportunity, not achievement—must be claimed fast.'
+      }
+    ],
+    challenges: [
+      {
+        component: 'C1',
+        name: 'Asset Recognition',
+        score: 3.0,
+        summary: 'Zero brand awareness against Ozempic\'s 97%. No logo, no color, no verbal identity, no visual system. A 6-syllable unfamiliar name. The brand literally doesn\'t exist yet—everything must be built from scratch against entrenched competitors.'
+      },
+      {
+        component: 'B1',
+        name: 'Emotional Territory',
+        score: 4.0,
+        summary: 'No emotional connection with any audience. "Clean slate" means no relationship at all. Must build trust and affinity while navigating category-wide shame, skepticism, and "Ozempic face" anxiety that Survodutide inherits without brand equity to counter.'
+      },
+      {
+        component: 'B2',
+        name: 'Cultural Landscape',
+        score: 4.5,
+        summary: 'Active GLP-1 cultural backlash in progress—shortage resentment, celebrity trivialization, medical legitimacy debates. Third entrant inherits all category stigma without the brand recognition that lets Wegovy and Zepbound weather criticism.'
+      }
+    ]
+  }
 };
