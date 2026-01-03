@@ -13,6 +13,8 @@ import {
   Lightbulb,
   Zap,
   ArrowLeft,
+  ArrowUpRight,
+  AlertTriangle,
 } from 'lucide-react';
 
 // Icon mapping for each component
@@ -233,6 +235,94 @@ export default function BrandPage({ data }: BrandPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Growth Opportunities & Challenges - Only for brands with this data */}
+      {data.growthFactors && (
+        <>
+          {/* Divider */}
+          <div className="px-8 md:px-16 lg:px-24">
+            <div className="max-w-5xl mx-auto">
+              <div className="gdt-section-divider" />
+            </div>
+          </div>
+
+          <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
+            <div className="max-w-5xl mx-auto">
+              <div className="grid gap-12 md:grid-cols-2">
+                {/* Opportunities Column */}
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <ArrowUpRight className="text-emerald-400" size={24} />
+                    <h2 className="gdt-display text-2xl md:text-3xl">
+                      Growth Opportunities
+                    </h2>
+                  </div>
+                  <div className="space-y-4">
+                    {data.growthFactors.opportunities.map((item, index) => (
+                      <div
+                        key={index}
+                        className="gdt-card p-5 border-l-4 border-l-emerald-500/50"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded">
+                              {item.component}
+                            </span>
+                            <h3 className="font-semibold text-[var(--gdt-text-primary)]">
+                              {item.name}
+                            </h3>
+                          </div>
+                          <span className="gdt-mono text-emerald-400 text-lg">
+                            {item.score.toFixed(1)}
+                          </span>
+                        </div>
+                        <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                          {item.summary}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Challenges Column */}
+                <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <AlertTriangle className="text-amber-400" size={24} />
+                    <h2 className="gdt-display text-2xl md:text-3xl">
+                      Growth Challenges
+                    </h2>
+                  </div>
+                  <div className="space-y-4">
+                    {data.growthFactors.challenges.map((item, index) => (
+                      <div
+                        key={index}
+                        className="gdt-card p-5 border-l-4 border-l-amber-500/50"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs font-mono text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">
+                              {item.component}
+                            </span>
+                            <h3 className="font-semibold text-[var(--gdt-text-primary)]">
+                              {item.name}
+                            </h3>
+                          </div>
+                          <span className="gdt-mono text-amber-400 text-lg">
+                            {item.score.toFixed(1)}
+                          </span>
+                        </div>
+                        <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                          {item.summary}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Divider */}
       <div className="px-8 md:px-16 lg:px-24">
