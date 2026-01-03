@@ -12,7 +12,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     market: 'USA',
     category: 'GLP-1/Glucagon Dual Agonist',
     date: '2025-01-02',
-    accentColor: '#1B3D36'
+    accentColor: '#FF5A8A'
   },
 
   totalScore: 59.7,

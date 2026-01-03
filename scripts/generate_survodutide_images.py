@@ -14,8 +14,8 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 STYLE_REF = "/Users/tomsuharto/Documents/Obsidian Vault/Claude Code/Growth Diagnosis/gdt-website/public/espolon-cover.png"
 OUTPUT_DIR = "/Users/tomsuharto/Documents/Obsidian Vault/Claude Code/Growth Diagnosis/gdt-website/public"
 
-# Survodutide brand accent - dark forest green
-BRAND_ACCENT = "#1B3D36"
+# Survodutide brand accent - hot pink
+BRAND_ACCENT = "#FF5A8A"
 
 BASE_STYLE = f"""
 Create an illustration in EXACTLY the same artistic style as this reference image:
