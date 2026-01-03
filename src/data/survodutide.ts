@@ -4,6 +4,9 @@ import { GDTAnalysis } from '@/lib/types';
  * Survodutide (Boehringer Ingelheim) Pre-Launch GDT Analysis
  * Source: outputs/survo-usa-2025-01-02/
  * Analysis Type: Pre-Launch Opportunity Assessment
+ *
+ * SCORING LENS: Current reality, not potential. Challenges as challenges.
+ * Pre-launch brands start from zero—"clean slate" is not a strength.
  */
 export const survodutideAnalysis: GDTAnalysis = {
   brand: {
@@ -15,15 +18,15 @@ export const survodutideAnalysis: GDTAnalysis = {
     accentColor: '#FF5A8A'
   },
 
-  totalScore: 59.7,
+  totalScore: 46.0,
 
   // Growth Profile - Cultural Entry (adapted for pre-launch)
   growthProfile: {
     id: 'cultural-entry',
     name: 'Cultural Entry',
     sequence: 'Position → Unlock → Connect',
-    definition: 'Survodutide enters a culturally complex market where GLP-1 medications carry both stigma (celebrity shortcuts, supply shortages) and aspiration (transformative weight loss). The brand must establish cultural legitimacy before it can compete on clinical credentials.',
-    implications: 'B2=5.4 represents significant cultural barriers: GLP-1 backlash from shortage-driven resentment, "Ozempic face" concerns, and the perception that these drugs are for celebrities, not patients. Strong C-section scores (7.4) indicate competitive opportunity exists—the category is growing but no brand owns the cultural conversation for next-gen dual agonists. A2=5.8 signals pricing strategy must address value perception in a market where Wegovy/Zepbound have established reference prices.',
+    definition: 'Survodutide enters a culturally contested market where GLP-1 medications carry both stigma and aspiration. The brand must build everything from scratch—awareness, positioning, relationships—while navigating active category backlash.',
+    implications: 'B-section scores (13.0) reveal the core challenge: zero emotional connection, hostile cultural landscape, and no experience infrastructure. Strong C2 (7.0) indicates real scientific differentiation exists, but C1 (3.0) shows the brand has no assets to communicate it. A3 (7.0) confirms the market opportunity is real—the question is whether Survodutide can capture it before the window closes.',
     shortDefinition: 'Pre-launch brands entering culturally contested categories requiring legitimacy-building before commercial execution.'
   },
 
@@ -31,152 +34,145 @@ export const survodutideAnalysis: GDTAnalysis = {
     {
       id: 'A',
       name: 'Brand & Business Alignment',
-      score: 19.4,
+      score: 17.5,
       tier: 'Moderate',
       components: [
-        { id: 'a1', name: 'Positioning White Space', score: 6.8, tier: 'Moderate', section: 'A' },
-        { id: 'a2', name: 'Pricing Strategy', score: 5.8, tier: 'Vulnerable', section: 'A' },
-        { id: 'a3', name: 'Market Opportunity', score: 6.8, tier: 'Moderate', section: 'A' }
+        { id: 'a1', name: 'Positioning White Space', score: 5.5, tier: 'Moderate', section: 'A' },
+        { id: 'a2', name: 'Pricing Strategy', score: 5.0, tier: 'Vulnerable', section: 'A' },
+        { id: 'a3', name: 'Market Opportunity', score: 7.0, tier: 'Strong', section: 'A' }
       ]
     },
     {
       id: 'B',
       name: 'Audience Connection',
-      score: 19.1,
-      tier: 'Moderate',
+      score: 13.0,
+      tier: 'Vulnerable',
       components: [
-        { id: 'b1', name: 'Emotional Territory', score: 6.5, tier: 'Moderate', section: 'B' },
-        { id: 'b2', name: 'Cultural Landscape', score: 5.4, tier: 'Critical Gap', section: 'B' },
-        { id: 'b3', name: 'Experience Design', score: 7.2, tier: 'Strong', section: 'B' }
+        { id: 'b1', name: 'Emotional Territory', score: 4.0, tier: 'Vulnerable', section: 'B' },
+        { id: 'b2', name: 'Cultural Landscape', score: 4.5, tier: 'Vulnerable', section: 'B' },
+        { id: 'b3', name: 'Experience Design', score: 4.5, tier: 'Vulnerable', section: 'B' }
       ]
     },
     {
       id: 'C',
       name: 'Competitive Transformation',
-      score: 22.2,
-      tier: 'Strong',
+      score: 15.5,
+      tier: 'Moderate',
       components: [
-        { id: 'c1', name: 'Asset Strategy', score: 7.4, tier: 'Strong', section: 'C' },
-        { id: 'c2', name: 'Innovation Platform', score: 7.4, tier: 'Strong', section: 'C' },
-        { id: 'c3', name: 'Competitive Pressure', score: 7.4, tier: 'Strong', section: 'C' }
+        { id: 'c1', name: 'Asset Strategy', score: 3.0, tier: 'Critical Gap', section: 'C' },
+        { id: 'c2', name: 'Innovation Platform', score: 7.0, tier: 'Strong', section: 'C' },
+        { id: 'c3', name: 'Competitive Pressure', score: 5.5, tier: 'Moderate', section: 'C' }
       ]
     }
   ],
 
   // Growth Barrier
   growthBarrier: {
-    headline: 'The Cultural Legitimacy Paradox',
-    description: 'Survodutide has strong clinical credentials but enters a culturally contested category where GLP-1s are simultaneously miracle drugs and celebrity shortcuts. Without cultural legitimacy, even superior data doesn\'t translate to brand preference.',
+    headline: 'Building a Brand from Zero in Hostile Territory',
+    description: 'Survodutide has real scientific differentiation but literally nothing else. No awareness, no assets, no emotional connection, no experience infrastructure—entering a category with active cultural backlash and 18-24 months before the market floods with competitors.',
     items: [
       {
-        constraint: 'Category Stigma Transfer',
-        component: 'B2',
-        score: 5.4,
-        evidence: 'GLP-1 backlash created by supply shortages, celebrity associations, and "Ozempic face" discourse. Third entrant inherits category baggage without brand recognition to counter it.'
-      },
-      {
-        constraint: 'Value Perception Gap',
-        component: 'A2',
-        score: 5.8,
-        evidence: 'No established payer relationships, incumbent pricing pressure from Wegovy/Zepbound, and compounding pharmacy competition undermining branded pricing.'
-      },
-      {
-        constraint: 'Zero Brand Awareness',
+        constraint: 'Zero Brand Assets',
         component: 'C1',
-        score: 7.4,
-        evidence: 'Ozempic has 97% unaided awareness. Survodutide has effectively 0%. Building from scratch requires significant investment and time the competitive window may not allow.'
+        score: 3.0,
+        evidence: 'Ozempic has 97% unaided awareness. Survodutide has 0%. No logo, no color ownership, no verbal identity. A 6-syllable unfamiliar name. Everything must be built from scratch against entrenched competitors.'
+      },
+      {
+        constraint: 'No Audience Connection',
+        component: 'B1',
+        score: 4.0,
+        evidence: 'Zero emotional relationship exists. "Clean slate" means no relationship at all. Must build trust and connection while inheriting category shame, skepticism, and Ozempic face anxiety.'
+      },
+      {
+        constraint: 'Cultural Headwinds',
+        component: 'B2',
+        score: 4.5,
+        evidence: 'GLP-1 backlash in full swing—shortage resentment, celebrity associations, medical legitimacy questions. Third entrant inherits all category baggage without brand recognition to counter it.'
       }
     ]
   },
 
   // Growth Solution
   growthSolution: {
-    headline: 'Own the Metabolic Health Revolution',
-    description: 'Reframe the category from "weight loss drugs" to "metabolic health transformation." Position Survodutide not as the third GLP-1 but as the first true metabolic health platform. Lead with medical legitimacy, not celebrity culture.',
+    headline: 'Lead with Science, Build Everything Else',
+    description: 'The only real asset is clinical differentiation (C2: 7.0). Every dollar and hour must work twice: building brand infrastructure while establishing cultural legitimacy. No shortcuts—this is a ground-up build in a time-limited window.',
     actions: [
-      'Claim "metabolic health transformation" positioning before competitors can contest it',
-      'Build medical legitimacy through endocrinologist and obesity medicine KOL partnerships',
-      'Design category-best patient experience that makes Survodutide easiest to start and stay on',
-      'Create distinctive brand assets that work in digital/social channels where category conversation happens',
-      'Develop value narrative connecting liver/cardiovascular benefits to payer outcomes'
+      'Build distinctive brand assets immediately—the brand needs to exist before it can compete',
+      'Establish medical legitimacy through KOL partnerships before DTC awareness campaigns',
+      'Design patient experience infrastructure from day one—can\'t afford to retrofit later',
+      'Enter cultural conversation through medical voices, not celebrity adjacency',
+      'Secure payer relationships with outcomes-based value narrative tied to dual agonist differentiation'
     ]
   },
 
   // Growth System
   growthSystem: {
-    headline: 'Legitimize → Differentiate → Scale',
-    description: 'The brand that owns the next-gen narrative wins the next-gen market. Survodutide must establish cultural legitimacy first, then leverage mechanism differentiation, then scale access and awareness.',
+    headline: 'Build → Legitimize → Scale',
+    description: 'Unlike established brands optimizing existing assets, Survodutide must construct everything simultaneously. Phase 1 builds the brand that doesn\'t exist. Phase 2 earns the cultural permission to compete. Phase 3 scales before the window closes.',
     phases: [
       {
         phase: 'Position',
-        description: 'Establish Survodutide as the serious medical choice—the metabolic health transformation platform, not another celebrity weight loss drug.',
+        description: 'Build the brand infrastructure that doesn\'t exist. Create assets, establish positioning, develop experience architecture. Nothing can scale until the foundation exists.',
         outputs: [
           {
-            name: 'Strategic Brand Platform',
-            score: 19.08,
-            purpose: 'Define the "metabolic health transformation" positioning that transcends weight loss and creates distance from GLP-1 cultural baggage',
-            componentsAddressed: ['A1 (6.8)', 'B1 (6.5)', 'B2 (5.4)'],
-            deliverables: ['Brand positioning architecture', 'Metabolic health messaging framework', 'Medical legitimacy narrative', 'Competitive differentiation map']
+            name: 'Brand Infrastructure Build',
+            score: 14.0,
+            purpose: 'Create the distinctive assets, visual identity, and verbal framework required before any market activity can begin',
+            componentsAddressed: ['C1 (3.0)', 'A1 (5.5)'],
+            deliverables: ['Brand identity system', 'Name/naming architecture strategy', 'Visual asset library', 'Verbal identity guidelines', 'Digital asset templates']
           },
           {
-            name: 'Category Leadership',
-            score: 21.13,
-            purpose: 'Establish Survodutide as category thought leader in dual agonist science and metabolic health outcomes',
-            componentsAddressed: ['A1 (6.8)', 'C2 (7.4)'],
-            deliverables: ['Medical education program', 'KOL partnership strategy', 'Scientific communication platform', 'Conference presence strategy']
+            name: 'Positioning Architecture',
+            score: 16.5,
+            purpose: 'Claim "metabolic health transformation" positioning before competitors can contest it—the mechanism differentiation needs a narrative',
+            componentsAddressed: ['A1 (5.5)', 'C2 (7.0)', 'B1 (4.0)'],
+            deliverables: ['Brand positioning platform', 'Messaging hierarchy', 'Claim substantiation framework', 'Competitive differentiation map']
           }
         ]
       },
       {
         phase: 'Unlock',
-        description: 'Enter and reshape the cultural conversation. Navigate GLP-1 cultural complexity by establishing medical legitimacy and reframing category narrative.',
+        description: 'Earn cultural permission to compete. Build legitimacy through medical authority, not celebrity adjacency. Address category stigma head-on.',
         outputs: [
           {
-            name: 'Culture Strategy',
-            score: 19.49,
-            purpose: 'Navigate GLP-1 cultural complexity by establishing medical legitimacy and reframing category conversation',
-            componentsAddressed: ['B2 (5.4)', 'B1 (6.5)'],
-            deliverables: ['Cultural landscape mapping', 'Medical voice activation strategy', 'Anti-stigma messaging', 'Patient advocacy partnerships']
+            name: 'Medical Legitimacy Campaign',
+            score: 15.5,
+            purpose: 'Establish credibility through HCP partnerships and medical authority before consumer awareness',
+            componentsAddressed: ['B2 (4.5)', 'C2 (7.0)', 'B1 (4.0)'],
+            deliverables: ['KOL partnership strategy', 'Medical education program', 'Conference presence plan', 'Peer-reviewed publication support']
           },
           {
-            name: 'Fame Orchestration',
-            score: 20.67,
-            purpose: 'Build brand awareness and recognition through earned media and strategic visibility without celebrity baggage',
-            componentsAddressed: ['B2 (5.4)', 'C1 (7.4)', 'A1 (6.8)'],
-            deliverables: ['Media relations strategy', 'Medical media partnerships', 'Brand visibility playbook', 'Crisis communication protocols']
+            name: 'Cultural Navigation Strategy',
+            score: 13.0,
+            purpose: 'Enter the GLP-1 cultural conversation strategically—acknowledge backlash, reframe narrative, build trust',
+            componentsAddressed: ['B2 (4.5)', 'B1 (4.0)', 'A1 (5.5)'],
+            deliverables: ['Cultural landscape mapping', 'Stigma response framework', 'Patient advocacy partnerships', 'Social listening + response protocols']
           }
         ]
       },
       {
         phase: 'Connect',
-        description: 'Execute market entry with category-best patient experience, clear value narrative for payers, and scalable access infrastructure.',
+        description: 'Scale market presence with infrastructure and legitimacy in place. Build experience, drive awareness, secure access—all within the competitive window.',
         outputs: [
           {
-            name: 'Go-To-Market Strategy',
-            score: 21.04,
-            purpose: 'Orchestrate launch execution across HCP, payer, and patient stakeholders with integrated channel strategy',
-            componentsAddressed: ['A3 (6.8)', 'A2 (5.8)', 'B3 (7.2)'],
-            deliverables: ['Launch sequencing plan', 'Channel strategy', 'Payer engagement playbook', 'HCP targeting and messaging']
+            name: 'Experience Infrastructure',
+            score: 14.0,
+            purpose: 'Build the patient experience that doesn\'t exist—from first touchpoint through ongoing therapy management',
+            componentsAddressed: ['B3 (4.5)', 'B1 (4.0)', 'A2 (5.0)'],
+            deliverables: ['Patient journey design', 'Access/prior auth support program', 'Titration management tools', 'Side effect support protocols', 'Digital patient platform']
           },
           {
-            name: 'Launch Campaigns',
-            score: 21.34,
-            purpose: 'Drive awareness and trial through coordinated DTC and HCP campaigns that reinforce metabolic health positioning',
-            componentsAddressed: ['A1 (6.8)', 'C1 (7.4)', 'B1 (6.5)'],
-            deliverables: ['DTC campaign creative', 'HCP campaign creative', 'Digital/social strategy', 'Media plan']
-          },
-          {
-            name: 'Hidden Consumer Truths',
-            score: 19.82,
-            purpose: 'Uncover and address the emotional barriers and motivations that determine treatment initiation and persistence',
-            componentsAddressed: ['B1 (6.5)', 'B2 (5.4)', 'A2 (5.8)'],
-            deliverables: ['Patient journey research', 'Barrier mapping', 'Motivation framework', 'Message testing protocol']
+            name: 'Market Launch Execution',
+            score: 17.5,
+            purpose: 'Coordinated launch across HCP, payer, and patient channels—racing the competitive clock',
+            componentsAddressed: ['A3 (7.0)', 'C3 (5.5)', 'A2 (5.0)'],
+            deliverables: ['Launch sequencing plan', 'Payer negotiation playbook', 'HCP targeting + messaging', 'DTC campaign creative', 'Media plan']
           }
         ]
       }
     ],
-    criticalPath: 'Position (Establish legitimacy) → Unlock (Reshape culture) → Connect (Execute market entry)',
-    implementationNotes: 'Phase 1 establishes the positioning foundation that makes Phase 2 cultural work credible. Phase 2 creates the cultural conditions that make Phase 3 launch execution effective. Without cultural legitimacy (Phase 2), even superior launch execution (Phase 3) will face headwinds from category stigma and competitor narratives. The 18-24 month window post-launch is critical for establishing positioning before 10+ competitors enter the market by 2027-2028.'
+    criticalPath: 'Build (Create what doesn\'t exist) → Legitimize (Earn cultural permission) → Scale (Race the clock)',
+    implementationNotes: 'The 18-24 month window is real. By 2027-2028, 10+ competitors enter. Everything in Phase 1-2 must complete fast enough to leave runway for Phase 3 scaling. Parallel workstreams required—sequential execution runs out of time.'
   },
 
   components: [
@@ -184,51 +180,51 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'a1',
       name: 'Positioning White Space',
       section: 'A',
-      score: 6.8,
+      score: 5.5,
       tier: 'Moderate',
       wsn: {
-        headline: 'Third Entrant Advantage in a Two-Horse Race',
-        subline: 'Wegovy and Zepbound dominate today. Survodutide can define tomorrow.',
-        what: 'The GLP-1 market is structurally a duopoly: Novo Nordisk (Wegovy/Ozempic) vs. Eli Lilly (Zepbound/Mounjaro). Both have established clinical credentials, manufacturing scale, and cultural presence. Survodutide enters as the first glucagon dual agonist approved for obesity—a genuine mechanism differentiation that neither incumbent can claim.',
-        evidence: 'Boehringer Ingelheim\'s Phase 3 showed 18.7% weight loss at 46 weeks—competitive with tirzepatide. The glucagon component offers potential metabolic advantages (improved liver fat reduction, better lipid profiles) that pure GLP-1 agonists don\'t provide. However, the brand lacks Novo\'s DTC presence or Lilly\'s manufacturing capacity.',
-        soWhat: 'Survodutide\'s white space isn\'t "another weight loss drug"—it\'s the metabolic health positioning that transcends simple weight reduction. The clinical data supports a broader story; the question is whether BI can tell it before the narrative window closes.',
-        nowWhat: 'Own the "metabolic health transformation" narrative before Lilly or Novo expand into it. Position dual agonism as the evolution of the category, not just another option.'
+        headline: 'Differentiation Exists, Positioning Doesn\'t',
+        subline: 'The science is real. The brand position is vapor.',
+        what: 'Survodutide is the first glucagon/GLP-1 dual agonist—genuine mechanism differentiation. But positioning doesn\'t exist until you claim it, communicate it, and defend it. Today, Survodutide is a molecule with clinical data, not a brand with a position.',
+        evidence: 'Phase 3 showed 18.7% weight loss, competitive with tirzepatide. Glucagon component offers metabolic advantages (liver fat, lipids) that pure GLP-1s don\'t provide. But no messaging exists. No positioning architecture. No claim framework. The differentiation lives in papers, not in market.',
+        soWhat: 'The white space for "metabolic health transformation" is real and unclaimed. But white space is opportunity, not achievement. Novo and Lilly could pivot messaging to contest this territory before Survodutide establishes it.',
+        nowWhat: 'Build positioning architecture immediately. The mechanism story needs a narrative framework before the first HCP conversation. Claim the territory in medical channels before attempting consumer awareness.'
       },
       strengths: [
         'First-to-market glucagon dual agonist with genuine mechanism differentiation',
         'Strong metabolic health data beyond weight loss (liver fat, lipid profiles)',
-        'Clean slate without incumbent baggage or supply crisis history'
+        'White space for "metabolic health transformation" positioning exists'
       ],
       weaknesses: [
-        'Third entrant in established Novo/Lilly duopoly with brand recognition disadvantage',
-        'Limited DTC marketing experience compared to Novo\'s Ozempic machine',
-        'Manufacturing scale uncertainty in a category defined by supply constraints'
+        'Positioning is theoretical—nothing has been claimed or communicated',
+        'No messaging framework, claim architecture, or narrative exists',
+        'Competitors could pivot to contest the positioning before it\'s established'
       ],
-      competitiveContext: 'Novo Nordisk and Eli Lilly have built category infrastructure—DTC awareness, payer relationships, manufacturing scale. Survodutide must compete on differentiation, not distribution, at least initially.'
+      competitiveContext: 'Novo and Lilly own the current conversation. Survodutide has a differentiated story to tell but no voice to tell it with.'
     },
     {
       id: 'a2',
       name: 'Pricing Strategy',
       section: 'A',
-      score: 5.8,
+      score: 5.0,
       tier: 'Vulnerable',
       wsn: {
-        headline: 'Price War Positioning Without Price War Economics',
-        subline: 'Wegovy and Zepbound set the ceiling. Survodutide must decide if it competes on value or premium.',
-        what: 'GLP-1 pricing is brutally transparent: Wegovy lists at ~$1,350/month, Zepbound at ~$1,060/month. Both face PBM resistance, coverage exclusions, and compounding pharmacy competition. Survodutide enters this pricing pressure cooker without the manufacturing scale that gives Lilly its cost advantage.',
-        evidence: 'Only 40% of commercial plans cover GLP-1s for obesity. CVS Caremark excluded Wegovy in 2024. The compounding pharmacy market exploded to $1B+ by exploiting shortage loopholes. BI\'s operational footprint in the US obesity market is minimal compared to Novo and Lilly.',
-        soWhat: 'Pricing at parity signals "me too." Pricing below signals desperation. Pricing above requires justification Survodutide hasn\'t yet established. The dual agonist mechanism offers a premium story, but it needs to be told before the invoice arrives.',
-        nowWhat: 'Build the value narrative before the price becomes the headline. Metabolic health benefits (liver, cardiovascular) justify premium positioning—but only if payers understand the differentiation before launch.'
+        headline: 'Entering a Price War Without Weapons',
+        subline: 'No payer relationships. No manufacturing scale. Established reference prices.',
+        what: 'GLP-1 pricing is brutally transparent and under pressure. Wegovy ~$1,350/month, Zepbound ~$1,060/month. Both face PBM resistance and compounding pharmacy competition. Survodutide enters this pressure cooker with no payer relationships, no contract history, and uncertain manufacturing economics.',
+        evidence: 'Only 40% of commercial plans cover GLP-1s for obesity. CVS Caremark excluded Wegovy in 2024. Compounding pharmacy market exploded to $1B+. BI\'s US obesity market infrastructure is minimal compared to Novo and Lilly.',
+        soWhat: 'Premium pricing requires a value story that doesn\'t exist yet. Parity pricing signals "me too." Below-market signals desperation. Every pricing position has problems without the foundation work.',
+        nowWhat: 'Build value narrative before price becomes the conversation. Outcomes-based contracting tied to metabolic health benefits (liver, cardiovascular) may be the only path to premium positioning.'
       },
       strengths: [
-        'Differentiated mechanism supports premium pricing narrative with metabolic health outcomes',
-        'No prior pricing baggage or failed contract history',
-        'Opportunity for outcomes-based contracts demonstrating total cost of care reduction'
+        'Differentiated mechanism could support premium positioning if value story is built',
+        'No failed contract history or pricing baggage to overcome'
       ],
       weaknesses: [
-        'No established payer relationships for obesity indication',
-        'Incumbent pricing pressure from Wegovy/Zepbound reference points',
-        'Compounding pharmacy threat undermining all branded pricing'
+        'Zero established payer relationships in obesity indication',
+        'Incumbent reference prices already set expectations',
+        'Compounding pharmacy threat undermines all branded pricing',
+        'Manufacturing economics unclear—may not have Lilly\'s cost position'
       ],
       categoryAverage: 6.2,
       competitorScores: [
@@ -241,25 +237,25 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'a3',
       name: 'Market Opportunity',
       section: 'A',
-      score: 6.8,
-      tier: 'Moderate',
+      score: 7.0,
+      tier: 'Strong',
       wsn: {
-        headline: 'A $100B Market Growing Into a $150B Market',
-        subline: 'The opportunity is obvious. The path to capturing it is not.',
-        what: 'US anti-obesity medication market projected to reach $50B by 2030, with GLP-1 class capturing 80%+. Global potential exceeds $100B. Current penetration is <5% of eligible patients—massive headroom exists.',
-        evidence: '110M+ Americans meet obesity criteria. Only ~4M currently on GLP-1 therapy. Supply constraints artificially suppressed demand—as manufacturing scales, patient volume will surge. Employer coverage expanding as ROI data emerges (reduced comorbidity costs).',
-        soWhat: 'The market isn\'t the constraint—access, awareness, and insurance coverage are. Survodutide\'s opportunity isn\'t stealing Wegovy/Zepbound patients; it\'s capturing the 95% of eligible patients who aren\'t yet on any GLP-1.',
-        nowWhat: 'Focus on market expansion, not share theft. Build access infrastructure, patient support programs, and HCP education that bring new patients into the category—with Survodutide as their first treatment.'
+        headline: 'The Market Is Real',
+        subline: '$100B+ opportunity with <5% penetration. The headroom is genuine.',
+        what: 'US anti-obesity medication market projected to reach $50B by 2030. 110M+ Americans meet obesity criteria, only ~4M currently on GLP-1 therapy. Supply constraints artificially suppressed demand—as manufacturing scales, patient volume will surge.',
+        evidence: 'Current penetration <5% of eligible patients. Employer coverage expanding as ROI data emerges. Category growth driven by new patient acquisition, not just share theft. The opportunity is external market reality, not brand-dependent.',
+        soWhat: 'This is the one genuinely strong score that\'s not about potential—the market opportunity exists independent of Survodutide\'s readiness to capture it. The question is execution, not opportunity.',
+        nowWhat: 'Focus on market expansion strategy, not share theft. The 95% of eligible patients not on GLP-1s are the real target—with Survodutide as their first treatment, not a switch from Wegovy.'
       },
       strengths: [
         'Massive unmet demand with <5% category penetration',
-        'Market still in early growth phase with expanding insurance coverage',
-        'New patient acquisition strategy avoids direct incumbent competition'
+        'Market still in early growth phase—not zero-sum competition yet',
+        'New patient acquisition avoids direct incumbent competition'
       ],
       weaknesses: [
-        'Dependent on manufacturing capacity to meet demand',
-        'Incumbent manufacturing advantage from years of scale-up investment',
-        'Regulatory approval timing uncertainty affecting launch window'
+        'Capturing opportunity requires execution capabilities not yet built',
+        'Manufacturing capacity uncertainty could limit ability to meet demand',
+        'Regulatory timing affects launch window'
       ],
       categoryAverage: 7.0,
       competitorScores: [
@@ -272,25 +268,25 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b1',
       name: 'Emotional Territory',
       section: 'B',
-      score: 6.5,
-      tier: 'Moderate',
+      score: 4.0,
+      tier: 'Vulnerable',
       wsn: {
-        headline: 'Beyond Vanity: The Dignity of Health',
-        subline: 'GLP-1s carry celebrity baggage. Survodutide can carry medical legitimacy.',
-        what: 'The emotional landscape of obesity treatment is fraught: shame, hope, skepticism, and desperation coexist. Wegovy and Zepbound inherited both the promise and the stigma of their celebrity associations. Survodutide enters with a clean slate—no Elon Musk tweets, no Kim Kardashian rumors.',
-        evidence: 'Patient qualitative research shows deep ambivalence: excitement about efficacy, fear of being seen as "taking the easy way out," anxiety about long-term unknowns. The "Ozempic face" discourse created real hesitation among potential patients.',
-        soWhat: 'The emotional territory isn\'t about weight loss—it\'s about reclaiming agency over health. Patients don\'t want to feel like they\'re "cheating"; they want to feel like they\'re finally getting effective medical treatment for a medical condition.',
-        nowWhat: 'Position Survodutide as the serious medical choice—not the celebrity shortcut. Lead with metabolic health outcomes (liver, heart) that frame this as comprehensive treatment, not vanity medication.'
+        headline: 'Zero Emotional Connection',
+        subline: '"Clean slate" means no relationship at all.',
+        what: 'Survodutide has no emotional connection with any audience. No trust built, no affinity established, no relationship exists. The brand inherits the category\'s emotional complexity—shame, hope, skepticism, desperation—without any brand-specific equity to navigate it.',
+        evidence: 'Patient qualitative research shows deep ambivalence about GLP-1s: excitement about efficacy, fear of "taking the easy way out," anxiety about unknowns. Survodutide has no voice in this emotional landscape. Zero awareness means zero relationship.',
+        soWhat: '"No baggage" is not a strength—it\'s the absence of relationship. Wegovy and Zepbound have emotional equity, even if complicated. Survodutide has nothing. Building emotional connection from zero while navigating category stigma is a significant challenge.',
+        nowWhat: 'Lead with medical legitimacy to build trust before attempting emotional connection. The "serious medical choice" positioning creates a foundation for relationship-building that "another weight loss drug" cannot.'
       },
       strengths: [
-        'No celebrity baggage or "vanity drug" associations',
-        'Metabolic health story transcends weight loss stigma',
-        'Opportunity to own medical legitimacy positioning'
+        'No negative brand-specific associations to overcome',
+        'Can design emotional territory intentionally rather than inheriting it'
       ],
       weaknesses: [
-        'Category stigma transfer risk from GLP-1 backlash',
-        'Emotional barriers to treatment initiation remain high',
-        'Side effect anxiety from "Ozempic face" discourse'
+        'Zero emotional connection exists—must build from nothing',
+        'Inherits category emotional baggage (shame, skepticism, Ozempic face anxiety)',
+        'No brand voice in the emotional conversation about GLP-1s',
+        'Competitors have emotional equity, even if complicated'
       ],
       categoryAverage: 6.2,
       competitorScores: [
@@ -303,25 +299,25 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b2',
       name: 'Cultural Landscape',
       section: 'B',
-      score: 5.4,
-      tier: 'Critical Gap',
+      score: 4.5,
+      tier: 'Vulnerable',
       wsn: {
-        headline: 'GLP-1 Culture War: Shortages, Shame, and Celebrity',
-        subline: 'The category\'s cultural moment is also its cultural liability.',
-        what: 'GLP-1s became a cultural phenomenon in 2023-24, but not always positively. Supply shortages created resentment (diabetics vs. weight loss users). Celebrity associations trivialize medical need. Social media discourse oscillates between miracle drug and dangerous shortcut.',
-        evidence: '"Ozempic face" generated 1.2B TikTok views. FDA shortage notices for semaglutide persisted 18+ months. Medical societies issued guidance defending GLP-1 prescribing for obesity. The cultural conversation is happening without Boehringer Ingelheim\'s participation.',
-        soWhat: 'Survodutide launches into a culturally contested space. The brand can\'t ignore the existing narrative—it must actively reshape it. Third-entrant status means inheriting the category\'s cultural baggage without the brand recognition that Wegovy/Zepbound use to weather criticism.',
-        nowWhat: 'Enter the cultural conversation strategically. Partner with medical voices (endocrinologists, obesity medicine specialists) to legitimize the category. Use the dual agonist mechanism to create distance from "celebrity GLP-1" associations.'
+        headline: 'Entering a Culture War',
+        subline: 'Active backlash. No brand voice. Third entrant inherits the mess.',
+        what: 'GLP-1s became a cultural phenomenon but not always positively. Supply shortages created diabetic vs. weight loss resentment. Celebrity associations trivialize medical need. "Ozempic face" generated 1.2B TikTok views. The cultural conversation is contested and Survodutide has no voice in it.',
+        evidence: 'FDA shortage notices persisted 18+ months. Medical societies issued defensive guidance. Social media oscillates between miracle drug and dangerous shortcut. BI has not participated in the cultural conversation—no assets, no voice, no presence.',
+        soWhat: 'Third entrant status means inheriting category cultural baggage without brand recognition to counter criticism. Wegovy and Zepbound can weather backlash with brand equity. Survodutide cannot.',
+        nowWhat: 'Enter through medical legitimacy channels, not consumer culture. Partner with endocrinologists and obesity medicine specialists to earn credibility. Use dual agonist mechanism to create distance from "celebrity GLP-1" narrative.'
       },
       strengths: [
-        'Category awareness is already high—no need to explain what GLP-1s are',
-        'No existing brand baggage to overcome',
-        'Opportunity to reframe narrative around medical legitimacy'
+        'Category awareness is high—no need to explain what GLP-1s are',
+        'Can position distinctively against cultural narrative rather than within it'
       ],
       weaknesses: [
-        'Inherits category stigma without brand recognition defense',
-        'Cultural backlash actively in progress',
-        'Limited resources to counter competitor voice share'
+        'Active cultural backlash in progress',
+        'No brand presence or voice in the conversation',
+        'Third entrant inherits stigma without recognition to counter it',
+        'Limited resources to compete with incumbent voice share'
       ],
       categoryAverage: 6.0,
       competitorScores: [
@@ -334,25 +330,25 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b3',
       name: 'Experience Design',
       section: 'B',
-      score: 7.2,
-      tier: 'Strong',
+      score: 4.5,
+      tier: 'Vulnerable',
       wsn: {
-        headline: 'The Patient Journey That Could Define the Category',
-        subline: 'Novo and Lilly built products. Survodutide can build an experience.',
-        what: 'Current GLP-1 patient experience is fragmented: complex prior authorization, pharmacy roulette, dosing titration confusion, side effect management anxiety. No brand has optimized the end-to-end journey.',
-        evidence: 'Average time from prescription to first fill: 3-4 weeks with prior auth. 40%+ of patients experience GI side effects requiring management. Titration schedules are confusing. Digital support programs are underutilized.',
-        soWhat: 'Experience excellence is an uncontested arena. While Novo and Lilly compete on efficacy data, Survodutide can compete on patient support. The brand that makes GLP-1 therapy easiest to start and stay on wins the loyalty war.',
-        nowWhat: 'Design the category\'s best patient experience from day one: streamlined access, proactive side effect management, digital titration support, HCP coordination. Make "easy to stay on" the brand\'s operational advantage.'
+        headline: 'No Experience Exists',
+        subline: 'Zero touchpoints. Everything must be built.',
+        what: 'Survodutide has no patient experience because the brand doesn\'t exist in market. No access programs, no patient support, no digital tools, no HCP relationships, no touchpoint infrastructure. "Could build best-in-class" is not a score—it\'s a to-do list.',
+        evidence: 'Current GLP-1 patient experience is fragmented: 3-4 week prior auth delays, pharmacy roulette, titration confusion, side effect anxiety. The opportunity to improve on this is real, but Survodutide starts with nothing built.',
+        soWhat: 'Experience excellence requires infrastructure that doesn\'t exist. Building it takes time and resources. The gap between "opportunity" and "reality" is the entire distance from zero to competitive.',
+        nowWhat: 'Design experience architecture now, before launch. Patient support programs, access solutions, digital tools, HCP coordination—all must be built in parallel with brand infrastructure. Cannot retrofit post-launch.'
       },
       strengths: [
-        'Clean slate for experience design without legacy system constraints',
-        'Competitor experiences are mediocre—low bar to exceed',
-        'Digital capability opportunity to differentiate'
+        'No legacy systems to work around—can design optimally',
+        'Competitor experiences are mediocre—bar to exceed is achievable'
       ],
       weaknesses: [
-        'No existing patient services infrastructure to leverage',
-        'HCP relationship building required from scratch',
-        'Significant resource investment needed for best-in-class experience'
+        'Zero experience infrastructure exists',
+        'No patient services programs built',
+        'No HCP relationships established',
+        'Significant resource investment required to build from scratch'
       ],
       categoryAverage: 6.0,
       competitorScores: [
@@ -365,25 +361,26 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'c1',
       name: 'Asset Strategy',
       section: 'C',
-      score: 7.4,
-      tier: 'Strong',
+      score: 3.0,
+      tier: 'Critical Gap',
       wsn: {
-        headline: 'Building a Brand From Scratch in a Branded Category',
-        subline: 'Ozempic is a verb. Survodutide is a syllable count.',
-        what: 'Survodutide enters with no brand assets: no logo recognition, no color ownership, no verbal identity. The compound name is challenging (6 syllables, unfamiliar phonemes). Competitors have years of brand-building head start.',
-        evidence: 'Ozempic has 97% unaided awareness among weight loss seekers. Wegovy inherits Ozempic\'s recognizability. Zepbound/Mounjaro benefit from Lilly\'s diabetes franchise familiarity. Survodutide/Boehringer Ingelheim has minimal US consumer presence.',
-        soWhat: 'The brand must be built from zero. But this also means no mistakes to overcome. The opportunity is to create the first truly digital-native GLP-1 brand—designed for social, TikTok-ready, built for the channels where weight loss conversations actually happen.',
-        nowWhat: 'Invest in distinctive brand assets before launch. Consider brand name strategy carefully. Build visual and verbal identity that\'s immediately recognizable and shareable. Own a color, own a sound, own a shape.'
+        headline: 'Zero Assets Against 97% Awareness',
+        subline: 'The brand doesn\'t exist. Literally.',
+        what: 'Survodutide has no brand assets. No logo recognition, no color ownership, no verbal identity, no visual system. The compound name is 6 syllables with unfamiliar phonemes. Ozempic has 97% unaided awareness. Survodutide has effectively 0%.',
+        evidence: 'Wegovy inherits Ozempic recognizability. Zepbound/Mounjaro benefit from Lilly\'s diabetes franchise. Survodutide/Boehringer Ingelheim has minimal US consumer presence. No DTC history. No existing brand platform to leverage.',
+        soWhat: 'This is a critical gap, not an opportunity. "No baggage" doesn\'t help when you have no presence. Building brand awareness from zero against entrenched competitors with massive DTC spending requires significant investment and time the competitive window may not allow.',
+        nowWhat: 'Brand identity build is foundational—must happen first. Consider trade name strategy carefully. Build for digital/social channels where category conversation happens. Distinctive assets required before any awareness investment makes sense.'
       },
       strengths: [
-        'No brand baggage or negative associations to overcome',
-        'Opportunity for modern, digital-first brand design',
-        'Can build for channels where category conversation happens (TikTok, Instagram)'
+        'No negative brand associations to overcome',
+        'Can build digital-native identity for modern channels'
       ],
       weaknesses: [
-        'Zero existing awareness requires massive investment',
+        'Zero awareness—literally starting from nothing',
         'Challenging compound name (6 syllables, unfamiliar phonemes)',
-        'Significant time and resources required for brand-building'
+        'No existing brand platform or DTC infrastructure',
+        'Competitors have years of brand-building head start',
+        'Massive investment required with uncertain time for ROI'
       ],
       categoryAverage: 6.5,
       competitorScores: [
@@ -396,25 +393,26 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'c2',
       name: 'Innovation Platform',
       section: 'C',
-      score: 7.4,
+      score: 7.0,
       tier: 'Strong',
       wsn: {
-        headline: 'The Dual Agonist That Could Become a Platform',
-        subline: 'Survodutide isn\'t just a molecule. It\'s a metabolic technology.',
-        what: 'Glucagon/GLP-1 dual agonism represents a genuine mechanism innovation. The glucagon component adds metabolic benefits (liver fat reduction, lipid improvement) that pure GLP-1s don\'t provide. BI\'s pipeline includes oral formulation development and combination therapies.',
-        evidence: 'Phase 3 data showed 44% reduction in liver fat (MASH/NAFLD relevant). Cardiovascular outcome trials planned. Oral formulation in development would eliminate injection barrier. Pipeline positions Survodutide as platform, not single product.',
-        soWhat: 'The innovation story extends beyond weight loss. Survodutide can position as comprehensive metabolic health technology—relevant for NASH, cardiovascular risk, Type 2 diabetes beyond obesity indication. This is a differentiated narrative that competitors can\'t easily claim.',
-        nowWhat: 'Build the platform narrative now. Don\'t launch as "another weight loss drug"—launch as "metabolic health transformation technology." Set up the franchise for indication expansion and formulation evolution.'
+        headline: 'Real Differentiation Lives Here',
+        subline: 'The molecule is genuinely different. This is the one real asset.',
+        what: 'Glucagon/GLP-1 dual agonism is genuine mechanism innovation. The glucagon component adds metabolic benefits that pure GLP-1s don\'t provide. This isn\'t marketing positioning—it\'s clinical reality. The innovation exists in the science.',
+        evidence: 'Phase 3 showed 44% liver fat reduction (MASH/NAFLD relevant). Cardiovascular outcome trials planned. Oral formulation in development. Pipeline positions Survodutide as platform, not single product. The clinical story is real and differentiated.',
+        soWhat: 'This is the foundation everything else must be built on. The only current asset is scientific differentiation. Every brand, positioning, and communication decision should ladder to this genuine difference.',
+        nowWhat: 'Protect and amplify the innovation story. Build positioning architecture around metabolic health transformation. Ensure clinical differentiation translates into market differentiation before competitors can muddy the waters.'
       },
       strengths: [
-        'Genuine mechanism differentiation with glucagon/GLP-1 dual agonism',
+        'Genuine mechanism differentiation—not just marketing claims',
         'Platform potential beyond obesity (NASH, cardiovascular, diabetes)',
-        'Strong pipeline with oral formulation and combination therapies'
+        'Strong pipeline with oral formulation development',
+        'Clinical data supports broader metabolic health story'
       ],
       weaknesses: [
-        'Clinical data still emerging—not all claims fully validated',
-        'Competitor pipeline response will erode differentiation over time',
-        'Execution complexity of platform positioning vs. product marketing'
+        'Some clinical claims still emerging—not all fully validated',
+        'Competitor pipeline will erode differentiation over time',
+        'Innovation story needs translation into market positioning'
       ],
       categoryAverage: 6.8,
       competitorScores: [
@@ -427,25 +425,26 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'c3',
       name: 'Competitive Pressure',
       section: 'C',
-      score: 7.4,
-      tier: 'Strong',
+      score: 5.5,
+      tier: 'Moderate',
       wsn: {
-        headline: 'The Window Before the Flood',
-        subline: '2025-2027 is the last moment to establish position before 10+ competitors arrive.',
-        what: 'The GLP-1 pipeline is crowded: Amgen, Pfizer, AstraZeneca, Viking, Structure, and others all have candidates in Phase 2/3. By 2027-2028, the market will fragment significantly. Survodutide\'s launch window is also its positioning window.',
-        evidence: 'Amgen\'s MariTide (monthly injection) in Phase 3. Pfizer\'s danuglipron (oral) advancing. Viking\'s VK2735 showing strong Phase 2 results. 20+ GLP-1 related compounds in clinical development globally.',
-        soWhat: 'First-mover among next-gen entrants creates durable advantage—but only if positioning is established before the crowd arrives. Survodutide must claim "dual agonist" and "metabolic health" positioning before competitors can contest it.',
-        nowWhat: 'Move with urgency on brand building. The 18-24 month window post-launch is critical for establishing positioning. Don\'t wait for competitors to define the next-gen narrative—write it first.'
+        headline: 'Racing a Closing Window',
+        subline: '18-24 months before the flood. Pressure, not comfort.',
+        what: 'The GLP-1 pipeline is crowded. Amgen, Pfizer, AstraZeneca, Viking, Structure—all have candidates in Phase 2/3. By 2027-2028, 10+ new entrants will fragment the market. Survodutide\'s launch window is also its positioning window, and it\'s finite.',
+        evidence: 'Amgen\'s MariTide (monthly injection) in Phase 3. Pfizer\'s danuglipron (oral) advancing. Viking\'s VK2735 showing strong Phase 2 results. 20+ GLP-1 related compounds in global development.',
+        soWhat: 'This is pressure, not opportunity. First-mover among next-gen entrants only matters if positioning is established before the crowd arrives. Every month of delay costs positioning permanently.',
+        nowWhat: 'Move with urgency on all fronts. Parallel workstreams required—sequential execution runs out of time. Claim dual agonist and metabolic health positioning before competitors can contest it.'
       },
       strengths: [
         'Clear differentiation vs. current products with dual agonism',
-        'Window before major competitor launches (Amgen, Pfizer, Viking)',
-        'First-mover opportunity in next-gen glucagon/GLP-1 class'
+        'Window exists before major competitor launches',
+        'First-mover opportunity among next-gen glucagon/GLP-1 class'
       ],
       weaknesses: [
-        'Pipeline pressure is real—window is finite',
+        'Window is finite—18-24 months maximum',
         'Deep-pocketed competitors (Pfizer, Amgen) in development',
-        'Speed to market critical—delays cost positioning permanently'
+        'Any launch delay costs positioning permanently',
+        'Must build brand infrastructure AND establish positioning within window'
       ],
       categoryAverage: 7.0,
       competitorScores: [
