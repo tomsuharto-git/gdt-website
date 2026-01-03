@@ -55,21 +55,25 @@ Throughout: Medical/scientific decorative elements - molecular bonds, cell struc
 The feeling should be: scientific elegance, metabolic transformation, medical legitimacy, sophisticated health technology
 """
 
-# Cultural Entry Growth Profile - for pre-launch brands entering contested categories
+# Cultural Entry Growth Profile - Build → Legitimize → Scale (pre-launch from zero)
 CULTURAL_ENTRY_PROMPT = """
-SUBJECT MATTER - Cultural Entry (Pre-launch brand entering contested cultural space):
+SUBJECT MATTER - Build → Legitimize → Scale (Pre-launch brand building everything from scratch):
 
-Central focal point: A GATEWAY or GRAND ENTRANCE ARCH at center - ornate but closed/partially open, representing the threshold into a new cultural territory. The door should be cracking open with light (in accent color) emerging.
+Central focal point: A CONSTRUCTION CRANE or SCAFFOLD STRUCTURE at center - actively building/assembling something that doesn't exist yet. The structure is mid-construction, clearly incomplete but rising.
 
-Upper area: Cultural symbols floating above - speech bubbles, media screens, social icons, crowd silhouettes, but shown as somewhat chaotic/contested. Lightning bolts or tension lines between competing forces.
+Upper area: The GOAL/VISION - a completed brand symbol or trophy at the top, but shown as blueprint/outline (not yet real). Clock or hourglass showing time pressure. Stars representing the destination.
 
-Middle elements: The pathway TO the gateway - showing preparation elements like blueprints, strategy maps, credential badges, medical/legitimacy symbols (stethoscope, diploma scrolls, official seals). A figure approaching the gate with these credentials.
+LEFT SIDE (Build phase): Foundation work - blueprint rolls, drafting tools, building blocks being stacked, identity elements being designed (logo sketches, color swatches), zero becoming one.
 
-Lower elements: Foundation building - cornerstone blocks being laid, roots growing, defensive walls being constructed, stakeholder figures (doctors, patients, advocates) forming an alliance.
+MIDDLE (Legitimize phase): Medical/credibility symbols - stethoscope, diploma/certificate, handshake between figures, podium/speaking platform, trust symbols (shield, seal of approval), doctor figure endorsing.
 
-Throughout: Tension lines between old narratives and new positioning, barrier elements being overcome, legitimacy symbols (certificates, handshakes, official stamps), cultural conversation bubbles, strategic arrows pointing toward the gateway
+RIGHT SIDE (Scale phase): Growth/launch elements - rocket preparing for launch, arrows pointing upward, megaphone/amplification, network nodes expanding, market chart rising.
 
-The feeling should be: strategic entry into contested territory, building legitimacy before the door opens, preparation and positioning, navigating cultural complexity
+Lower elements: Starting line or ground level marked "ZERO" - emphasizing the starting point is nothing. Competitors shown in distance (already built structures) creating urgency.
+
+Throughout: Construction lines, assembly arrows, progress indicators (0% to 100% bar), time pressure symbols (clocks, hourglasses), the pink accent color highlighting the path from zero to built.
+
+The feeling should be: building from nothing, racing against time, construction in progress, the long road from zero to competitive, urgency and determination
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):
@@ -109,16 +113,9 @@ def main():
     print(f"Style reference: {STYLE_REF}")
     print(f"Brand accent: {BRAND_ACCENT}")
 
-    # Generate cover
+    # Generate Cultural Entry growth profile only
     generate_image(
-        "Survodutide Cover",
-        COVER_PROMPT,
-        "survodutide-cover-new.png"
-    )
-
-    # Generate Cultural Entry growth profile
-    generate_image(
-        "Cultural Entry Growth Profile",
+        "Cultural Entry Growth Profile (Build → Legitimize → Scale)",
         CULTURAL_ENTRY_PROMPT,
         "growth-systems/cultural-entry-new.png"
     )
