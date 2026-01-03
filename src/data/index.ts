@@ -1,11 +1,13 @@
 import { GDTAnalysis } from '@/lib/types';
 import { zynAnalysis } from './zyn';
 import { espolonAnalysis } from './espolon';
+import { survodutideAnalysis } from './survodutide';
 
 // All available brand analyses
 export const brandAnalyses: Record<string, GDTAnalysis> = {
   zyn: zynAnalysis,
   espolon: espolonAnalysis,
+  survodutide: survodutideAnalysis,
 };
 
 // Brand metadata for hub page
