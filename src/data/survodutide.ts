@@ -12,53 +12,54 @@ export const survodutideAnalysis: GDTAnalysis = {
     market: 'USA',
     category: 'GLP-1/Glucagon Dual Agonist',
     date: '2025-01-02',
-    accentColor: '#0055B8'
+    accentColor: '#FF5A8A'
   },
 
-  totalScore: 59.7,
+  // Scoring lens: Current reality, not potential. Challenges as challenges.
+  totalScore: 46.0,
 
   // Growth Profile - Cultural Entry (adapted for pre-launch)
   growthProfile: {
     id: 'cultural-entry',
     name: 'Cultural Entry',
-    sequence: 'Position → Unlock → Connect',
-    definition: 'Survodutide enters a culturally complex market where GLP-1 medications carry both stigma (celebrity shortcuts, supply shortages) and aspiration (transformative weight loss). The brand must establish cultural legitimacy before it can compete on clinical credentials.',
-    implications: 'B2=5.4 represents significant cultural barriers: GLP-1 backlash from shortage-driven resentment, "Ozempic face" concerns, and the perception that these drugs are for celebrities, not patients. Strong C-section scores (7.4) indicate competitive opportunity exists—the category is growing but no brand owns the cultural conversation for next-gen dual agonists. A2=5.8 signals pricing strategy must address value perception in a market where Wegovy/Zepbound have established reference prices.',
-    shortDefinition: 'Pre-launch brands entering culturally contested categories requiring legitimacy-building before commercial execution.'
+    sequence: 'Build → Legitimize → Scale',
+    definition: 'Survodutide must build everything from scratch—brand recognition, HCP relationships, patient trust, payer contracts—before it can compete. The challenge isn\'t just market entry; it\'s constructing the infrastructure for market entry while competitors have 5+ years of head start.',
+    implications: 'C1=3.0 represents the core challenge: building brand recognition from zero against Ozempic\'s 97% awareness. B1=4.0 and B2=4.5 reflect the emotional and cultural barriers of entering a stigmatized category without existing relationships. Strong innovation scores (C2=7.0) represent the genuine scientific opportunity—but science doesn\'t sell itself. A3=7.0 confirms the market opportunity is real; the question is whether Survodutide can capture any of it.',
+    shortDefinition: 'Pre-launch brands building everything from zero in established categories with entrenched competitors.'
   },
 
   sections: [
     {
       id: 'A',
       name: 'Brand & Business Alignment',
-      score: 19.4,
+      score: 16.5,
       tier: 'Moderate',
       components: [
-        { id: 'a1', name: 'Positioning White Space', score: 6.8, tier: 'Moderate', section: 'A' },
-        { id: 'a2', name: 'Pricing Strategy', score: 5.8, tier: 'Vulnerable', section: 'A' },
-        { id: 'a3', name: 'Market Opportunity', score: 6.8, tier: 'Moderate', section: 'A' }
+        { id: 'a1', name: 'Positioning White Space', score: 5.5, tier: 'Vulnerable', section: 'A' },
+        { id: 'a2', name: 'Pricing Strategy', score: 4.0, tier: 'Critical Gap', section: 'A' },
+        { id: 'a3', name: 'Market Opportunity', score: 7.0, tier: 'Strong', section: 'A' }
       ]
     },
     {
       id: 'B',
       name: 'Audience Connection',
-      score: 19.1,
-      tier: 'Moderate',
+      score: 13.0,
+      tier: 'Critical Gap',
       components: [
-        { id: 'b1', name: 'Emotional Territory', score: 6.5, tier: 'Moderate', section: 'B' },
-        { id: 'b2', name: 'Cultural Landscape', score: 5.4, tier: 'Critical Gap', section: 'B' },
-        { id: 'b3', name: 'Experience Design', score: 7.2, tier: 'Strong', section: 'B' }
+        { id: 'b1', name: 'Emotional Territory', score: 4.0, tier: 'Critical Gap', section: 'B' },
+        { id: 'b2', name: 'Cultural Landscape', score: 4.5, tier: 'Critical Gap', section: 'B' },
+        { id: 'b3', name: 'Experience Design', score: 4.5, tier: 'Critical Gap', section: 'B' }
       ]
     },
     {
       id: 'C',
       name: 'Competitive Transformation',
-      score: 22.2,
-      tier: 'Strong',
+      score: 15.5,
+      tier: 'Vulnerable',
       components: [
-        { id: 'c1', name: 'Asset Strategy', score: 7.4, tier: 'Strong', section: 'C' },
-        { id: 'c2', name: 'Innovation Platform', score: 7.4, tier: 'Strong', section: 'C' },
-        { id: 'c3', name: 'Competitive Pressure', score: 7.4, tier: 'Strong', section: 'C' }
+        { id: 'c1', name: 'Asset Recognition', score: 3.0, tier: 'Critical Gap', section: 'C' },
+        { id: 'c2', name: 'Innovation Platform', score: 7.0, tier: 'Strong', section: 'C' },
+        { id: 'c3', name: 'Competitive Pressure', score: 5.5, tier: 'Vulnerable', section: 'C' }
       ]
     }
   ],
@@ -184,8 +185,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'a1',
       name: 'Positioning White Space',
       section: 'A',
-      score: 6.8,
-      tier: 'Moderate',
+      score: 5.5,
+      tier: 'Vulnerable',
       wsn: {
         headline: 'Third Entrant Advantage in a Two-Horse Race',
         subline: 'Wegovy and Zepbound dominate today. Survodutide can define tomorrow.',
@@ -210,8 +211,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'a2',
       name: 'Pricing Strategy',
       section: 'A',
-      score: 5.8,
-      tier: 'Vulnerable',
+      score: 4.0,
+      tier: 'Critical Gap',
       wsn: {
         headline: 'Price War Positioning Without Price War Economics',
         subline: 'Wegovy and Zepbound set the ceiling. Survodutide must decide if it competes on value or premium.',
@@ -241,8 +242,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'a3',
       name: 'Market Opportunity',
       section: 'A',
-      score: 6.8,
-      tier: 'Moderate',
+      score: 7.0,
+      tier: 'Strong',
       wsn: {
         headline: 'A $100B Market Growing Into a $150B Market',
         subline: 'The opportunity is obvious. The path to capturing it is not.',
@@ -272,8 +273,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b1',
       name: 'Emotional Territory',
       section: 'B',
-      score: 6.5,
-      tier: 'Moderate',
+      score: 4.0,
+      tier: 'Critical Gap',
       wsn: {
         headline: 'Beyond Vanity: The Dignity of Health',
         subline: 'GLP-1s carry celebrity baggage. Survodutide can carry medical legitimacy.',
@@ -303,7 +304,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b2',
       name: 'Cultural Landscape',
       section: 'B',
-      score: 5.4,
+      score: 4.5,
       tier: 'Critical Gap',
       wsn: {
         headline: 'GLP-1 Culture War: Shortages, Shame, and Celebrity',
@@ -334,8 +335,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'b3',
       name: 'Experience Design',
       section: 'B',
-      score: 7.2,
-      tier: 'Strong',
+      score: 4.5,
+      tier: 'Critical Gap',
       wsn: {
         headline: 'The Patient Journey That Could Define the Category',
         subline: 'Novo and Lilly built products. Survodutide can build an experience.',
@@ -363,10 +364,10 @@ export const survodutideAnalysis: GDTAnalysis = {
     },
     {
       id: 'c1',
-      name: 'Asset Strategy',
+      name: 'Asset Recognition',
       section: 'C',
-      score: 7.4,
-      tier: 'Strong',
+      score: 3.0,
+      tier: 'Critical Gap',
       wsn: {
         headline: 'Building a Brand From Scratch in a Branded Category',
         subline: 'Ozempic is a verb. Survodutide is a syllable count.',
@@ -396,7 +397,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'c2',
       name: 'Innovation Platform',
       section: 'C',
-      score: 7.4,
+      score: 7.0,
       tier: 'Strong',
       wsn: {
         headline: 'The Dual Agonist That Could Become a Platform',
@@ -427,8 +428,8 @@ export const survodutideAnalysis: GDTAnalysis = {
       id: 'c3',
       name: 'Competitive Pressure',
       section: 'C',
-      score: 7.4,
-      tier: 'Strong',
+      score: 5.5,
+      tier: 'Vulnerable',
       wsn: {
         headline: 'The Window Before the Flood',
         subline: '2025-2027 is the last moment to establish position before 10+ competitors arrive.',
@@ -454,5 +455,55 @@ export const survodutideAnalysis: GDTAnalysis = {
         { name: 'Saxenda', score: 6.0 }
       ]
     }
-  ]
+  ],
+
+  // Growth Opportunities & Challenges
+  growthFactors: {
+    opportunities: [
+      {
+        component: 'C2',
+        name: 'Innovation Platform',
+        score: 7.0,
+        headline: 'The Science Is Real',
+        summary: 'Dual agonism represents genuine mechanism innovation. The glucagon component delivers metabolic benefits (liver fat, lipids) that pure GLP-1s can\'t match. This is the foundation for a differentiated story—if anyone is listening.'
+      },
+      {
+        component: 'A3',
+        name: 'Market Opportunity',
+        score: 7.0,
+        headline: '$100B Market, 5% Penetrated',
+        summary: 'The opportunity is undeniable: 110M+ Americans meet obesity criteria, <5% on GLP-1 therapy. This isn\'t about stealing share from Wegovy/Zepbound—it\'s about the 95% who aren\'t on any treatment yet.'
+      },
+      {
+        component: 'A1',
+        name: 'Positioning White Space',
+        score: 5.5,
+        headline: 'Unclaimed Territory Exists',
+        summary: 'No one owns "metabolic health transformation." Wegovy owns celebrity weight loss. Zepbound owns diabetes crossover. Survodutide could own the medical legitimacy positioning—but only if it claims it before the window closes.'
+      }
+    ],
+    challenges: [
+      {
+        component: 'C1',
+        name: 'Asset Recognition',
+        score: 3.0,
+        headline: 'The Brand Doesn\'t Exist',
+        summary: 'Ozempic has 97% unaided awareness. Survodutide has effectively 0%. The 6-syllable name, the unknown parent company (in US consumer context), the absence of any cultural presence—everything must be built from scratch.'
+      },
+      {
+        component: 'B1',
+        name: 'Emotional Territory',
+        score: 4.0,
+        headline: 'No Relationship to Build On',
+        summary: 'Pre-launch brands have no emotional territory with patients. You can\'t have emotional connection with something you\'ve never heard of. This is the reality of starting from zero in a category where competitors have years of patient relationships.'
+      },
+      {
+        component: 'B2',
+        name: 'Cultural Landscape',
+        score: 4.5,
+        headline: 'Entering a Culture War',
+        summary: 'GLP-1s are simultaneously miracle drugs and celebrity shortcuts. Survodutide inherits all the category stigma—Ozempic face, shortage resentment, "cheating" discourse—without any brand recognition to weather the criticism.'
+      }
+    ]
+  }
 };
