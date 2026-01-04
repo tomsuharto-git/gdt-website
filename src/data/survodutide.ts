@@ -92,7 +92,7 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Solution
   growthSolution: {
-    headline: 'Mean More Than Weight Loss',
+    headline: 'Own the Bigger Health Story',
     description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can stand for something bigger: real metabolic health, not just a number on the scale. The dual agonist science actually supports this story.',
     actions: [
       'Own "metabolic health" before anyone else claims it—this is more than weight loss',
