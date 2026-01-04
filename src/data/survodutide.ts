@@ -92,8 +92,8 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Solution
   growthSolution: {
-    headline: 'Be the Serious One',
-    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can be the grown-up choice: real medicine for metabolic health, not a shortcut for skinny jeans. The dual agonist science actually supports this story.',
+    headline: 'Mean More Than Weight Loss',
+    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can stand for something bigger: real metabolic health, not just a number on the scale. The dual agonist science actually supports this story.',
     actions: [
       'Own "metabolic health" before anyone else claims it—this is more than weight loss',
       'Get doctors talking. Endocrinologists and obesity specialists give you credibility celebrities can\'t',
