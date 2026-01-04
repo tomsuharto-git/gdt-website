@@ -16,7 +16,7 @@ export const survodutideAnalysis: GDTAnalysis = {
   },
 
   // Scoring lens: Current reality, not potential. Challenges as challenges.
-  totalScore: 46.0,
+  totalScore: 45.0,
 
   // Growth Profile - Cultural Entry (adapted for pre-launch)
   growthProfile: {
@@ -105,12 +105,12 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth System
   growthSystem: {
-    headline: 'Get Credible → Get Known → Get Chosen',
-    description: 'You can\'t skip steps. First, doctors need to believe in you. Then, patients need to know you exist. Then, you can compete for their business. Rush this and you\'re just another noise in the GLP-1 circus.',
+    headline: 'Build → Legitimize → Scale',
+    description: 'You can\'t skip steps. First, build what doesn\'t exist—the brand, the story, the relationships. Then, earn legitimacy through the right voices and proof points. Then, scale with confidence. Rush this and you\'re just another noise in the GLP-1 circus.',
     phases: [
       {
         phase: 'Position',
-        description: 'Before anything else, get taken seriously. Doctors need to see Survodutide as real medicine, not another celebrity fad.',
+        description: 'Build the foundation. Define what Survodutide stands for and get the medical community to take it seriously.',
         outputs: [
           {
             name: 'Brand Story',
@@ -130,7 +130,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       },
       {
         phase: 'Unlock',
-        description: 'Change how people think about GLP-1s. If Survodutide is just "another Ozempic," it loses. It needs to be something else.',
+        description: 'Earn legitimacy. Get the right people saying the right things—doctors, specialists, credible voices. Change how people think about what this drug is for.',
         outputs: [
           {
             name: 'Reputation Building',
@@ -150,7 +150,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       },
       {
         phase: 'Connect',
-        description: 'Now you can launch. Get to patients, get covered by insurance, make the experience better than anyone else.',
+        description: 'Scale with confidence. Launch to patients, lock in insurance coverage, and deliver an experience that keeps people on treatment.',
         outputs: [
           {
             name: 'Launch Plan',
@@ -176,7 +176,7 @@ export const survodutideAnalysis: GDTAnalysis = {
         ]
       }
     ],
-    criticalPath: 'Get Credible → Get Known → Get Chosen',
+    criticalPath: 'Build → Legitimize → Scale',
     implementationNotes: 'You can\'t advertise your way out of a credibility problem. If doctors don\'t believe in you, patient demand doesn\'t matter. If patients haven\'t heard of you, the best insurance coverage won\'t help. Each phase unlocks the next. The window is 18-24 months before 10+ more competitors show up.'
   },
 
