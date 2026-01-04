@@ -252,7 +252,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                 {/* Opportunities Column */}
                 <div>
                   <div className="flex items-center gap-3 mb-6">
-                    <ArrowUpRight className="text-emerald-400" size={24} />
+                    <ArrowUpRight className="text-[var(--gdt-score-high)]" size={24} />
                     <h2 className="gdt-display text-2xl md:text-3xl">
                       Growth Opportunities
                     </h2>
@@ -261,13 +261,14 @@ export default function BrandPage({ data }: BrandPageProps) {
                     {data.growthFactors.opportunities.map((item, index) => (
                       <div
                         key={index}
-                        className="gdt-card p-5 border-l-4 border-l-emerald-500/50"
+                        className="gdt-card p-5 border-l-4"
+                        style={{ borderLeftColor: getScoreColor(item.score) }}
                       >
                         <div className="flex items-start justify-between mb-2">
-                          <p className="text-xs uppercase tracking-widest text-emerald-400">
+                          <p className="text-xs uppercase tracking-widest" style={{ color: getScoreColor(item.score) }}>
                             {item.name}
                           </p>
-                          <span className="gdt-mono text-emerald-400 text-lg">
+                          <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
                             {item.score.toFixed(1)}
                           </span>
                         </div>
@@ -285,7 +286,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                 {/* Challenges Column */}
                 <div>
                   <div className="flex items-center gap-3 mb-6">
-                    <AlertTriangle className="text-amber-400" size={24} />
+                    <AlertTriangle className="text-[var(--gdt-score-low)]" size={24} />
                     <h2 className="gdt-display text-2xl md:text-3xl">
                       Growth Challenges
                     </h2>
@@ -294,13 +295,14 @@ export default function BrandPage({ data }: BrandPageProps) {
                     {data.growthFactors.challenges.map((item, index) => (
                       <div
                         key={index}
-                        className="gdt-card p-5 border-l-4 border-l-amber-500/50"
+                        className="gdt-card p-5 border-l-4"
+                        style={{ borderLeftColor: getScoreColor(item.score) }}
                       >
                         <div className="flex items-start justify-between mb-2">
-                          <p className="text-xs uppercase tracking-widest text-amber-400">
+                          <p className="text-xs uppercase tracking-widest" style={{ color: getScoreColor(item.score) }}>
                             {item.name}
                           </p>
-                          <span className="gdt-mono text-amber-400 text-lg">
+                          <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
                             {item.score.toFixed(1)}
                           </span>
                         </div>
