@@ -263,19 +263,17 @@ export default function BrandPage({ data }: BrandPageProps) {
                         key={index}
                         className="gdt-card p-5 border-l-4 border-l-emerald-500/50"
                       >
-                        <div className="flex items-start justify-between mb-3">
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-mono text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded">
-                              {item.component}
-                            </span>
-                            <h3 className="font-semibold text-[var(--gdt-text-primary)]">
-                              {item.name}
-                            </h3>
-                          </div>
+                        <div className="flex items-start justify-between mb-2">
+                          <p className="text-xs uppercase tracking-widest text-emerald-400">
+                            {item.name}
+                          </p>
                           <span className="gdt-mono text-emerald-400 text-lg">
                             {item.score.toFixed(1)}
                           </span>
                         </div>
+                        <h3 className="gdt-display text-xl text-[var(--gdt-text-primary)] mb-2">
+                          {item.headline}
+                        </h3>
                         <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
                           {item.summary}
                         </p>
@@ -298,19 +296,17 @@ export default function BrandPage({ data }: BrandPageProps) {
                         key={index}
                         className="gdt-card p-5 border-l-4 border-l-amber-500/50"
                       >
-                        <div className="flex items-start justify-between mb-3">
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-mono text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded">
-                              {item.component}
-                            </span>
-                            <h3 className="font-semibold text-[var(--gdt-text-primary)]">
-                              {item.name}
-                            </h3>
-                          </div>
+                        <div className="flex items-start justify-between mb-2">
+                          <p className="text-xs uppercase tracking-widest text-amber-400">
+                            {item.name}
+                          </p>
                           <span className="gdt-mono text-amber-400 text-lg">
                             {item.score.toFixed(1)}
                           </span>
                         </div>
+                        <h3 className="gdt-display text-xl text-[var(--gdt-text-primary)] mb-2">
+                          {item.headline}
+                        </h3>
                         <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
                           {item.summary}
                         </p>

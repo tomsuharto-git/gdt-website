@@ -462,19 +462,22 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C2',
         name: 'Innovation Platform',
         score: 7.0,
+        headline: 'The Science Is Real',
         summary: 'Glucagon/GLP-1 dual agonism is genuine mechanism differentiation—not marketing spin. Clinical data supports metabolic health benefits (44% liver fat reduction, lipid improvements) that pure GLP-1s can\'t claim. This is the one real asset to build everything else on.'
       },
       {
         component: 'A3',
         name: 'Market Opportunity',
         score: 7.0,
-        summary: 'The $100B+ market is real with <5% penetration. 110M eligible Americans, only 4M on therapy. The opportunity exists independent of Survodutide\'s readiness—the question is execution speed before the 2027-2028 competitor flood.'
+        headline: '$100B Market, 5% Penetrated',
+        summary: '110M eligible Americans, only 4M on therapy. The opportunity exists independent of Survodutide\'s readiness—the question is execution speed before the 2027-2028 competitor flood.'
       },
       {
         component: 'A1',
         name: 'Positioning White Space',
         score: 5.5,
-        summary: 'The "metabolic health transformation" positioning is unclaimed territory. Dual agonist mechanism supports a story beyond weight loss that neither Wegovy nor Zepbound can credibly tell. But white space is opportunity, not achievement—must be claimed fast.'
+        headline: 'Unclaimed Territory Exists',
+        summary: '"Metabolic health transformation" positioning is open. Dual agonist mechanism supports a story beyond weight loss that neither Wegovy nor Zepbound can credibly tell. But white space is opportunity, not achievement—must be claimed fast.'
       }
     ],
     challenges: [
@@ -482,19 +485,22 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C1',
         name: 'Asset Recognition',
         score: 3.0,
-        summary: 'Zero brand awareness against Ozempic\'s 97%. No logo, no color, no verbal identity, no visual system. A 6-syllable unfamiliar name. The brand literally doesn\'t exist yet—everything must be built from scratch against entrenched competitors.'
+        headline: 'The Brand Doesn\'t Exist',
+        summary: 'Zero awareness against Ozempic\'s 97%. No logo, no color, no verbal identity. A 6-syllable unfamiliar name. Everything must be built from scratch against entrenched competitors with massive DTC budgets.'
       },
       {
         component: 'B1',
         name: 'Emotional Territory',
         score: 4.0,
-        summary: 'No emotional connection with any audience. "Clean slate" means no relationship at all. Must build trust and affinity while navigating category-wide shame, skepticism, and "Ozempic face" anxiety that Survodutide inherits without brand equity to counter.'
+        headline: 'No Relationship to Build On',
+        summary: '"Clean slate" means no connection at all. Must build trust and affinity while navigating category-wide shame, skepticism, and "Ozempic face" anxiety—inherited without brand equity to counter it.'
       },
       {
         component: 'B2',
         name: 'Cultural Landscape',
         score: 4.5,
-        summary: 'Active GLP-1 cultural backlash in progress—shortage resentment, celebrity trivialization, medical legitimacy debates. Third entrant inherits all category stigma without the brand recognition that lets Wegovy and Zepbound weather criticism.'
+        headline: 'Entering a Culture War',
+        summary: 'Active GLP-1 backlash in progress—shortage resentment, celebrity trivialization, medical legitimacy debates. Third entrant inherits all category stigma without the brand recognition to weather criticism.'
       }
     ]
   }

@@ -126,6 +126,7 @@ export interface GrowthFactorItem {
   component: string;
   name: string;
   score: number;
+  headline: string;
   summary: string;
 }
 
