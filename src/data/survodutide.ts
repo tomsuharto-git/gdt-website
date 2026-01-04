@@ -24,7 +24,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     name: 'Cultural Entry',
     sequence: 'Build → Legitimize → Scale',
     definition: 'Survodutide must build everything from scratch—brand recognition, HCP relationships, patient trust, payer contracts—before it can compete. The challenge isn\'t just market entry; it\'s constructing the infrastructure for market entry while competitors have 5+ years of head start.',
-    implications: 'C1=3.0 represents the core challenge: building brand recognition from zero against Ozempic\'s 97% awareness. B1=4.0 and B2=4.5 reflect the emotional and cultural barriers of entering a stigmatized category without existing relationships. Strong innovation scores (C2=7.0) represent the genuine scientific opportunity—but science doesn\'t sell itself. A3=7.0 confirms the market opportunity is real; the question is whether Survodutide can capture any of it.',
+    implications: 'The core challenge is visibility: Ozempic has 97% unaided awareness, Survodutide has effectively zero. You can\'t compete when no one knows you exist. The cultural landscape adds complexity—GLP-1s carry stigma from celebrity associations and shortage resentment that a new entrant inherits without the brand equity to weather criticism. The science is genuinely differentiated (dual agonism, metabolic benefits), but science doesn\'t sell itself. The $100B market opportunity is real; the question is whether Survodutide can build fast enough to capture any of it.',
     shortDefinition: 'Pre-launch brands building everything from zero in established categories with entrenched competitors.'
   },
 
