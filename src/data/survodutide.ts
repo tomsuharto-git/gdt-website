@@ -464,21 +464,21 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C2',
         name: 'Innovation Platform',
         score: 7.0,
-        headline: 'The Science Is Real',
+        headline: 'Differentiated Mechanism',
         summary: 'Dual agonism represents genuine mechanism innovation. The glucagon component delivers metabolic benefits (liver fat, lipids) that pure GLP-1s can\'t match. This is the foundation for a differentiated story—if anyone is listening.'
       },
       {
         component: 'A3',
         name: 'Market Opportunity',
         score: 7.0,
-        headline: '$100B Market, 5% Penetrated',
+        headline: '95% Category Headroom',
         summary: 'The opportunity is undeniable: 110M+ Americans meet obesity criteria, <5% on GLP-1 therapy. This isn\'t about stealing share from Wegovy/Zepbound—it\'s about the 95% who aren\'t on any treatment yet.'
       },
       {
         component: 'A1',
         name: 'Positioning White Space',
         score: 5.5,
-        headline: 'Unclaimed Territory Exists',
+        headline: 'Open Positioning Lane',
         summary: 'No one owns "metabolic health transformation." Wegovy owns celebrity weight loss. Zepbound owns diabetes crossover. Survodutide could own the medical legitimacy positioning—but only if it claims it before the window closes.'
       }
     ],
@@ -487,21 +487,21 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C1',
         name: 'Asset Recognition',
         score: 3.0,
-        headline: 'The Brand Doesn\'t Exist',
+        headline: 'Zero Brand Awareness',
         summary: 'Ozempic has 97% unaided awareness. Survodutide has effectively 0%. The 6-syllable name, the unknown parent company (in US consumer context), the absence of any cultural presence—everything must be built from scratch.'
       },
       {
         component: 'B1',
         name: 'Emotional Territory',
         score: 4.0,
-        headline: 'No Relationship to Build On',
+        headline: 'No Patient Relationships',
         summary: 'Pre-launch brands have no emotional territory with patients. You can\'t have emotional connection with something you\'ve never heard of. This is the reality of starting from zero in a category where competitors have years of patient relationships.'
       },
       {
         component: 'B2',
         name: 'Cultural Landscape',
         score: 4.5,
-        headline: 'Entering a Culture War',
+        headline: 'Category Stigma Headwind',
         summary: 'GLP-1s are simultaneously miracle drugs and celebrity shortcuts. Survodutide inherits all the category stigma—Ozempic face, shortage resentment, "cheating" discourse—without any brand recognition to weather the criticism.'
       }
     ]
