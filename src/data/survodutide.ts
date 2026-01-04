@@ -66,118 +66,118 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Barrier
   growthBarrier: {
-    headline: 'The Cultural Legitimacy Paradox',
-    description: 'Survodutide has strong clinical credentials but enters a culturally contested category where GLP-1s are simultaneously miracle drugs and celebrity shortcuts. Without cultural legitimacy, even superior data doesn\'t translate to brand preference.',
+    headline: 'Nobody Knows Who You Are',
+    description: 'Good science isn\'t enough. GLP-1s are famous—and infamous. Survodutide has to build a brand from nothing while swimming against a current of celebrity gossip, shortage resentment, and "Ozempic face" jokes.',
     items: [
       {
-        constraint: 'Category Stigma Transfer',
+        constraint: 'Inheriting the Backlash',
         component: 'B2',
-        score: 5.4,
-        evidence: 'GLP-1 backlash created by supply shortages, celebrity associations, and "Ozempic face" discourse. Third entrant inherits category baggage without brand recognition to counter it.'
+        score: 4.5,
+        evidence: 'People are tired of hearing about Ozempic. The shortages made diabetics angry. The celebrity posts made it feel unserious. Survodutide walks into all of this without any brand goodwill to fall back on.'
       },
       {
-        constraint: 'Value Perception Gap',
+        constraint: 'No Pricing Power',
         component: 'A2',
-        score: 5.8,
-        evidence: 'No established payer relationships, incumbent pricing pressure from Wegovy/Zepbound, and compounding pharmacy competition undermining branded pricing.'
+        score: 4.0,
+        evidence: 'Wegovy and Zepbound already set the price expectations. Insurance companies already hate covering these drugs. And compounding pharmacies are undercutting everyone. Not a great time to show up asking for premium pricing.'
       },
       {
-        constraint: 'Zero Brand Awareness',
+        constraint: 'Starting From Zero',
         component: 'C1',
-        score: 7.4,
-        evidence: 'Ozempic has 97% unaided awareness. Survodutide has effectively 0%. Building from scratch requires significant investment and time the competitive window may not allow.'
+        score: 3.0,
+        evidence: 'Ozempic is a household name. Survodutide is a six-syllable word no one can pronounce. Building awareness takes money and time—and competitors aren\'t waiting.'
       }
     ]
   },
 
   // Growth Solution
   growthSolution: {
-    headline: 'Own the Metabolic Health Revolution',
-    description: 'Reframe the category from "weight loss drugs" to "metabolic health transformation." Position Survodutide not as the third GLP-1 but as the first true metabolic health platform. Lead with medical legitimacy, not celebrity culture.',
+    headline: 'Be the Serious One',
+    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can be the grown-up choice: real medicine for metabolic health, not a shortcut for skinny jeans. The dual agonist science actually supports this story.',
     actions: [
-      'Claim "metabolic health transformation" positioning before competitors can contest it',
-      'Build medical legitimacy through endocrinologist and obesity medicine KOL partnerships',
-      'Design category-best patient experience that makes Survodutide easiest to start and stay on',
-      'Create distinctive brand assets that work in digital/social channels where category conversation happens',
-      'Develop value narrative connecting liver/cardiovascular benefits to payer outcomes'
+      'Own "metabolic health" before anyone else claims it—this is more than weight loss',
+      'Get doctors talking. Endocrinologists and obesity specialists give you credibility celebrities can\'t',
+      'Make starting and staying on treatment dead simple—better than anyone else',
+      'Build a brand people can actually find and remember online',
+      'Show insurance companies why the liver and heart benefits are worth paying for'
     ]
   },
 
   // Growth System
   growthSystem: {
-    headline: 'Legitimize → Differentiate → Scale',
-    description: 'The brand that owns the next-gen narrative wins the next-gen market. Survodutide must establish cultural legitimacy first, then leverage mechanism differentiation, then scale access and awareness.',
+    headline: 'Get Credible → Get Known → Get Chosen',
+    description: 'You can\'t skip steps. First, doctors need to believe in you. Then, patients need to know you exist. Then, you can compete for their business. Rush this and you\'re just another noise in the GLP-1 circus.',
     phases: [
       {
         phase: 'Position',
-        description: 'Establish Survodutide as the serious medical choice—the metabolic health transformation platform, not another celebrity weight loss drug.',
+        description: 'Before anything else, get taken seriously. Doctors need to see Survodutide as real medicine, not another celebrity fad.',
         outputs: [
           {
-            name: 'Strategic Brand Platform',
-            score: 19.08,
-            purpose: 'Define the "metabolic health transformation" positioning that transcends weight loss and creates distance from GLP-1 cultural baggage',
-            componentsAddressed: ['A1 (6.8)', 'B1 (6.5)', 'B2 (5.4)'],
-            deliverables: ['Brand positioning architecture', 'Metabolic health messaging framework', 'Medical legitimacy narrative', 'Competitive differentiation map']
+            name: 'Brand Story',
+            score: 14.0,
+            purpose: 'Define what Survodutide stands for—metabolic health, not vanity—and make it stick',
+            componentsAddressed: ['A1 (5.5)', 'B1 (4.0)', 'B2 (4.5)'],
+            deliverables: ['Core positioning', 'Key messages', 'How we\'re different from Wegovy/Zepbound', 'Visual identity']
           },
           {
-            name: 'Category Leadership',
-            score: 21.13,
-            purpose: 'Establish Survodutide as category thought leader in dual agonist science and metabolic health outcomes',
-            componentsAddressed: ['A1 (6.8)', 'C2 (7.4)'],
-            deliverables: ['Medical education program', 'KOL partnership strategy', 'Scientific communication platform', 'Conference presence strategy']
+            name: 'Medical Credibility',
+            score: 12.5,
+            purpose: 'Get the doctors and specialists who matter to understand and recommend the science',
+            componentsAddressed: ['A1 (5.5)', 'C2 (7.0)'],
+            deliverables: ['Doctor education materials', 'Key opinion leader partnerships', 'Conference strategy', 'Clinical story']
           }
         ]
       },
       {
         phase: 'Unlock',
-        description: 'Enter and reshape the cultural conversation. Navigate GLP-1 cultural complexity by establishing medical legitimacy and reframing category narrative.',
+        description: 'Change how people think about GLP-1s. If Survodutide is just "another Ozempic," it loses. It needs to be something else.',
         outputs: [
           {
-            name: 'Culture Strategy',
-            score: 19.49,
-            purpose: 'Navigate GLP-1 cultural complexity by establishing medical legitimacy and reframing category conversation',
-            componentsAddressed: ['B2 (5.4)', 'B1 (6.5)'],
-            deliverables: ['Cultural landscape mapping', 'Medical voice activation strategy', 'Anti-stigma messaging', 'Patient advocacy partnerships']
+            name: 'Reputation Building',
+            score: 8.5,
+            purpose: 'Build credibility through the right voices—medical experts, not influencers',
+            componentsAddressed: ['B2 (4.5)', 'B1 (4.0)'],
+            deliverables: ['Who speaks for us', 'How to handle the backlash', 'Patient stories that matter', 'What we don\'t say']
           },
           {
-            name: 'Fame Orchestration',
-            score: 20.67,
-            purpose: 'Build brand awareness and recognition through earned media and strategic visibility without celebrity baggage',
-            componentsAddressed: ['B2 (5.4)', 'C1 (7.4)', 'A1 (6.8)'],
-            deliverables: ['Media relations strategy', 'Medical media partnerships', 'Brand visibility playbook', 'Crisis communication protocols']
+            name: 'Getting Noticed',
+            score: 12.5,
+            purpose: 'Build awareness without the celebrity baggage—be famous for the right reasons',
+            componentsAddressed: ['B2 (4.5)', 'C1 (3.0)', 'A1 (5.5)'],
+            deliverables: ['PR strategy', 'Medical media focus', 'Digital presence', 'How to handle crisis']
           }
         ]
       },
       {
         phase: 'Connect',
-        description: 'Execute market entry with category-best patient experience, clear value narrative for payers, and scalable access infrastructure.',
+        description: 'Now you can launch. Get to patients, get covered by insurance, make the experience better than anyone else.',
         outputs: [
           {
-            name: 'Go-To-Market Strategy',
-            score: 21.04,
-            purpose: 'Orchestrate launch execution across HCP, payer, and patient stakeholders with integrated channel strategy',
-            componentsAddressed: ['A3 (6.8)', 'A2 (5.8)', 'B3 (7.2)'],
-            deliverables: ['Launch sequencing plan', 'Channel strategy', 'Payer engagement playbook', 'HCP targeting and messaging']
+            name: 'Launch Plan',
+            score: 15.5,
+            purpose: 'Coordinate the actual launch—doctors, insurance, patients, all at once',
+            componentsAddressed: ['A3 (7.0)', 'A2 (4.0)', 'B3 (4.5)'],
+            deliverables: ['Launch timeline', 'Who to target first', 'Insurance strategy', 'Doctor outreach']
           },
           {
-            name: 'Launch Campaigns',
-            score: 21.34,
-            purpose: 'Drive awareness and trial through coordinated DTC and HCP campaigns that reinforce metabolic health positioning',
-            componentsAddressed: ['A1 (6.8)', 'C1 (7.4)', 'B1 (6.5)'],
-            deliverables: ['DTC campaign creative', 'HCP campaign creative', 'Digital/social strategy', 'Media plan']
+            name: 'Advertising',
+            score: 12.5,
+            purpose: 'Campaigns that drive awareness and get people to ask their doctors',
+            componentsAddressed: ['A1 (5.5)', 'C1 (3.0)', 'B1 (4.0)'],
+            deliverables: ['TV/digital ads', 'Doctor-facing campaigns', 'Social media', 'Media buying']
           },
           {
-            name: 'Hidden Consumer Truths',
-            score: 19.82,
-            purpose: 'Uncover and address the emotional barriers and motivations that determine treatment initiation and persistence',
-            componentsAddressed: ['B1 (6.5)', 'B2 (5.4)', 'A2 (5.8)'],
-            deliverables: ['Patient journey research', 'Barrier mapping', 'Motivation framework', 'Message testing protocol']
+            name: 'Patient Understanding',
+            score: 13.0,
+            purpose: 'Figure out what actually makes people start treatment and stick with it',
+            componentsAddressed: ['B1 (4.0)', 'B2 (4.5)', 'A2 (4.0)'],
+            deliverables: ['Patient research', 'What stops people', 'What motivates people', 'Message testing']
           }
         ]
       }
     ],
-    criticalPath: 'Position (Establish legitimacy) → Unlock (Reshape culture) → Connect (Execute market entry)',
-    implementationNotes: 'Phase 1 establishes the positioning foundation that makes Phase 2 cultural work credible. Phase 2 creates the cultural conditions that make Phase 3 launch execution effective. Without cultural legitimacy (Phase 2), even superior launch execution (Phase 3) will face headwinds from category stigma and competitor narratives. The 18-24 month window post-launch is critical for establishing positioning before 10+ competitors enter the market by 2027-2028.'
+    criticalPath: 'Get Credible → Get Known → Get Chosen',
+    implementationNotes: 'You can\'t advertise your way out of a credibility problem. If doctors don\'t believe in you, patient demand doesn\'t matter. If patients haven\'t heard of you, the best insurance coverage won\'t help. Each phase unlocks the next. The window is 18-24 months before 10+ more competitors show up.'
   },
 
   components: [
@@ -464,22 +464,22 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C2',
         name: 'Innovation Platform',
         score: 7.0,
-        headline: 'Differentiated Mechanism',
-        summary: 'Dual agonism represents genuine mechanism innovation. The glucagon component delivers metabolic benefits (liver fat, lipids) that pure GLP-1s can\'t match. This is the foundation for a differentiated story—if anyone is listening.'
+        headline: 'The Science Actually Works',
+        summary: 'Dual agonism isn\'t marketing spin—it\'s real. The glucagon piece helps with liver fat and cholesterol in ways Ozempic and Zepbound can\'t claim. That\'s a genuine story to tell, if anyone\'s listening.'
       },
       {
         component: 'A3',
         name: 'Market Opportunity',
         score: 7.0,
-        headline: '95% Category Headroom',
-        summary: 'The opportunity is undeniable: 110M+ Americans meet obesity criteria, <5% on GLP-1 therapy. This isn\'t about stealing share from Wegovy/Zepbound—it\'s about the 95% who aren\'t on any treatment yet.'
+        headline: 'Huge Market, Barely Touched',
+        summary: '110 million Americans could benefit from these drugs. Less than 5% are on one. This isn\'t about stealing Wegovy patients—it\'s about the 95% who haven\'t started treatment yet.'
       },
       {
         component: 'A1',
         name: 'Positioning White Space',
         score: 5.5,
-        headline: 'Open Positioning Lane',
-        summary: 'No one owns "metabolic health transformation." Wegovy owns celebrity weight loss. Zepbound owns diabetes crossover. Survodutide could own the medical legitimacy positioning—but only if it claims it before the window closes.'
+        headline: 'Room to Be Different',
+        summary: 'Wegovy is the celebrity drug. Zepbound is the diabetes crossover. Nobody owns "serious metabolic medicine." Survodutide could—but the window won\'t stay open forever.'
       }
     ],
     challenges: [
@@ -487,22 +487,22 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C1',
         name: 'Asset Recognition',
         score: 3.0,
-        headline: 'Zero Brand Awareness',
-        summary: 'Ozempic has 97% unaided awareness. Survodutide has effectively 0%. The 6-syllable name, the unknown parent company (in US consumer context), the absence of any cultural presence—everything must be built from scratch.'
+        headline: 'No One Knows You Exist',
+        summary: 'Everyone knows Ozempic. No one knows Survodutide. Six syllables, weird spelling, parent company Americans haven\'t heard of. Everything needs to be built from scratch.'
       },
       {
         component: 'B1',
         name: 'Emotional Territory',
         score: 4.0,
-        headline: 'No Patient Relationships',
-        summary: 'Pre-launch brands have no emotional territory with patients. You can\'t have emotional connection with something you\'ve never heard of. This is the reality of starting from zero in a category where competitors have years of patient relationships.'
+        headline: 'No Trust Yet',
+        summary: 'You can\'t have a relationship with something you\'ve never heard of. Competitors have been building patient trust for years. Survodutide is starting that conversation for the first time.'
       },
       {
         component: 'B2',
         name: 'Cultural Landscape',
         score: 4.5,
-        headline: 'Category Stigma Headwind',
-        summary: 'GLP-1s are simultaneously miracle drugs and celebrity shortcuts. Survodutide inherits all the category stigma—Ozempic face, shortage resentment, "cheating" discourse—without any brand recognition to weather the criticism.'
+        headline: 'Walking Into a Fight',
+        summary: 'GLP-1s are controversial. Celebrity drama, shortage anger, "cheating" accusations. Survodutide inherits all of it without any reputation to defend itself.'
       }
     ]
   }
