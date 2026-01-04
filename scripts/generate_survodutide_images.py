@@ -113,16 +113,15 @@ def main():
     print(f"Style reference: {STYLE_REF}")
     print(f"Brand accent: {BRAND_ACCENT}")
 
-    # Generate Cultural Entry growth profile only
+    # Generate cover image
     generate_image(
-        "Cultural Entry Growth Profile (Build → Legitimize → Scale)",
-        CULTURAL_ENTRY_PROMPT,
-        "growth-systems/cultural-entry-new.png"
+        "Survodutide Cover",
+        COVER_PROMPT,
+        "survodutide-cover.png"
     )
 
     print("\n" + "="*60)
     print("Generation complete!")
-    print("Review the *-new.png files, then rename to replace originals.")
     print("="*60)
 
 if __name__ == "__main__":
