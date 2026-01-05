@@ -21,8 +21,8 @@ export const zynAnalysis: GDTAnalysis = {
     id: 'foundation-reinforcement',
     name: 'Foundation Reinforcement',
     sequence: 'Position \u2192 Unlock \u2192 Connect',
-    definition: 'Zyn has exceptional cultural momentum (B2: 8.3) and strong business growth (A3: 8.2), but weak positioning clarity (A1: 6.2) threatens long-term sustainability. The brand created the category but never established clear differentiation—"tobacco-free" is now claimed by every competitor. Without a distinctive position, Zyn\'s 74% market share is vulnerable as On!, Velo, and Rogue attack from every direction.',
-    implications: 'Rebuild brand foundations through clear positioning (A1: 6.2 is the critical gap), unlock deeper customer understanding, and strengthen the already-strong emotional and cultural connections. FDA authorization provides a 12-18 month window to shift from "first mover" to "meaningfully different" before competitors achieve regulatory parity.',
+    definition: 'Zyn created the nicotine pouch category and owns 74% of it. The brand has genuine cultural momentum—memes, influencers, organic word-of-mouth. But it never established a clear reason to choose Zyn over the alternatives. "Tobacco-free" was the position, but now every competitor claims it too. Without a distinctive story, market share becomes a game of distribution and discounts.',
+    implications: 'The paradox: Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. FDA authorization gives Zyn a 12-18 month window before competitors catch up on regulatory credibility. The question isn\'t whether Zyn can maintain share—it\'s whether they can give people a reason to care beyond habit.',
     shortDefinition: 'Brands with strong cultural momentum but weak positioning clarity—requiring strategic foundation work to sustain growth.'
   },
   sections: [
