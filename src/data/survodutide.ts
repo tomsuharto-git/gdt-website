@@ -82,10 +82,10 @@ export const survodutideAnalysis: GDTAnalysis = {
         evidence: 'Wegovy and Zepbound already set the price expectations. Insurance companies already hate covering these drugs. And compounding pharmacies are undercutting everyone. Not a great time to show up asking for premium pricing.'
       },
       {
-        constraint: 'Starting From Zero',
+        constraint: 'Outspent Before You Start',
         component: 'C1',
         score: 3.0,
-        evidence: 'Ozempic is a household name. Survodutide is a six-syllable word no one can pronounce. Building awareness takes money and time—and competitors aren\'t waiting.'
+        evidence: 'Novo Nordisk and Lilly are spending billions on GLP-1 marketing. The airwaves are already saturated. Breaking through requires massive investment—and competitors aren\'t slowing down.'
       }
     ]
   },
@@ -487,8 +487,8 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C1',
         name: 'Asset Recognition',
         score: 3.0,
-        headline: 'No One Knows You Exist',
-        summary: 'Everyone knows Ozempic. No one knows Survodutide. Six syllables, weird spelling, parent company Americans haven\'t heard of. Everything needs to be built from scratch.'
+        headline: 'Entering a Very Loud Room',
+        summary: 'Novo Nordisk and Lilly are spending billions on GLP-1 marketing. The category is saturated with brand messages. Breaking through requires outsized investment just to be heard—let alone remembered.'
       },
       {
         component: 'B1',
