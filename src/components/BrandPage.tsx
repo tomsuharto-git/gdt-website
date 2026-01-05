@@ -335,7 +335,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       {/* Growth Barrier */}
       <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-sm uppercase tracking-widest text-red-400 mb-2">
+          <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
             Growth Barrier
           </p>
           <h2 className="gdt-display text-3xl md:text-4xl mb-4">
