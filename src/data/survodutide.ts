@@ -501,8 +501,8 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'B2',
         name: 'Cultural Landscape',
         score: 4.5,
-        headline: 'Walking Into a Fight',
-        summary: 'GLP-1s are controversial. Celebrity drama, shortage anger, "cheating" accusations. Survodutide inherits all of it without any reputation to defend itself.'
+        headline: 'GLP-1s Are Living in Ozempic\'s Shadow',
+        summary: 'Ozempic owns the cultural conversation—the jokes, the memes, the controversy. Every GLP-1 is compared to it. Survodutide has to break through while inheriting all the baggage and none of the name recognition.'
       }
     ]
   }
