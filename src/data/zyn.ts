@@ -85,7 +85,7 @@ export const zynAnalysis: GDTAnalysis = {
     ]
   },
   growthSolution: {
-    headline: 'Use FDA authorization to legitimize the entire category',
+    headline: 'Use FDA authorization to reframe Zyn and grow the category',
     description: 'Zyn has a 12-18 month window as the only FDA-authorized nicotine pouch. That\'s not just a claim - it\'s permission to shift how America thinks about nicotine pouches. Move the category from "TikTok trend for finance bros" to "FDA-recognized harm reduction."',
     actions: [
       'Lead the legitimacy conversation - Zyn can reframe nicotine pouches as a responsible choice, not a viral fad. No competitor has the FDA credibility to do this.',
