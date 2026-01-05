@@ -22,7 +22,7 @@ export const zynAnalysis: GDTAnalysis = {
     name: 'Foundation Reinforcement',
     sequence: 'Position \u2192 Unlock \u2192 Connect',
     definition: 'Zyn created the nicotine pouch category and owns 74% of it. The brand has genuine cultural momentum—memes, influencers, organic word-of-mouth. But it never established a clear reason to choose Zyn over the alternatives. "Tobacco-free" was the position, but now every competitor claims it too. Without a distinctive story, market share becomes a game of distribution and discounts.',
-    implications: 'The paradox: Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. FDA authorization gives Zyn a 12-18 month window before competitors catch up on regulatory credibility. The question isn\'t whether Zyn can maintain share—it\'s whether they can give people a reason to care beyond habit.',
+    implications: 'The paradox: Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. The FDA regulatory moat is closing—On! now has authorization too, and Velo is in the fast-track queue. The question isn\'t whether Zyn can maintain share—it\'s whether they can give people a reason to care beyond habit.',
     shortDefinition: 'Brands with strong cultural momentum but weak positioning clarity—requiring strategic foundation work to sustain growth.'
   },
   sections: [
@@ -86,9 +86,9 @@ export const zynAnalysis: GDTAnalysis = {
   },
   growthSolution: {
     headline: 'Use FDA authorization to reframe Zyn and grow the category',
-    description: 'Zyn has a 12-18 month window as the only FDA-authorized nicotine pouch. That\'s not just a claim - it\'s permission to shift how America thinks about nicotine pouches. Move the category from "TikTok trend for finance bros" to "FDA-recognized harm reduction."',
+    description: 'Zyn was first to FDA authorization, but On! has followed and Velo is close behind. The regulatory moat is closing. The opportunity now is to use first-mover credibility to shift how America thinks about nicotine pouches—from "TikTok trend for finance bros" to "FDA-recognized harm reduction."',
     actions: [
-      'Lead the legitimacy conversation - Zyn can reframe nicotine pouches as a responsible choice, not a viral fad. No competitor has the FDA credibility to do this.',
+      'Lead the legitimacy conversation - Zyn was first to FDA authorization and can still own the "responsible choice" narrative. But the window to establish this is shrinking as competitors gain parity.',
       'Take back the narrative from external voices - Tucker Carlson and TikTok memes shouldn\'t define a $2B brand. Build owned media infrastructure.',
       'Expand cultural permission beyond the base - 67% male, 25-34 is a ceiling. FDA legitimacy opens doors to older adults and health-conscious consumers.'
     ]
@@ -180,11 +180,11 @@ export const zynAnalysis: GDTAnalysis = {
         what: 'Here\'s the tension: Zyn clearly matters to consumers - it delivers real functional benefits. But it doesn\'t feel distinctively positioned versus competitors who all claim the same things: \'tobacco-free, discreet, convenient.\'',
         evidence: 'Consumer research shows Zyn delivers strong functional benefits but doesn\'t feel meaningfully different from competitors. The whole category is undifferentiated - everyone claims the same things.',
         soWhat: 'The 2024 supply shortage proved Zyn\'s market share is partially availability-driven - when alternatives were easier to find, consumers switched to On! (+77%), Velo, and Rogue. PMI ownership creates cognitive dissonance with \'tobacco-free\' claims (96.8% of ads).',
-        nowWhat: 'Transition from copyable \'tobacco-free\' to exclusive \'FDA-authorized\' positioning during the 12-18 month window before competitors gain approval. Address youth perception risk proactively before regulators mandate restrictions.'
+        nowWhat: 'Transition from copyable \'tobacco-free\' to \'first FDA-authorized\' positioning while that distinction still matters. On! now has authorization; Velo is close. The regulatory moat is closing—move fast. Address youth perception risk proactively before regulators mandate restrictions.'
       },
       strengths: [
         'Category Pioneer Advantage - Created modern nicotine pouch category, near-synonymous brand-category association',
-        'FDA Authorization as Trust Signal - First nicotine pouch with FDA marketing authorization (October 2024, 20 products)',
+        'FDA Authorization as Trust Signal - First nicotine pouch with FDA marketing authorization (January 2025, 20 products)',
         '\'Freedom\' Positioning with Lifestyle Integration - \'Anywhere, anytime\' messaging expands beyond tobacco replacement'
       ],
       weaknesses: [
@@ -295,7 +295,7 @@ export const zynAnalysis: GDTAnalysis = {
       },
       strengths: [
         'Organic cultural movement - Zynfluencer community created without paid brand involvement',
-        'FDA authorization trust advantage - First and only FDA-authorized nicotine pouch',
+        'FDA authorization trust advantage - First FDA-authorized nicotine pouch (On! has since followed)',
         'Lifestyle integration and discretion - Seamless integration into gym, work, social contexts'
       ],
       weaknesses: [
@@ -484,7 +484,7 @@ export const zynAnalysis: GDTAnalysis = {
         nowWhat: 'Three-horizon strategy: (1) Immediate - accelerate Colorado facility, stockpile inventory, develop unflavored variants for ban markets. (2) Near-term - leverage FDA for modified risk claims, match Velo pricing. (3) Medium-term - build compliance infrastructure, acquire DTC brands, prepare for flavor restrictions.'
       },
       strengths: [
-        'FDA authorization provides regulatory moat - 20 products authorized January 2025',
+        'First-mover FDA advantage - 20 products authorized January 2025, though On! has now achieved parity',
         'Market dominance creates pricing and distribution leverage',
         'Organic cultural momentum via Zynfluencers creates brand equity competitors cannot buy'
       ],
