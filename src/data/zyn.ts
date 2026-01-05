@@ -85,12 +85,12 @@ export const zynAnalysis: GDTAnalysis = {
     ]
   },
   growthSolution: {
-    headline: 'Use FDA authorization to reframe Zyn and grow the category',
-    description: 'Zyn was first to FDA authorization, but On! has followed and Velo is close behind. The regulatory moat is closing. The opportunity now is to use first-mover credibility to shift how America thinks about nicotine pouches—from "TikTok trend for finance bros" to "FDA-recognized harm reduction."',
+    headline: 'Change how America sees nicotine pouches',
+    description: 'Zyn created the category but let TikTok and Tucker Carlson define it. The opportunity isn\'t FDA exclusivity—it\'s reframing what nicotine pouches mean. From "viral fad for finance bros" to "legitimate harm reduction choice." Zyn is best positioned to lead this shift, but only if it starts telling its own story.',
     actions: [
-      'Lead the legitimacy conversation - Zyn was first to FDA authorization and can still own the "responsible choice" narrative. But the window to establish this is shrinking as competitors gain parity.',
+      'Own the legitimacy narrative - Reframe pouches as a responsible choice, not a trend. Zyn has the credibility and scale to shift category perception.',
       'Take back the narrative from external voices - Tucker Carlson and TikTok memes shouldn\'t define a $2B brand. Build owned media infrastructure.',
-      'Expand cultural permission beyond the base - 67% male, 25-34 is a ceiling. FDA legitimacy opens doors to older adults and health-conscious consumers.'
+      'Expand who the category is for - 67% male, 25-34 is a ceiling. A more legitimate category opens doors to older adults and health-conscious consumers.'
     ]
   },
   growthSystem: {
