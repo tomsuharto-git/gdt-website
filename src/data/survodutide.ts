@@ -464,8 +464,8 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'C2',
         name: 'Innovation Platform',
         score: 7.0,
-        headline: 'The Science Actually Works',
-        summary: 'Dual agonism isn\'t marketing spin—it\'s real. The glucagon piece helps with liver fat and cholesterol in ways Ozempic and Zepbound can\'t claim. That\'s a genuine story to tell, if anyone\'s listening.'
+        headline: 'Breakthrough Innovation Pending',
+        summary: 'Dual agonism could be a real differentiator—the glucagon piece helps with liver fat and cholesterol in ways Ozempic and Zepbound can\'t claim. Phase 3 data will tell the full story, but the science points to something genuinely new.'
       },
       {
         component: 'A3',
