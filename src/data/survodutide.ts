@@ -12,7 +12,8 @@ export const survodutideAnalysis: GDTAnalysis = {
     market: 'USA',
     category: 'GLP-1/Glucagon Dual Agonist',
     date: '2025-01-02',
-    accentColor: '#FF5A8A'
+    accentColor: '#FF5A8A',
+    password: 'survo2026'
   },
 
   // Scoring lens: Current reality, not potential. Challenges as challenges.

@@ -10,6 +10,7 @@ export interface BrandConfig {
   category: string;
   date: string;
   accentColor: string;
+  password?: string; // Optional password protection
 }
 
 // Component score data

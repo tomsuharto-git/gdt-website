@@ -1,6 +1,7 @@
 import { GDTAnalysis, getScoreTier, getScoreColor } from '@/lib/types';
 import { ExpandableAnalysis } from '@/components/ExpandableAnalysis';
 import FallbackImage from '@/components/FallbackImage';
+import PasswordGate from '@/components/PasswordGate';
 import Link from 'next/link';
 import {
   Target,
@@ -41,7 +42,7 @@ interface BrandPageProps {
 }
 
 export default function BrandPage({ data }: BrandPageProps) {
-  return (
+  const content = (
     <main
       className="min-h-screen"
       data-brand={data.brand.id}
@@ -593,4 +594,15 @@ export default function BrandPage({ data }: BrandPageProps) {
       </footer>
     </main>
   );
+
+  // Wrap with password gate if password is set
+  if (data.brand.password) {
+    return (
+      <PasswordGate brandId={data.brand.id} password={data.brand.password}>
+        {content}
+      </PasswordGate>
+    );
+  }
+
+  return content;
 }
