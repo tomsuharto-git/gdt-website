@@ -154,7 +154,8 @@ export default function BrandPage({ data }: BrandPageProps) {
         </div>
       </div>
 
-      {/* Diagnostic Overview - 3x3 Grid */}
+      {/* Diagnostic Overview - 3x3 Grid (hidden when growthFactors exists) */}
+      {!data.growthFactors && (
       <section className="px-8 md:px-16 lg:px-24 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid gap-6 md:grid-cols-3" style={{ alignItems: 'start' }}>
@@ -235,6 +236,7 @@ export default function BrandPage({ data }: BrandPageProps) {
           </div>
         </div>
       </section>
+      )}
 
       {/* Growth Opportunities & Challenges - Only for brands with this data */}
       {data.growthFactors && (
