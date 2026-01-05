@@ -13,7 +13,8 @@ export const zynAnalysis: GDTAnalysis = {
     market: 'USA',
     category: 'Nicotine Pouches',
     date: '2025-12-30',
-    accentColor: '#6B46C1'
+    accentColor: '#6B46C1',
+    password: 'zyn2026'
   },
   totalScore: 67.1,
   growthProfile: {
