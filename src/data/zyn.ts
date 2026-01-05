@@ -61,7 +61,7 @@ export const zynAnalysis: GDTAnalysis = {
     }
   ],
   growthBarrier: {
-    headline: 'The category creator is in danger of losing control of its narrative',
+    headline: 'The category creator risks losing its narrative',
     description: 'Zyn built 74% market share, but the "tobacco-free" claim that got them here is now used by everyone. Worse, viral TikTok fame attracted regulators before Zyn could shape the narrative - and now Tucker Carlson and Senator Schumer are defining the brand more than PMI is.',
     items: [
       {
