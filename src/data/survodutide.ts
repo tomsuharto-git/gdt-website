@@ -66,8 +66,8 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Barrier
   growthBarrier: {
-    headline: 'Nobody Knows Who You Are',
-    description: 'Good science isn\'t enough. GLP-1s are famous—and infamous. Survodutide has to build a brand from nothing while swimming against a current of celebrity gossip, shortage resentment, and "Ozempic face" jokes.',
+    headline: 'The Market Runs on Ozempic\'s Rules',
+    description: 'Lilly may be gaining share, but culturally Ozempic IS the GLP-1 category. It defined what these drugs mean—weight loss, celebrities, vanity metrics. Every new entrant gets measured against that frame, whether it fits their science or not.',
     items: [
       {
         constraint: 'Inheriting the Backlash',
