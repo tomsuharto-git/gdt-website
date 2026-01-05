@@ -247,13 +247,13 @@ export const survodutideAnalysis: GDTAnalysis = {
       wsn: {
         headline: 'A $100B Market Growing Into a $150B Market',
         subline: 'The opportunity is obvious. The path to capturing it is not.',
-        what: 'US anti-obesity medication market projected to reach $50B by 2030, with GLP-1 class capturing 80%+. Global potential exceeds $100B. Current penetration is <5% of eligible patients—massive headroom exists.',
-        evidence: '110M+ Americans meet obesity criteria. Only ~4M currently on GLP-1 therapy. Supply constraints artificially suppressed demand—as manufacturing scales, patient volume will surge. Employer coverage expanding as ROI data emerges (reduced comorbidity costs).',
-        soWhat: 'The market isn\'t the constraint—access, awareness, and insurance coverage are. Survodutide\'s opportunity isn\'t stealing Wegovy/Zepbound patients; it\'s capturing the 95% of eligible patients who aren\'t yet on any GLP-1.',
+        what: 'US anti-obesity medication market projected to reach $50B by 2030, with GLP-1 class capturing 80%+. Global potential exceeds $100B. Current penetration is ~15% of eligible patients—still significant headroom exists.',
+        evidence: '100M+ Americans are clinically eligible for GLP-1s. About 15% are now on therapy, up from single digits just two years ago. Growth is accelerating as manufacturing scales and employer coverage expands.',
+        soWhat: 'The market isn\'t the constraint—access, awareness, and insurance coverage are. Survodutide\'s opportunity isn\'t stealing Wegovy/Zepbound patients; it\'s capturing the 85% of eligible patients who aren\'t yet on any GLP-1.',
         nowWhat: 'Focus on market expansion, not share theft. Build access infrastructure, patient support programs, and HCP education that bring new patients into the category—with Survodutide as their first treatment.'
       },
       strengths: [
-        'Massive unmet demand with <5% category penetration',
+        'Significant unmet demand with ~85% of eligible patients still untreated',
         'Market still in early growth phase with expanding insurance coverage',
         'New patient acquisition strategy avoids direct incumbent competition'
       ],
@@ -471,8 +471,8 @@ export const survodutideAnalysis: GDTAnalysis = {
         component: 'A3',
         name: 'Market Opportunity',
         score: 7.0,
-        headline: 'Huge Market, Barely Touched',
-        summary: '110 million Americans could benefit from these drugs. Less than 5% are on one. This isn\'t about stealing Wegovy patients—it\'s about the 95% who haven\'t started treatment yet.'
+        headline: 'Huge Market, Still Growing',
+        summary: 'Over 100 million Americans are clinically eligible. About 15% are on a GLP-1 now—which still leaves massive headroom for a new entrant focused on the untreated majority.'
       },
       {
         component: 'A1',
