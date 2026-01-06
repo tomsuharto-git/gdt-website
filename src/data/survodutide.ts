@@ -22,9 +22,9 @@ export const survodutideAnalysis: GDTAnalysis = {
   // Growth Summary - what it takes to launch into a crowded market
   growthSummary: {
     headline: 'Starting From Zero, But With Whitespace to Own',
-    summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. While Ozempic owns 97% unaided awareness, Survodutide has effectively zero. The challenge isn\'t just market entry; it\'s building five layers of infrastructure while competitors have a 5+ year head start.',
-    paradox: 'The whitespace is weight wellness as a transformation journey—not vanity metrics, but metabolic improvement, sustainable habits, quality of life. The dual agonist science supports this bigger story. Customer Experience becomes the competitive moat: the journey of starting, staying, and succeeding on treatment matters as much as the drug itself.',
-    path: 'Claiming this positioning requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered. You can\'t own a positioning you can\'t reach people with.',
+    summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. Ozempic owns 97% unaided awareness. Survodutide has zero. The challenge isn\'t just market entry; it\'s catching up to competitors with a 5+ year head start.',
+    paradox: 'There\'s unclaimed territory in weight wellness as a transformation journey—not vanity metrics, but metabolic improvement, sustainable habits, lasting change. The dual agonist science supports this positioning. And the treatment experience itself can become the moat: the journey of starting, staying, and succeeding matters as much as the drug.',
+    path: 'But claiming this territory requires building infrastructure that doesn\'t exist: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience design, and Payer Relationships. You can\'t own positioning you can\'t reach people with.',
     sequence: 'Build → Legitimize → Scale',
     image: 'survodutide-cultural-entry.png'
   },
