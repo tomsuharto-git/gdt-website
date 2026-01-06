@@ -77,11 +77,12 @@ export interface GrowthProfile {
 
 // Growth Summary (new format - brand-specific, not GDT system-referential)
 export interface GrowthSummary {
-  headline: string; // e.g., "The Brand Everyone Buys But No One Chooses"
+  headline: string; // e.g., "The Category Creator That Needs to Define Itself"
   summary: string; // The situation - what's happening
   paradox: string; // The tension that must be resolved
   path: string; // The strategic path forward (human-synthesized)
   sequence: string; // e.g., "Position → Unlock → Connect"
+  image?: string; // Image filename in /growth-systems/ (e.g., "zyn-foundation-reinforcement.png")
 }
 
 // Growth Barrier item

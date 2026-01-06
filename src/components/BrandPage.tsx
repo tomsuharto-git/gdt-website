@@ -101,7 +101,7 @@ export default function BrandPage({ data }: BrandPageProps) {
               <div className="lg:col-span-1 order-2 lg:order-1">
                 <div className="aspect-square rounded-lg overflow-hidden">
                   <FallbackImage
-                    src={`/growth-systems/${data.brand.id}-summary.png`}
+                    src={`/growth-systems/${data.growthSummary.image ?? 'foundation-reinforcement.png'}`}
                     fallbackSrc={`/growth-systems/foundation-reinforcement.png`}
                     alt={`${data.brand.name} Growth Summary`}
                     className="w-full h-full object-cover"
