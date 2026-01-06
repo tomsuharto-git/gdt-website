@@ -118,7 +118,7 @@ export interface GrowthSystemOutput {
 
 // Growth System phase
 export interface GrowthSystemPhase {
-  phase: 'Position' | 'Unlock' | 'Connect';
+  phase: 'Position' | 'Unlock' | 'Connect' | 'Hijack' | 'Launch';
   description: string;
   outputs: GrowthSystemOutput[];
 }
