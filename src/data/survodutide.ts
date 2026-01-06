@@ -104,81 +104,81 @@ export const survodutideAnalysis: GDTAnalysis = {
     ]
   },
 
-  // Growth System
+  // Growth System - from Agent 10 output
   growthSystem: {
-    headline: 'Position → Unlock → Connect',
-    description: 'You can\'t skip steps. First, build what doesn\'t exist—the brand, the story, the relationships. Then, earn legitimacy through the right voices and proof points. Then, scale with confidence. Rush this and you\'re just another noise in the GLP-1 circus.',
+    headline: 'Legitimize → Differentiate → Scale',
+    description: 'The brand that owns the next-gen narrative wins the next-gen market. Survodutide must establish cultural legitimacy first, then leverage mechanism differentiation, then scale access and awareness.',
     phases: [
       {
         phase: 'Position',
-        description: 'Build the foundation. Define what Survodutide stands for and get the medical community to take it seriously.',
+        description: 'Establish Survodutide as the serious medical choice—the metabolic health transformation platform, not another celebrity weight loss drug.',
         outputs: [
           {
-            name: 'Brand Story',
-            score: 9.0,
-            purpose: 'Define what Survodutide stands for—metabolic health, not vanity—and make it stick',
-            componentsAddressed: ['A1 (5.5)', 'B1 (4.0)', 'B2 (4.5)'],
-            deliverables: ['Core positioning', 'Key messages', 'How we\'re different from Wegovy/Zepbound', 'Visual identity']
-          },
-          {
-            name: 'Medical Credibility',
-            score: 8.5,
-            purpose: 'Get the doctors and specialists who matter to understand and recommend the science',
-            componentsAddressed: ['A1 (5.5)', 'C2 (7.0)'],
-            deliverables: ['Doctor education materials', 'Key opinion leader partnerships', 'Conference strategy', 'Clinical story']
-          }
-        ]
-      },
-      {
-        phase: 'Unlock',
-        description: 'Earn legitimacy. Get the right people saying the right things—doctors, specialists, credible voices. Change how people think about what this drug is for.',
-        outputs: [
-          {
-            name: 'Reputation Building',
+            name: 'Strategic Brand Platform',
             score: 8.0,
-            purpose: 'Build credibility through the right voices—medical experts, not influencers',
-            componentsAddressed: ['B2 (4.5)', 'B1 (4.0)'],
-            deliverables: ['Who speaks for us', 'How to handle the backlash', 'Patient stories that matter', 'What we don\'t say']
+            purpose: 'Define the "metabolic health transformation" positioning that transcends weight loss and creates distance from GLP-1 cultural baggage',
+            componentsAddressed: ['Positioning White Space', 'Emotional Territory', 'Cultural Landscape'],
+            deliverables: ['Brand positioning architecture', 'Metabolic health messaging framework', 'Medical legitimacy narrative', 'Competitive differentiation map']
           },
           {
-            name: 'Getting Noticed',
-            score: 8.5,
-            purpose: 'Build awareness without the celebrity baggage—be famous for the right reasons',
-            componentsAddressed: ['B2 (4.5)', 'C1 (3.0)', 'A1 (5.5)'],
-            deliverables: ['PR strategy', 'Medical media focus', 'Digital presence', 'How to handle crisis']
+            name: 'Category Leadership',
+            score: 9.4,
+            purpose: 'Establish Survodutide as category thought leader in dual agonist science and metabolic health outcomes',
+            componentsAddressed: ['Positioning White Space', 'Innovation Platform'],
+            deliverables: ['Medical education program', 'KOL partnership strategy', 'Scientific communication platform', 'Conference presence strategy']
           }
         ]
       },
       {
-        phase: 'Connect',
-        description: 'Scale with confidence. Launch to patients, lock in insurance coverage, and deliver an experience that keeps people on treatment.',
+        phase: 'Hijack',
+        description: 'Enter and reshape the cultural conversation. Don\'t avoid the GLP-1 discourse—redirect it toward medical legitimacy and metabolic health.',
         outputs: [
           {
-            name: 'Launch Plan',
+            name: 'Culture Strategy',
+            score: 8.3,
+            purpose: 'Navigate GLP-1 cultural complexity by establishing medical legitimacy and reframing category conversation',
+            componentsAddressed: ['Cultural Landscape', 'Emotional Territory'],
+            deliverables: ['Cultural landscape mapping', 'Medical voice activation strategy', 'Anti-stigma messaging', 'Patient advocacy partnerships']
+          },
+          {
+            name: 'Fame Orchestration',
+            score: 9.1,
+            purpose: 'Build brand awareness and recognition through earned media and strategic visibility without celebrity baggage',
+            componentsAddressed: ['Cultural Landscape', 'Asset Strategy', 'Positioning White Space'],
+            deliverables: ['Media relations strategy', 'Medical media partnerships', 'Brand visibility playbook', 'Crisis communication protocols']
+          }
+        ]
+      },
+      {
+        phase: 'Launch',
+        description: 'Execute market entry with category-best patient experience, clear value narrative for payers, and scalable access infrastructure.',
+        outputs: [
+          {
+            name: 'Go-To-Market Strategy',
+            score: 9.3,
+            purpose: 'Orchestrate launch execution across HCP, payer, and patient stakeholders with integrated channel strategy',
+            componentsAddressed: ['Market Opportunity', 'Pricing Strategy', 'Experience Design'],
+            deliverables: ['Launch sequencing plan', 'Channel strategy', 'Payer engagement playbook', 'HCP targeting and messaging']
+          },
+          {
+            name: 'Launch Campaigns',
             score: 9.5,
-            purpose: 'Coordinate the actual launch—doctors, insurance, patients, all at once',
-            componentsAddressed: ['A3 (7.0)', 'A2 (4.0)', 'B3 (4.5)'],
-            deliverables: ['Launch timeline', 'Who to target first', 'Insurance strategy', 'Doctor outreach']
+            purpose: 'Drive awareness and trial through coordinated DTC and HCP campaigns that reinforce metabolic health positioning',
+            componentsAddressed: ['Positioning White Space', 'Asset Strategy', 'Emotional Territory'],
+            deliverables: ['DTC campaign creative', 'HCP campaign creative', 'Digital/social strategy', 'Media plan']
           },
           {
-            name: 'Advertising',
+            name: 'Hidden Consumer Truths',
             score: 8.5,
-            purpose: 'Campaigns that drive awareness and get people to ask their doctors',
-            componentsAddressed: ['A1 (5.5)', 'C1 (3.0)', 'B1 (4.0)'],
-            deliverables: ['TV/digital ads', 'Doctor-facing campaigns', 'Social media', 'Media buying']
-          },
-          {
-            name: 'Patient Understanding',
-            score: 8.0,
-            purpose: 'Figure out what actually makes people start treatment and stick with it',
-            componentsAddressed: ['B1 (4.0)', 'B2 (4.5)', 'A2 (4.0)'],
-            deliverables: ['Patient research', 'What stops people', 'What motivates people', 'Message testing']
+            purpose: 'Uncover and address the emotional barriers and motivations that determine treatment initiation and persistence',
+            componentsAddressed: ['Emotional Territory', 'Cultural Landscape', 'Pricing Strategy'],
+            deliverables: ['Patient journey research', 'Barrier mapping', 'Motivation framework', 'Message testing protocol']
           }
         ]
       }
     ],
-    criticalPath: 'Position → Unlock → Connect',
-    implementationNotes: 'You can\'t advertise your way out of a credibility problem. If doctors don\'t believe in you, patient demand doesn\'t matter. If patients haven\'t heard of you, the best insurance coverage won\'t help. Each phase unlocks the next. The window is 18-24 months before 10+ more competitors show up.'
+    criticalPath: 'Position (Establish legitimacy) → Hijack (Reshape culture) → Launch (Execute market entry)',
+    implementationNotes: 'Phase 1 establishes the positioning foundation that makes Phase 2 cultural work credible. Phase 2 creates the cultural conditions that make Phase 3 launch execution effective. Without cultural legitimacy (Phase 2), even superior launch execution (Phase 3) will face headwinds from category stigma and competitor narratives.'
   },
 
   components: [
