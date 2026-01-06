@@ -190,7 +190,7 @@ export const survodutideAnalysis: GDTAnalysis = {
       tier: 'Vulnerable',
       wsn: {
         headline: 'Room to Be Different',
-        subline: 'Wegovy is the celebrity drug. Zepbound is the diabetes crossover. Nobody owns the transformation journey—weight wellness beyond the scale.',
+        subline: 'Ozempic defined the category. Wegovy is the celebrity weight loss drug. Zepbound is the efficacy play. Nobody owns the transformation journey—weight wellness beyond the scale.',
         what: 'The GLP-1 market is structurally a duopoly: Novo Nordisk (Wegovy/Ozempic) vs. Eli Lilly (Zepbound/Mounjaro). Both have established clinical credentials, manufacturing scale, and cultural presence. Survodutide enters as the first glucagon dual agonist approved for obesity—a genuine mechanism differentiation that neither incumbent can claim.',
         evidence: 'Boehringer Ingelheim\'s Phase 3 showed 18.7% weight loss at 46 weeks—competitive with tirzepatide. The glucagon component offers potential metabolic advantages (improved liver fat reduction, better lipid profiles) that pure GLP-1 agonists don\'t provide. However, the brand lacks Novo\'s DTC presence or Lilly\'s manufacturing capacity.',
         soWhat: 'Survodutide\'s white space isn\'t "another weight loss drug"—it\'s the metabolic health positioning that transcends simple weight reduction. The clinical data supports a broader story; the question is whether BI can tell it before the narrative window closes.',
@@ -480,7 +480,7 @@ export const survodutideAnalysis: GDTAnalysis = {
         name: 'Positioning White Space',
         score: 5.5,
         headline: 'Room to Be Different',
-        summary: 'Wegovy is the celebrity drug. Zepbound is the diabetes crossover. Nobody owns the transformation journey—weight wellness beyond the scale. Survodutide could—but the window won\'t stay open forever.'
+        summary: 'Ozempic defined the category. Wegovy is the celebrity weight loss drug. Zepbound is the efficacy play. Nobody owns the transformation journey—weight wellness beyond the scale. Survodutide could—but the window won\'t stay open forever.'
       }
     ],
     challenges: [
