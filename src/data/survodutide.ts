@@ -106,7 +106,7 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth System - from Agent 10 output
   growthSystem: {
-    headline: 'Legitimize → Differentiate → Scale',
+    headline: 'Position → Hijack → Launch',
     description: 'The brand that owns the next-gen narrative wins the next-gen market. Survodutide must establish cultural legitimacy first, then leverage mechanism differentiation, then scale access and awareness.',
     phases: [
       {
@@ -177,7 +177,7 @@ export const survodutideAnalysis: GDTAnalysis = {
         ]
       }
     ],
-    criticalPath: 'Position (Establish legitimacy) → Hijack (Reshape culture) → Launch (Execute market entry)',
+    criticalPath: 'Position → Hijack → Launch',
     implementationNotes: 'Phase 1 establishes the positioning foundation that makes Phase 2 cultural work credible. Phase 2 creates the cultural conditions that make Phase 3 launch execution effective. Without cultural legitimacy (Phase 2), even superior launch execution (Phase 3) will face headwinds from category stigma and competitor narratives.'
   },
 
