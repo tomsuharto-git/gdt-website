@@ -115,14 +115,14 @@ export const survodutideAnalysis: GDTAnalysis = {
         outputs: [
           {
             name: 'Brand Story',
-            score: 14.0,
+            score: 9.0,
             purpose: 'Define what Survodutide stands for—metabolic health, not vanity—and make it stick',
             componentsAddressed: ['A1 (5.5)', 'B1 (4.0)', 'B2 (4.5)'],
             deliverables: ['Core positioning', 'Key messages', 'How we\'re different from Wegovy/Zepbound', 'Visual identity']
           },
           {
             name: 'Medical Credibility',
-            score: 12.5,
+            score: 8.5,
             purpose: 'Get the doctors and specialists who matter to understand and recommend the science',
             componentsAddressed: ['A1 (5.5)', 'C2 (7.0)'],
             deliverables: ['Doctor education materials', 'Key opinion leader partnerships', 'Conference strategy', 'Clinical story']
@@ -135,14 +135,14 @@ export const survodutideAnalysis: GDTAnalysis = {
         outputs: [
           {
             name: 'Reputation Building',
-            score: 8.5,
+            score: 8.0,
             purpose: 'Build credibility through the right voices—medical experts, not influencers',
             componentsAddressed: ['B2 (4.5)', 'B1 (4.0)'],
             deliverables: ['Who speaks for us', 'How to handle the backlash', 'Patient stories that matter', 'What we don\'t say']
           },
           {
             name: 'Getting Noticed',
-            score: 12.5,
+            score: 8.5,
             purpose: 'Build awareness without the celebrity baggage—be famous for the right reasons',
             componentsAddressed: ['B2 (4.5)', 'C1 (3.0)', 'A1 (5.5)'],
             deliverables: ['PR strategy', 'Medical media focus', 'Digital presence', 'How to handle crisis']
@@ -155,21 +155,21 @@ export const survodutideAnalysis: GDTAnalysis = {
         outputs: [
           {
             name: 'Launch Plan',
-            score: 15.5,
+            score: 9.5,
             purpose: 'Coordinate the actual launch—doctors, insurance, patients, all at once',
             componentsAddressed: ['A3 (7.0)', 'A2 (4.0)', 'B3 (4.5)'],
             deliverables: ['Launch timeline', 'Who to target first', 'Insurance strategy', 'Doctor outreach']
           },
           {
             name: 'Advertising',
-            score: 12.5,
+            score: 8.5,
             purpose: 'Campaigns that drive awareness and get people to ask their doctors',
             componentsAddressed: ['A1 (5.5)', 'C1 (3.0)', 'B1 (4.0)'],
             deliverables: ['TV/digital ads', 'Doctor-facing campaigns', 'Social media', 'Media buying']
           },
           {
             name: 'Patient Understanding',
-            score: 13.0,
+            score: 8.0,
             purpose: 'Figure out what actually makes people start treatment and stick with it',
             componentsAddressed: ['B1 (4.0)', 'B2 (4.5)', 'A2 (4.0)'],
             deliverables: ['Patient research', 'What stops people', 'What motivates people', 'Message testing']
