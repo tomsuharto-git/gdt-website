@@ -17,13 +17,12 @@ export const zynAnalysis: GDTAnalysis = {
     password: 'zyn2026'
   },
   totalScore: 67.1,
-  growthProfile: {
-    id: 'foundation-reinforcement',
-    name: 'Foundation Reinforcement',
-    sequence: 'Position \u2192 Unlock \u2192 Connect',
-    definition: 'Zyn created the nicotine pouch category and owns 74% of it. The brand has genuine cultural momentum—memes, influencers, organic word-of-mouth. But it never established a clear reason to choose Zyn over the alternatives. "Tobacco-free" was the position, but now every competitor claims it too. Without a distinctive story, market share becomes a game of distribution and discounts.',
-    implications: 'The paradox: Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. The FDA regulatory moat is closing—On! now has authorization too, and Velo is in the fast-track queue. The question isn\'t whether Zyn can maintain share—it\'s whether they can give people a reason to care beyond habit.',
-    shortDefinition: 'Brands with strong cultural momentum but weak positioning clarity—requiring strategic foundation work to sustain growth.'
+  growthSummary: {
+    headline: 'The Category Creator That Needs to Define Itself',
+    summary: 'Zyn created the nicotine pouch category and owns 74% of it. The brand has genuine cultural momentum—memes, influencers, organic word-of-mouth. But it never established a clear reason to choose Zyn over the alternatives. "Tobacco-free" was the position, but now every competitor claims it too. Without a distinctive story, market share becomes a game of distribution and discounts.',
+    paradox: 'Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. The FDA regulatory moat is closing—On! now has authorization too, and Velo is in the fast-track queue.',
+    path: 'Zyn must transition from category creator to category definer—using the FDA authorization window to establish what nicotine pouches mean before competitors write that story instead.',
+    sequence: 'Position → Unlock → Connect'
   },
   sections: [
     {
@@ -61,8 +60,8 @@ export const zynAnalysis: GDTAnalysis = {
     }
   ],
   growthBarrier: {
-    headline: 'The category creator risks losing its narrative',
-    description: 'Zyn built 74% market share, but the "tobacco-free" claim that got them here is now used by everyone. Worse, viral TikTok fame attracted regulators before Zyn could shape the narrative - and now Tucker Carlson and Senator Schumer are defining the brand more than PMI is.',
+    headline: 'The category creator doesn\'t control its own story',
+    description: 'Zyn built 74% market share on cultural momentum it never owned. The "tobacco-free" claim that got them here is now generic. The viral fame that made them famous attracted regulators. And the brand narrative is being written by podcasters, politicians, and TikTok creators—not by PMI.',
     items: [
       {
         constraint: '"Tobacco-free" is now table stakes',
@@ -71,25 +70,25 @@ export const zynAnalysis: GDTAnalysis = {
         evidence: 'Every competitor claims tobacco-free. 96.8% of category ads use this message. Zyn\'s founding claim is now generic. No distinctive verbal assets to replace it.'
       },
       {
-        constraint: 'Tucker Carlson controls Zyn\'s brand story',
+        constraint: 'Zero owned media infrastructure',
         component: 'Culture, Positioning',
         score: 6.0,
-        evidence: 'Brand narrative shaped by external voices (Carlson, Rogan, TikTok memes) not company. When Carlson disagreed with PMI, he launched competing brand ALP. Zero owned media infrastructure.'
+        evidence: 'Brand narrative shaped by external voices—podcasters, meme creators, political commentators—not company. When influencers disagree with PMI, they launch competing products. Zyn has no direct channel to consumers.'
       },
       {
-        constraint: 'Cultural success became a political liability',
+        constraint: 'Virality turned into regulatory exposure',
         component: 'Culture, Disruption',
         score: 7.2,
-        evidence: 'Youth usage doubled to 400k (2021-2023). Schumer investigation. 119 FDA warning letters. California flavor bans. The same virality that built the brand now fuels regulatory backlash.'
+        evidence: 'Youth usage doubled to 400k (2021-2023). Congressional investigations. 119 FDA warning letters. State flavor bans in CA, MA, DC. The same organic buzz that built the brand now fuels political backlash.'
       }
     ]
   },
   growthSolution: {
     headline: 'Change how America sees nicotine pouches',
-    description: 'Zyn created the category but let TikTok and Tucker Carlson define it. The opportunity isn\'t FDA exclusivity—it\'s reframing what nicotine pouches mean. From "viral fad for finance bros" to "legitimate harm reduction choice." Zyn is best positioned to lead this shift, but only if it starts telling its own story.',
+    description: 'Zyn created the category but let podcasters, politicians, and meme culture define it. The opportunity isn\'t FDA exclusivity—it\'s reframing what nicotine pouches mean. From "viral fad for finance bros" to "legitimate harm reduction choice." Zyn is best positioned to lead this shift, but only if it starts telling its own story.',
     actions: [
       'Own the legitimacy narrative - Reframe pouches as a responsible choice, not a trend. Zyn has the credibility and scale to shift category perception.',
-      'Take back the narrative from external voices - Tucker Carlson and TikTok memes shouldn\'t define a $2B brand. Build owned media infrastructure.',
+      'Build owned media infrastructure - A $2B brand shouldn\'t have its story written by external voices. Create direct channels to consumers that PMI controls.',
       'Expand who the category is for - 67% male, 25-34 is a ceiling. A more legitimate category opens doors to older adults and health-conscious consumers.'
     ]
   },

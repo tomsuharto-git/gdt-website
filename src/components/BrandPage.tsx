@@ -13,7 +13,6 @@ import {
   Fingerprint,
   Lightbulb,
   Zap,
-  ArrowLeft,
   ArrowUpRight,
   AlertTriangle,
 } from 'lucide-react';
@@ -52,17 +51,6 @@ export default function BrandPage({ data }: BrandPageProps) {
         '--gdt-accent-text': data.brand.accentColor,
       } as React.CSSProperties}
     >
-      {/* Back to Hub Link */}
-      <div className="px-8 md:px-16 lg:px-24 py-4 bg-[var(--gdt-bg-secondary)]">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-[var(--gdt-text-muted)] hover:text-[var(--gdt-accent)] transition-colors"
-        >
-          <ArrowLeft size={16} />
-          All Diagnoses
-        </Link>
-      </div>
-
       {/* Hero Section - Two Equal Squares */}
       <section className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -104,47 +92,89 @@ export default function BrandPage({ data }: BrandPageProps) {
         </div>
       </div>
 
-      {/* Growth Profile */}
+      {/* Growth Summary (new format) or Growth Profile (legacy) */}
       <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-1 order-2 lg:order-1">
-              <div className="aspect-square rounded-lg overflow-hidden">
-                <FallbackImage
-                  src={`/growth-systems/${data.brand.id}-${data.growthProfile.id}.png`}
-                  fallbackSrc={`/growth-systems/${data.growthProfile.id}.png`}
-                  alt={`${data.growthProfile.name} Growth Profile`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="lg:col-span-2 order-1 lg:order-2 contents lg:block">
-              <div className="order-1 lg:order-none mb-4 lg:mb-0">
-                <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
-                  Growth Profile
-                </p>
-                <h2 className="gdt-display text-3xl md:text-4xl mb-6 lg:mb-6">
-                  {data.growthProfile.name}
-                </h2>
+          {data.growthSummary ? (
+            /* New Growth Summary format - brand-specific headline */
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+              <div className="lg:col-span-1 order-2 lg:order-1">
+                <div className="aspect-square rounded-lg overflow-hidden">
+                  <FallbackImage
+                    src={`/growth-systems/${data.brand.id}-summary.png`}
+                    fallbackSrc={`/growth-systems/foundation-reinforcement.png`}
+                    alt={`${data.brand.name} Growth Summary`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
 
-              <div className="order-3 lg:order-none">
-                <div className="space-y-6">
-                  <p className="text-lg text-[var(--gdt-text-secondary)] leading-relaxed">
-                    {data.growthProfile.definition}
+              <div className="lg:col-span-2 order-1 lg:order-2 contents lg:block">
+                <div className="order-1 lg:order-none mb-4 lg:mb-0">
+                  <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
+                    Growth Summary
                   </p>
-                  <p className="text-[var(--gdt-text-primary)] leading-relaxed">
-                    {data.growthProfile.implications}
-                  </p>
+                  <h2 className="gdt-display text-3xl md:text-4xl mb-6 lg:mb-6">
+                    {data.growthSummary.headline}
+                  </h2>
                 </div>
 
-                <p className="text-xs text-[var(--gdt-text-muted)] italic mt-8">
-                  *{data.growthProfile.name}: {data.growthProfile.shortDefinition}
-                </p>
+                <div className="order-3 lg:order-none">
+                  <div className="space-y-6">
+                    <p className="text-lg text-[var(--gdt-text-secondary)] leading-relaxed">
+                      {data.growthSummary.summary}
+                    </p>
+                    <p className="text-[var(--gdt-text-primary)] leading-relaxed">
+                      {data.growthSummary.paradox}
+                    </p>
+                    <p className="text-[var(--gdt-text-primary)] leading-relaxed font-medium">
+                      {data.growthSummary.path}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ) : data.growthProfile ? (
+            /* Legacy Growth Profile format */
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+              <div className="lg:col-span-1 order-2 lg:order-1">
+                <div className="aspect-square rounded-lg overflow-hidden">
+                  <FallbackImage
+                    src={`/growth-systems/${data.brand.id}-${data.growthProfile.id}.png`}
+                    fallbackSrc={`/growth-systems/${data.growthProfile.id}.png`}
+                    alt={`${data.growthProfile.name} Growth Profile`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <div className="lg:col-span-2 order-1 lg:order-2 contents lg:block">
+                <div className="order-1 lg:order-none mb-4 lg:mb-0">
+                  <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
+                    Growth Profile
+                  </p>
+                  <h2 className="gdt-display text-3xl md:text-4xl mb-6 lg:mb-6">
+                    {data.growthProfile.name}
+                  </h2>
+                </div>
+
+                <div className="order-3 lg:order-none">
+                  <div className="space-y-6">
+                    <p className="text-lg text-[var(--gdt-text-secondary)] leading-relaxed">
+                      {data.growthProfile.definition}
+                    </p>
+                    <p className="text-[var(--gdt-text-primary)] leading-relaxed">
+                      {data.growthProfile.implications}
+                    </p>
+                  </div>
+
+                  <p className="text-xs text-[var(--gdt-text-muted)] italic mt-8">
+                    *{data.growthProfile.name}: {data.growthProfile.shortDefinition}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 

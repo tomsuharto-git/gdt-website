@@ -65,7 +65,7 @@ export interface ComponentData {
   categoryAverage?: number;
 }
 
-// Growth Profile (top of page - the brand narrative)
+// Growth Profile (legacy - for backward compatibility)
 export interface GrowthProfile {
   id: string; // e.g., "foundation-reinforcement" - matches illustration filename
   name: string; // e.g., "Foundation Reinforcement"
@@ -73,6 +73,15 @@ export interface GrowthProfile {
   definition: string;
   implications: string;
   shortDefinition: string; // One-line definition for the footnote
+}
+
+// Growth Summary (new format - brand-specific, not GDT system-referential)
+export interface GrowthSummary {
+  headline: string; // e.g., "The Brand Everyone Buys But No One Chooses"
+  summary: string; // The situation - what's happening
+  paradox: string; // The tension that must be resolved
+  path: string; // The strategic path forward (human-synthesized)
+  sequence: string; // e.g., "Position → Unlock → Connect"
 }
 
 // Growth Barrier item
@@ -141,7 +150,8 @@ export interface GrowthFactors {
 export interface GDTAnalysis {
   brand: BrandConfig;
   totalScore: number;
-  growthProfile: GrowthProfile;
+  growthProfile?: GrowthProfile; // Legacy format
+  growthSummary?: GrowthSummary; // New format (preferred)
   sections: SectionScore[];
   components: ComponentData[];
   growthBarrier: GrowthBarrier;

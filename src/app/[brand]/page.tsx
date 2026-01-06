@@ -20,9 +20,13 @@ export async function generateMetadata({ params }: BrandPageParams) {
     return { title: 'Brand Not Found' };
   }
 
+  const growthHeadline = analysis.growthSummary?.headline
+    ?? analysis.growthProfile?.name
+    ?? 'Growth Analysis';
+
   return {
     title: `${analysis.brand.name} Growth Diagnosis`,
-    description: `Strategic growth analysis for ${analysis.brand.name} - ${analysis.growthProfile.name}`,
+    description: `Strategic growth analysis for ${analysis.brand.name} - ${growthHeadline}`,
   };
 }
 

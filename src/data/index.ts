@@ -24,6 +24,11 @@ export interface BrandMeta {
 }
 
 export function getBrandMeta(analysis: GDTAnalysis): BrandMeta {
+  // Use growthSummary headline (new format) or growthProfile name (legacy)
+  const growthHeadline = analysis.growthSummary?.headline
+    ?? analysis.growthProfile?.name
+    ?? 'Growth Analysis';
+
   return {
     id: analysis.brand.id,
     name: analysis.brand.name,
@@ -32,7 +37,7 @@ export function getBrandMeta(analysis: GDTAnalysis): BrandMeta {
     date: analysis.brand.date,
     accentColor: analysis.brand.accentColor,
     totalScore: analysis.totalScore,
-    growthProfile: analysis.growthProfile.name,
+    growthProfile: growthHeadline,
     coverImage: `/${analysis.brand.id}-cover.png`,
   };
 }
