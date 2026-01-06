@@ -23,8 +23,8 @@ export const survodutideAnalysis: GDTAnalysis = {
   growthSummary: {
     headline: 'Starting From Zero, But With Whitespace to Own',
     summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. While Ozempic owns 97% unaided awareness, Survodutide has effectively zero. The challenge isn\'t just market entry; it\'s building five layers of infrastructure while competitors have a 5+ year head start.',
-    paradox: 'The whitespace is clear—REAL WEIGHT HEALTH vs. just losing pounds—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
-    path: 'Own REAL WEIGHT HEALTH—not vanity metrics, but metabolic transformation that changes lives. The dual agonist science supports this bigger story. Customer Experience becomes the competitive moat: make starting and staying on treatment so seamless that it becomes the category standard.',
+    paradox: 'The whitespace is clear—weight wellness as a transformation journey, not just a number on the scale—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
+    path: 'Own the bigger story: weight health as holistic transformation—metabolic improvement, sustainable habits, quality of life—not vanity metrics. The dual agonist science supports outcomes beyond pounds lost. Customer Experience becomes the competitive moat: the journey of starting, staying, and succeeding on treatment matters as much as the drug itself.',
     sequence: 'Build → Legitimize → Scale',
     image: 'survodutide-cultural-entry.png'
   },
@@ -93,14 +93,14 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Solution
   growthSolution: {
-    headline: 'Own REAL WEIGHT HEALTH',
-    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide stands for something bigger: REAL WEIGHT HEALTH, not just losing some pounds. The dual agonist science supports metabolic transformation—liver health, cardiovascular benefits, sustainable change. This is where Customer Experience becomes crucial.',
+    headline: 'Own the Transformation Journey',
+    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can stand for something bigger: weight wellness as a holistic transformation, not just pounds lost. It\'s about metabolic health, sustainable habits, quality of life. The dual agonist science supports this—liver health, cardiovascular benefits, lasting change. Customer Experience is where this comes to life.',
     actions: [
-      'Own "Real Weight Health" before anyone else claims it—metabolic transformation, not vanity metrics',
-      'Build Customer Experience that makes starting and staying on treatment seamless—this becomes the competitive moat',
-      'Get doctors talking. Endocrinologists and obesity specialists give credibility celebrities can\'t buy',
-      'Show payers why the liver and heart benefits justify coverage—outcomes-based contracts that prove total cost of care',
-      'Build Mental Availability through medical credibility, not celebrity noise'
+      'Define weight wellness as transformation—metabolic improvement, sustainable habits, quality of life—not vanity metrics',
+      'Build Customer Experience that supports the full journey: starting, staying, succeeding. This becomes the competitive moat.',
+      'Get doctors talking. Endocrinologists and obesity specialists give credibility that celebrity endorsements can\'t buy.',
+      'Show payers why holistic outcomes justify coverage—outcomes-based contracts proving total cost of care reduction',
+      'Build Mental Availability through medical credibility and patient success stories, not celebrity noise'
     ]
   },
 
