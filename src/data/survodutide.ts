@@ -25,7 +25,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. Ozempic owns 97% unaided awareness. Survodutide has zero. The challenge isn\'t just market entry; it\'s catching up to competitors with a 5+ year head start.',
     paradox: 'There\'s unclaimed territory in weight wellness as a transformation journey—not vanity metrics, but metabolic improvement, sustainable habits, lasting change. The dual agonist science supports this positioning. And the treatment experience itself can become the moat: the journey of starting, staying, and succeeding matters as much as the drug.',
     path: 'But claiming this territory requires building infrastructure that doesn\'t exist: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience design, and Payer Relationships. You can\'t own positioning you can\'t reach people with.',
-    sequence: 'Build → Legitimize → Scale',
+    sequence: 'Position → Unlock → Connect',
     image: 'survodutide-cultural-entry.png'
   },
 
@@ -106,7 +106,7 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth System
   growthSystem: {
-    headline: 'Build → Legitimize → Scale',
+    headline: 'Position → Unlock → Connect',
     description: 'You can\'t skip steps. First, build what doesn\'t exist—the brand, the story, the relationships. Then, earn legitimacy through the right voices and proof points. Then, scale with confidence. Rush this and you\'re just another noise in the GLP-1 circus.',
     phases: [
       {
@@ -177,7 +177,7 @@ export const survodutideAnalysis: GDTAnalysis = {
         ]
       }
     ],
-    criticalPath: 'Build → Legitimize → Scale',
+    criticalPath: 'Position → Unlock → Connect',
     implementationNotes: 'You can\'t advertise your way out of a credibility problem. If doctors don\'t believe in you, patient demand doesn\'t matter. If patients haven\'t heard of you, the best insurance coverage won\'t help. Each phase unlocks the next. The window is 18-24 months before 10+ more competitors show up.'
   },
 
