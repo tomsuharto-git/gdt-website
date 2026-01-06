@@ -23,8 +23,8 @@ export const survodutideAnalysis: GDTAnalysis = {
   growthSummary: {
     headline: 'Starting From Zero, But With Whitespace to Own',
     summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. While Ozempic owns 97% unaided awareness, Survodutide has effectively zero. The challenge isn\'t just market entry; it\'s building five layers of infrastructure while competitors have a 5+ year head start.',
-    paradox: 'The whitespace is clear—weight wellness as a transformation journey, not just a number on the scale—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
-    path: 'Own the bigger story: weight health as holistic transformation—metabolic improvement, sustainable habits, quality of life—not vanity metrics. The dual agonist science supports outcomes beyond pounds lost. Customer Experience becomes the competitive moat: the journey of starting, staying, and succeeding on treatment matters as much as the drug itself.',
+    paradox: 'The whitespace exists, but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered. You can\'t own a positioning you can\'t reach people with.',
+    path: 'Own weight wellness as a transformation journey—not vanity metrics, but metabolic improvement, sustainable habits, quality of life. The dual agonist science supports this bigger story. Customer Experience becomes the competitive moat: the journey of starting, staying, and succeeding on treatment matters as much as the drug itself.',
     sequence: 'Build → Legitimize → Scale',
     image: 'survodutide-cultural-entry.png'
   },
