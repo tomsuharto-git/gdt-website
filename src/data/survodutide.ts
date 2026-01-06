@@ -23,8 +23,8 @@ export const survodutideAnalysis: GDTAnalysis = {
   growthSummary: {
     headline: 'Starting From Zero, But With Whitespace to Own',
     summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. While Ozempic owns 97% unaided awareness, Survodutide has effectively zero. The challenge isn\'t just market entry; it\'s building five layers of infrastructure while competitors have a 5+ year head start.',
-    paradox: 'The positioning whitespace is clear—"Serious Metabolic Medicine" vs. celebrity weight loss—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
-    path: 'Own REAL WEIGHT HEALTH—not just losing pounds, but metabolic transformation. The dual agonist science supports this bigger story. Customer Experience becomes the competitive moat: make starting and staying on treatment so seamless that it becomes the category standard.',
+    paradox: 'The whitespace is clear—REAL WEIGHT HEALTH vs. just losing pounds—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
+    path: 'Own REAL WEIGHT HEALTH—not vanity metrics, but metabolic transformation that changes lives. The dual agonist science supports this bigger story. Customer Experience becomes the competitive moat: make starting and staying on treatment so seamless that it becomes the category standard.',
     sequence: 'Build → Legitimize → Scale',
     image: 'survodutide-cultural-entry.png'
   },
