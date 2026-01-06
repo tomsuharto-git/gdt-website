@@ -19,14 +19,14 @@ export const survodutideAnalysis: GDTAnalysis = {
   // Scoring lens: Current reality, not potential. Challenges as challenges.
   totalScore: 45.0,
 
-  // Growth Profile - Cultural Entry (adapted for pre-launch)
-  growthProfile: {
-    id: 'cultural-entry',
-    name: 'Cultural Entry',
+  // Growth Summary - what it takes to launch into a crowded market
+  growthSummary: {
+    headline: 'Building Everything From Zero in a Market That Already Has Winners',
+    summary: 'Survodutide has genuinely differentiated science—the first glucagon dual agonist with metabolic benefits beyond weight loss. But science doesn\'t sell itself. While Ozempic owns 97% unaided awareness, Survodutide has effectively zero. The challenge isn\'t just market entry; it\'s constructing five layers of infrastructure while competitors have a 5+ year head start.',
+    paradox: 'The positioning white space is clear—"Serious Metabolic Medicine" vs. celebrity weight loss—but claiming it requires infrastructure that doesn\'t exist yet: Go-to-Market capabilities, Mental Availability with patients, Brand Trust with HCPs, Customer Experience that keeps people on treatment, and Payer Relationships that actually get it covered.',
+    path: 'Own REAL WEIGHT HEALTH—not just losing pounds, but metabolic transformation. The dual agonist science supports this bigger story. The Customer Experience becomes crucial: make starting and staying on treatment so seamless that it becomes the category standard.',
     sequence: 'Build → Legitimize → Scale',
-    definition: 'Survodutide must build everything from scratch—brand recognition, HCP relationships, patient trust, payer contracts—before it can compete. The challenge isn\'t just market entry; it\'s constructing the infrastructure for market entry while competitors have 5+ years of head start.',
-    implications: 'The core challenge is visibility: Ozempic has 97% unaided awareness, Survodutide has effectively zero. You can\'t compete when no one knows you exist. The cultural landscape adds complexity—GLP-1s carry stigma from celebrity associations and shortage resentment that a new entrant inherits without the brand equity to weather criticism. The science is genuinely differentiated (dual agonism, metabolic benefits), but science doesn\'t sell itself. The $100B market opportunity is real; the question is whether Survodutide can build fast enough to capture any of it.',
-    shortDefinition: 'Pre-launch brands building everything from zero in established categories with entrenched competitors.'
+    image: 'survodutide-cultural-entry.png'
   },
 
   sections: [
@@ -93,14 +93,14 @@ export const survodutideAnalysis: GDTAnalysis = {
 
   // Growth Solution
   growthSolution: {
-    headline: 'Own the Bigger Health Story',
-    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide can stand for something bigger: real metabolic health, not just a number on the scale. The dual agonist science actually supports this story.',
+    headline: 'Own REAL WEIGHT HEALTH',
+    description: 'Don\'t fight for the "celebrity weight loss" space—let Wegovy and Zepbound have it. Survodutide stands for something bigger: REAL WEIGHT HEALTH, not just losing some pounds. The dual agonist science supports metabolic transformation—liver health, cardiovascular benefits, sustainable change. This is where Customer Experience becomes crucial.',
     actions: [
-      'Own "metabolic health" before anyone else claims it—this is more than weight loss',
-      'Get doctors talking. Endocrinologists and obesity specialists give you credibility celebrities can\'t',
-      'Make starting and staying on treatment dead simple—better than anyone else',
-      'Build a brand people can actually find and remember online',
-      'Show insurance companies why the liver and heart benefits are worth paying for'
+      'Own "Real Weight Health" before anyone else claims it—metabolic transformation, not vanity metrics',
+      'Build Customer Experience that makes starting and staying on treatment seamless—this becomes the competitive moat',
+      'Get doctors talking. Endocrinologists and obesity specialists give credibility celebrities can\'t buy',
+      'Show payers why the liver and heart benefits justify coverage—outcomes-based contracts that prove total cost of care',
+      'Build Mental Availability through medical credibility, not celebrity noise'
     ]
   },
 
