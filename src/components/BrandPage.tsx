@@ -52,14 +52,14 @@ export default function BrandPage({ data }: BrandPageProps) {
       } as React.CSSProperties}
     >
       {/* Hero Section - Two Equal Squares */}
-      <section className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
+      <section className="px-8 md:px-16 lg:px-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Square: Text Content */}
           <div className="aspect-square p-8 lg:p-12 flex flex-col justify-center">
             <h1 className="gdt-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-6">
               <span className="gdt-accent-text">{data.brand.name.split(' ')[0]}</span>
               <br />
-              <span className="text-[var(--gdt-text-primary)]">Growth Diagnosis</span>
+              <span className="gdt-text-primary">Growth Diagnosis</span>
             </h1>
             <div className="flex flex-wrap gap-2">
               <span className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border border-[var(--gdt-border-accent)] text-[var(--gdt-accent)]">
@@ -68,7 +68,7 @@ export default function BrandPage({ data }: BrandPageProps) {
               <span className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border border-[var(--gdt-border-accent)] text-[var(--gdt-accent)]">
                 {data.brand.market}
               </span>
-              <span className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border border-[var(--gdt-border)] text-[var(--gdt-text-muted)]">
+              <span className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border gdt-border gdt-text-muted">
                 {data.brand.date}
               </span>
             </div>
@@ -86,14 +86,14 @@ export default function BrandPage({ data }: BrandPageProps) {
       </section>
 
       {/* Divider */}
-      <div className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
+      <div className="px-8 md:px-16 lg:px-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <div className="gdt-section-divider" />
         </div>
       </div>
 
       {/* Growth Summary (new format) or Growth Profile (legacy) */}
-      <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
+      <section className="px-8 md:px-16 lg:px-24 py-16 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           {data.growthSummary ? (
             /* New Growth Summary format - brand-specific headline */
@@ -121,13 +121,13 @@ export default function BrandPage({ data }: BrandPageProps) {
 
                 <div className="order-3 lg:order-none">
                   <div className="space-y-6">
-                    <p className="text-lg text-[var(--gdt-text-secondary)] leading-relaxed">
+                    <p className="text-lg gdt-text-secondary leading-relaxed">
                       {data.growthSummary.summary}
                     </p>
-                    <p className="text-[var(--gdt-text-primary)] leading-relaxed">
+                    <p className="gdt-text-primary leading-relaxed">
                       {data.growthSummary.paradox}
                     </p>
-                    <p className="text-[var(--gdt-text-primary)] leading-relaxed font-medium">
+                    <p className="gdt-text-primary leading-relaxed font-medium">
                       {data.growthSummary.path}
                     </p>
                   </div>
@@ -160,15 +160,15 @@ export default function BrandPage({ data }: BrandPageProps) {
 
                 <div className="order-3 lg:order-none">
                   <div className="space-y-6">
-                    <p className="text-lg text-[var(--gdt-text-secondary)] leading-relaxed">
+                    <p className="text-lg gdt-text-secondary leading-relaxed">
                       {data.growthProfile.definition}
                     </p>
-                    <p className="text-[var(--gdt-text-primary)] leading-relaxed">
+                    <p className="gdt-text-primary leading-relaxed">
                       {data.growthProfile.implications}
                     </p>
                   </div>
 
-                  <p className="text-xs text-[var(--gdt-text-muted)] italic mt-8">
+                  <p className="text-xs gdt-text-muted italic mt-8">
                     *{data.growthProfile.name}: {data.growthProfile.shortDefinition}
                   </p>
                 </div>
@@ -179,7 +179,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       </section>
 
       {/* Divider */}
-      <div className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
+      <div className="px-8 md:px-16 lg:px-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <div className="gdt-section-divider" />
         </div>
@@ -210,7 +210,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                     <h3 className="gdt-display text-2xl mb-2 whitespace-pre-line">
                       {sectionInfo.name}
                     </h3>
-                    <p className="text-sm text-[var(--gdt-text-secondary)]">
+                    <p className="text-sm gdt-text-secondary">
                       {sectionInfo.desc}
                     </p>
                   </div>
@@ -225,7 +225,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                         <div style={{ backgroundColor: getScoreColor(component.score) }} />
                         <Link
                           href={`#${component.id}`}
-                          className="flex flex-col p-5 hover:bg-[var(--gdt-bg-tertiary)] transition-colors group"
+                          className="flex flex-col p-5 hover:gdt-bg-tertiary transition-colors group"
                         >
                           <div className="flex justify-between mb-5">
                             <div className="flex flex-col justify-between">
@@ -244,17 +244,17 @@ export default function BrandPage({ data }: BrandPageProps) {
                                 <span className={`gdt-mono score-${getScoreTier(component.score)}`} style={{ fontSize: '2rem', lineHeight: '1' }}>
                                   {component.score.toFixed(1)}
                                 </span>
-                                <span className="text-[var(--gdt-text-muted)]" style={{ fontSize: '1rem' }}>/10</span>
+                                <span className="gdt-text-muted" style={{ fontSize: '1rem' }}>/10</span>
                               </div>
                               <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(component.score)}`}>
                                 {component.tier}
                               </span>
                             </div>
                           </div>
-                          <p className="text-base text-[var(--gdt-text-primary)] font-medium leading-snug">
+                          <p className="text-base gdt-text-primary font-medium leading-snug">
                             {component.wsn.headline}
                           </p>
-                          <p className="text-sm text-[var(--gdt-text-secondary)] mt-1 leading-snug">
+                          <p className="text-sm gdt-text-secondary mt-1 leading-snug">
                             {component.wsn.subline}
                           </p>
                         </Link>
@@ -279,7 +279,7 @@ export default function BrandPage({ data }: BrandPageProps) {
             </div>
           </div>
 
-          <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
+          <section className="px-8 md:px-16 lg:px-24 py-16 gdt-bg-secondary">
             <div className="max-w-5xl mx-auto">
               <div className="grid gap-12 md:grid-cols-2">
                 {/* Opportunities Column */}
@@ -305,10 +305,10 @@ export default function BrandPage({ data }: BrandPageProps) {
                             {item.score.toFixed(1)}
                           </span>
                         </div>
-                        <h3 className="gdt-display text-xl text-[var(--gdt-text-primary)] mb-2">
+                        <h3 className="gdt-display text-xl gdt-text-primary mb-2">
                           {item.headline}
                         </h3>
-                        <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                        <p className="text-sm gdt-text-secondary leading-relaxed">
                           {item.summary}
                         </p>
                       </div>
@@ -339,10 +339,10 @@ export default function BrandPage({ data }: BrandPageProps) {
                             {item.score.toFixed(1)}
                           </span>
                         </div>
-                        <h3 className="gdt-display text-xl text-[var(--gdt-text-primary)] mb-2">
+                        <h3 className="gdt-display text-xl gdt-text-primary mb-2">
                           {item.headline}
                         </h3>
-                        <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                        <p className="text-sm gdt-text-secondary leading-relaxed">
                           {item.summary}
                         </p>
                       </div>
@@ -363,7 +363,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       </div>
 
       {/* Growth Barrier */}
-      <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
+      <section className="px-8 md:px-16 lg:px-24 py-16 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
             Growth Barrier
@@ -371,7 +371,7 @@ export default function BrandPage({ data }: BrandPageProps) {
           <h2 className="gdt-display text-3xl md:text-4xl mb-4">
             {data.growthBarrier.headline}
           </h2>
-          <p className="text-lg text-[var(--gdt-text-secondary)] mb-8 max-w-3xl">
+          <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
             {data.growthBarrier.description}
           </p>
 
@@ -381,10 +381,10 @@ export default function BrandPage({ data }: BrandPageProps) {
                 key={index}
                 className="gdt-card p-5 border-l-4 border-l-red-500/50"
               >
-                <h3 className="font-semibold text-[var(--gdt-text-primary)] mb-2">
+                <h3 className="font-semibold gdt-text-primary mb-2">
                   {item.constraint}
                 </h3>
-                <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                <p className="text-sm gdt-text-secondary leading-relaxed">
                   {item.evidence.charAt(0).toUpperCase() + item.evidence.slice(1)}
                 </p>
               </div>
@@ -394,7 +394,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       </section>
 
       {/* Divider */}
-      <div className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
+      <div className="px-8 md:px-16 lg:px-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <div className="gdt-section-divider" />
         </div>
@@ -409,7 +409,7 @@ export default function BrandPage({ data }: BrandPageProps) {
           <h2 className="gdt-display text-3xl md:text-4xl mb-4">
             {data.growthSolution.headline}
           </h2>
-          <p className="text-lg text-[var(--gdt-text-secondary)] mb-8 max-w-3xl">
+          <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
             {data.growthSolution.description}
           </p>
 
@@ -422,10 +422,10 @@ export default function BrandPage({ data }: BrandPageProps) {
                   key={index}
                   className="gdt-card p-5 border-l-4 border-l-[var(--gdt-accent)]"
                 >
-                  <h3 className="font-semibold text-[var(--gdt-text-primary)] mb-2">
+                  <h3 className="font-semibold gdt-text-primary mb-2">
                     {title}
                   </h3>
-                  <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+                  <p className="text-sm gdt-text-secondary leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -443,7 +443,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       </div>
 
       {/* Growth System */}
-      <section className="px-8 md:px-16 lg:px-24 py-16 bg-[var(--gdt-bg-secondary)]">
+      <section className="px-8 md:px-16 lg:px-24 py-16 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-widest gdt-accent-text mb-2">
             Growth System
@@ -451,7 +451,7 @@ export default function BrandPage({ data }: BrandPageProps) {
           <h2 className="gdt-display text-3xl md:text-4xl mb-4">
             {data.growthSystem.headline}
           </h2>
-          <p className="text-lg text-[var(--gdt-text-secondary)] mb-8 max-w-3xl">
+          <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
             {data.growthSystem.description}
           </p>
 
@@ -460,17 +460,17 @@ export default function BrandPage({ data }: BrandPageProps) {
               <div key={phase.phase} className="flex flex-col">
                 <div className="mb-4">
                   <span className="gdt-display text-2xl gdt-accent-text">{index + 1}. {phase.phase}</span>
-                  <p className="text-sm text-[var(--gdt-text-secondary)] mt-1">{phase.description}</p>
+                  <p className="text-sm gdt-text-secondary mt-1">{phase.description}</p>
                 </div>
 
                 <div className="space-y-4 flex-1">
                   {phase.outputs.map((output) => (
                     <div key={output.name} className="gdt-card p-5 border-l-4 border-l-[var(--gdt-accent)]" style={{ minHeight: '120px' }}>
                       <div className="flex items-start justify-between mb-2">
-                        <h4 className="font-semibold text-[var(--gdt-text-primary)]">{output.name}</h4>
+                        <h4 className="font-semibold gdt-text-primary">{output.name}</h4>
                         <span className="gdt-mono text-xs gdt-accent-text">{Math.round(output.score * 10)}%</span>
                       </div>
-                      <p className="text-sm text-[var(--gdt-text-secondary)]">
+                      <p className="text-sm gdt-text-secondary">
                         {output.purpose}
                       </p>
                     </div>
@@ -486,7 +486,7 @@ export default function BrandPage({ data }: BrandPageProps) {
       <div className="px-8 md:px-16 lg:px-24 py-8">
         <div className="max-w-5xl mx-auto">
           <div className="gdt-section-divider" />
-          <p className="text-center text-[var(--gdt-text-muted)] text-sm mt-8">
+          <p className="text-center gdt-text-muted text-sm mt-8">
             Detailed Component Analysis
           </p>
         </div>
@@ -507,7 +507,7 @@ export default function BrandPage({ data }: BrandPageProps) {
               <h2 className="gdt-display text-3xl md:text-4xl mb-3">
                 {sectionNames[section.id] || section.name}
               </h2>
-              <p className="text-[var(--gdt-text-secondary)]">
+              <p className="gdt-text-secondary">
                 {section.id === 'A' && 'Evaluates how effectively your brand positioning creates financial value'}
                 {section.id === 'B' && 'Evaluates the strength of connection between your brand and audience'}
                 {section.id === 'C' && 'Evaluates how much change is needed and your readiness for transformation'}
@@ -535,7 +535,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                             })()}
                             <h3 className="gdt-display text-3xl md:text-4xl leading-none">{component.name}</h3>
                           </div>
-                          <p className="text-sm text-[var(--gdt-text-secondary)] mt-2 md:mt-1 md:ml-10">
+                          <p className="text-sm gdt-text-secondary mt-2 md:mt-1 md:ml-10">
                             {component.id === 'a1' && "Measures your brand's Meaningful Difference vs. competitors"}
                             {component.id === 'a2' && "Evaluates your ability to command premium prices"}
                             {component.id === 'a3' && "Assesses revenue and market share trajectory"}
@@ -552,7 +552,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                             <span className={`gdt-mono score-${getScoreTier(component.score)}`} style={{ fontSize: '2rem' }}>
                               {component.score.toFixed(1)}
                             </span>
-                            <span className="text-[var(--gdt-text-muted)]" style={{ fontSize: '1rem' }}>/10</span>
+                            <span className="gdt-text-muted" style={{ fontSize: '1rem' }}>/10</span>
                           </div>
                           <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(component.score)}`}>
                             {component.tier}
@@ -566,7 +566,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                         <h4 className="gdt-display text-2xl md:text-3xl mb-1">
                           {component.wsn.headline}
                         </h4>
-                        <p className="text-base text-[var(--gdt-text-secondary)]">
+                        <p className="text-base gdt-text-secondary">
                           {component.wsn.subline}
                         </p>
                       </div>
@@ -574,20 +574,20 @@ export default function BrandPage({ data }: BrandPageProps) {
                       <div className="grid gap-4 md:grid-cols-3">
                         <div className="gdt-card p-5">
                           <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">What</p>
-                          <p className="text-[var(--gdt-text-primary)] leading-relaxed">{component.wsn.what}</p>
+                          <p className="gdt-text-primary leading-relaxed">{component.wsn.what}</p>
                           {component.wsn.evidence && (
-                            <p className="text-sm text-[var(--gdt-text-secondary)] mt-2 leading-relaxed">{component.wsn.evidence}</p>
+                            <p className="text-sm gdt-text-secondary mt-2 leading-relaxed">{component.wsn.evidence}</p>
                           )}
                         </div>
 
                         <div className="gdt-card p-5">
                           <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">So What</p>
-                          <p className="text-[var(--gdt-text-primary)] leading-relaxed">{component.wsn.soWhat}</p>
+                          <p className="gdt-text-primary leading-relaxed">{component.wsn.soWhat}</p>
                         </div>
 
                         <div className="gdt-card p-5">
                           <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">Now What</p>
-                          <p className="text-[var(--gdt-text-primary)] leading-relaxed">{component.wsn.nowWhat}</p>
+                          <p className="gdt-text-primary leading-relaxed">{component.wsn.nowWhat}</p>
                         </div>
                       </div>
 
@@ -612,12 +612,12 @@ export default function BrandPage({ data }: BrandPageProps) {
       ))}
 
       {/* Footer */}
-      <footer className="px-8 md:px-16 lg:px-24 py-8 border-t border-[var(--gdt-border)]">
+      <footer className="px-8 md:px-16 lg:px-24 py-8 border-t gdt-border">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <Link href="/" className="text-sm text-[var(--gdt-text-muted)] hover:text-[var(--gdt-accent)] transition-colors">
+          <Link href="/" className="text-sm gdt-text-muted hover:text-[var(--gdt-accent)] transition-colors">
             Growth Diagnosis Tool
           </Link>
-          <p className="text-sm text-[var(--gdt-text-muted)]">
+          <p className="text-sm gdt-text-muted">
             Generated {data.brand.date}
           </p>
         </div>

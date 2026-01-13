@@ -51,21 +51,21 @@ export default function HomePage({ brands }: HomePageProps) {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[var(--gdt-bg-primary)] flex items-center justify-center">
-        <div className="text-[var(--gdt-text-muted)]">Loading...</div>
+      <div className="min-h-screen gdt-bg-primary flex items-center justify-center">
+        <div className="gdt-text-muted">Loading...</div>
       </div>
     );
   }
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-[var(--gdt-bg-primary)] flex items-center justify-center px-4">
+      <div className="min-h-screen gdt-bg-primary flex items-center justify-center px-4">
         <div className="max-w-md w-full">
           <div className="gdt-card p-8">
             <h1 className="gdt-display text-2xl md:text-3xl text-center mb-2">
               Growth Diagnosis Tool
             </h1>
-            <p className="text-[var(--gdt-text-secondary)] text-center mb-8">
+            <p className="gdt-text-secondary text-center mb-8">
               Enter password to access brand analyses.
             </p>
 
@@ -76,7 +76,7 @@ export default function HomePage({ brands }: HomePageProps) {
                   value={inputPassword}
                   onChange={(e) => setInputPassword(e.target.value)}
                   placeholder="Enter password"
-                  className="w-full px-4 py-3 bg-[var(--gdt-bg-secondary)] border border-[var(--gdt-border)] rounded-lg text-[var(--gdt-text-primary)] placeholder-[var(--gdt-text-muted)] focus:outline-none focus:border-[var(--gdt-accent)] transition-colors"
+                  className="w-full px-4 py-3 gdt-bg-secondary border gdt-border rounded-lg gdt-text-primary gdt-placeholder focus:outline-none gdt-focus transition-colors"
                   autoFocus
                 />
                 {error && (
@@ -100,14 +100,14 @@ export default function HomePage({ brands }: HomePageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[var(--gdt-bg-primary)]">
+    <main className="min-h-screen gdt-bg-primary">
       {/* Hero */}
-      <section className="px-8 md:px-16 lg:px-24 py-24 bg-[var(--gdt-bg-secondary)]">
+      <section className="px-8 md:px-16 lg:px-24 py-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="gdt-display text-4xl md:text-5xl lg:text-6xl mb-6">
             Growth Diagnosis Tool
           </h1>
-          <p className="text-lg md:text-xl text-[var(--gdt-text-secondary)] max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl gdt-text-secondary max-w-2xl mx-auto">
             Strategic brand analysis powered by AI. Uncover growth barriers,
             identify opportunities, and build actionable growth systems.
           </p>
@@ -115,7 +115,7 @@ export default function HomePage({ brands }: HomePageProps) {
       </section>
 
       {/* Divider */}
-      <div className="px-8 md:px-16 lg:px-24 bg-[var(--gdt-bg-secondary)]">
+      <div className="px-8 md:px-16 lg:px-24 gdt-bg-secondary">
         <div className="max-w-5xl mx-auto">
           <div className="gdt-section-divider" />
         </div>
@@ -124,7 +124,7 @@ export default function HomePage({ brands }: HomePageProps) {
       {/* Brand Grid */}
       <section className="px-8 md:px-16 lg:px-24 py-16">
         <div className="max-w-6xl mx-auto">
-          <p className="text-sm uppercase tracking-widest text-[var(--gdt-text-muted)] mb-8">
+          <p className="text-sm uppercase tracking-widest gdt-text-muted mb-8">
             {brands.length} Brand {brands.length === 1 ? 'Analysis' : 'Analyses'}
           </p>
 
@@ -142,7 +142,7 @@ export default function HomePage({ brands }: HomePageProps) {
                   } as React.CSSProperties}
                 >
                   {/* Cover Image */}
-                  <div className="aspect-[2/1] overflow-hidden bg-[var(--gdt-bg-tertiary)]">
+                  <div className="aspect-[2/1] overflow-hidden gdt-bg-tertiary">
                     <img
                       src={brand.coverImage}
                       alt={`${brand.name} cover`}
@@ -161,7 +161,7 @@ export default function HomePage({ brands }: HomePageProps) {
                         >
                           {brand.name}
                         </h2>
-                        <div className="flex items-center gap-2 text-sm text-[var(--gdt-text-muted)]">
+                        <div className="flex items-center gap-2 text-sm gdt-text-muted">
                           <span>{brand.category}</span>
                           <span>•</span>
                           <span>{brand.market}</span>
@@ -176,9 +176,9 @@ export default function HomePage({ brands }: HomePageProps) {
                           >
                             {(brand.totalScore / 9).toFixed(1)}
                           </span>
-                          <span className="text-[var(--gdt-text-muted)] text-sm">/10</span>
+                          <span className="gdt-text-muted text-sm">/10</span>
                         </div>
-                        <span className="text-xs text-[var(--gdt-text-muted)]">avg score</span>
+                        <span className="text-xs gdt-text-muted">avg score</span>
                       </div>
                     </div>
 
@@ -193,7 +193,7 @@ export default function HomePage({ brands }: HomePageProps) {
                       >
                         {brand.growthProfile}
                       </span>
-                      <span className="text-xs text-[var(--gdt-text-muted)]">
+                      <span className="text-xs gdt-text-muted">
                         {brand.date}
                       </span>
                     </div>
@@ -212,9 +212,9 @@ export default function HomePage({ brands }: HomePageProps) {
       </section>
 
       {/* Footer */}
-      <footer className="px-8 md:px-16 lg:px-24 py-8 border-t border-[var(--gdt-border)]">
+      <footer className="px-8 md:px-16 lg:px-24 py-8 border-t gdt-border">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-sm text-[var(--gdt-text-muted)]">
+          <p className="text-sm gdt-text-muted">
             Growth Diagnosis Tool • Powered by AI
           </p>
         </div>

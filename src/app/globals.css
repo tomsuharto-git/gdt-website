@@ -244,3 +244,31 @@ body {
 .stagger-children > *:nth-child(7) { animation-delay: 0.7s; }
 .stagger-children > *:nth-child(8) { animation-delay: 0.8s; }
 .stagger-children > *:nth-child(9) { animation-delay: 0.9s; }
+
+/* Background utilities (to avoid Tailwind v4 arbitrary value issues) */
+.gdt-bg-primary { background-color: var(--gdt-bg-primary); }
+.gdt-bg-secondary { background-color: var(--gdt-bg-secondary); }
+.gdt-bg-tertiary { background-color: var(--gdt-bg-tertiary); }
+.gdt-bg-card { background-color: var(--gdt-bg-card); }
+.gdt-bg-accent { background-color: var(--gdt-accent); }
+
+/* Text utilities */
+.gdt-text-primary { color: var(--gdt-text-primary); }
+.gdt-text-secondary { color: var(--gdt-text-secondary); }
+.gdt-text-muted { color: var(--gdt-text-muted); }
+
+/* Border utilities */
+.gdt-border { border-color: var(--gdt-border); }
+.gdt-border-accent { border-color: var(--gdt-border-accent); }
+
+/* Placeholder utilities */
+.gdt-placeholder::placeholder { color: var(--gdt-text-muted); }
+
+/* Focus state */
+.gdt-focus:focus {
+  outline: none;
+  border-color: var(--gdt-accent);
+}
+
+/* Hover background */
+.gdt-hover-bg:hover { background-color: var(--gdt-bg-tertiary); }

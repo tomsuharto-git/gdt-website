@@ -39,8 +39,8 @@ export default function PasswordGate({ brandId, password, children }: PasswordGa
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[var(--gdt-bg-primary)] flex items-center justify-center">
-        <div className="text-[var(--gdt-text-muted)]">Loading...</div>
+      <div className="min-h-screen gdt-bg-primary flex items-center justify-center">
+        <div className="gdt-text-muted">Loading...</div>
       </div>
     );
   }
@@ -50,13 +50,13 @@ export default function PasswordGate({ brandId, password, children }: PasswordGa
   }
 
   return (
-    <div className="min-h-screen bg-[var(--gdt-bg-primary)] flex items-center justify-center px-4">
+    <div className="min-h-screen gdt-bg-primary flex items-center justify-center px-4">
       <div className="max-w-md w-full">
         <div className="gdt-card p-8">
           <h1 className="gdt-display text-2xl md:text-3xl text-center mb-2">
             Protected Content
           </h1>
-          <p className="text-[var(--gdt-text-secondary)] text-center mb-8">
+          <p className="gdt-text-secondary text-center mb-8">
             This diagnosis requires a password to access.
           </p>
 
@@ -67,7 +67,7 @@ export default function PasswordGate({ brandId, password, children }: PasswordGa
                 value={inputPassword}
                 onChange={(e) => setInputPassword(e.target.value)}
                 placeholder="Enter password"
-                className="w-full px-4 py-3 bg-[var(--gdt-bg-secondary)] border border-[var(--gdt-border)] rounded-lg text-[var(--gdt-text-primary)] placeholder-[var(--gdt-text-muted)] focus:outline-none focus:border-[var(--gdt-accent)] transition-colors"
+                className="w-full px-4 py-3 gdt-bg-secondary border gdt-border rounded-lg gdt-text-primary gdt-placeholder focus:outline-none gdt-focus transition-colors"
                 autoFocus
               />
               {error && (
@@ -79,7 +79,7 @@ export default function PasswordGate({ brandId, password, children }: PasswordGa
 
             <button
               type="submit"
-              className="w-full px-4 py-3 bg-[var(--gdt-accent)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="w-full px-4 py-3 gdt-bg-accent text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               Access Diagnosis
             </button>

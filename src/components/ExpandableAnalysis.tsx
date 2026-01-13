@@ -37,7 +37,7 @@ export function ExpandableAnalysis({
   if (!hasContent) return null;
 
   return (
-    <div className="mt-6 pt-6 border-t border-[var(--gdt-border)]">
+    <div className="mt-6 pt-6 border-t gdt-border">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className="flex items-center gap-2 text-sm uppercase tracking-widest gdt-accent-text hover:opacity-80 transition-opacity"
@@ -59,7 +59,7 @@ export function ExpandableAnalysis({
                   </h5>
                   <ul className="space-y-2">
                     {strengths.map((strength, idx) => (
-                      <li key={idx} className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed pl-4 border-l-2 border-green-500/30">
+                      <li key={idx} className="text-sm gdt-text-secondary leading-relaxed pl-4 border-l-2 border-green-500/30">
                         {strength}
                       </li>
                     ))}
@@ -75,7 +75,7 @@ export function ExpandableAnalysis({
                   </h5>
                   <ul className="space-y-2">
                     {weaknesses.map((weakness, idx) => (
-                      <li key={idx} className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed pl-4 border-l-2 border-red-500/30">
+                      <li key={idx} className="text-sm gdt-text-secondary leading-relaxed pl-4 border-l-2 border-red-500/30">
                         {weakness}
                       </li>
                     ))}
@@ -91,7 +91,7 @@ export function ExpandableAnalysis({
               <h5 className="text-sm uppercase tracking-widest gdt-accent-text mb-3">
                 Competitive Context
               </h5>
-              <p className="text-sm text-[var(--gdt-text-secondary)] leading-relaxed">
+              <p className="text-sm gdt-text-secondary leading-relaxed">
                 {competitiveContext}
               </p>
             </div>
@@ -108,14 +108,14 @@ export function ExpandableAnalysis({
                 <div className="flex items-center gap-3">
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-sm font-medium text-[var(--gdt-text-primary)]">
+                      <span className="text-sm font-medium gdt-text-primary">
                         {brandName}
                       </span>
                       <span className="gdt-mono text-sm gdt-accent-text font-bold">
                         {brandScore.toFixed(1)}
                       </span>
                     </div>
-                    <div className="h-2 bg-[var(--gdt-bg-tertiary)] rounded-full overflow-hidden">
+                    <div className="h-2 gdt-bg-tertiary rounded-full overflow-hidden">
                       <div
                         className="h-full rounded-full"
                         style={{
@@ -132,14 +132,14 @@ export function ExpandableAnalysis({
                   <div key={competitor.name} className="flex items-center gap-3">
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-1">
-                        <span className="text-sm text-[var(--gdt-text-secondary)]">
+                        <span className="text-sm gdt-text-secondary">
                           {competitor.name}
                         </span>
-                        <span className="gdt-mono text-sm text-[var(--gdt-text-muted)]">
+                        <span className="gdt-mono text-sm gdt-text-muted">
                           {competitor.score.toFixed(1)}
                         </span>
                       </div>
-                      <div className="h-2 bg-[var(--gdt-bg-tertiary)] rounded-full overflow-hidden">
+                      <div className="h-2 gdt-bg-tertiary rounded-full overflow-hidden">
                         <div
                           className="h-full bg-[var(--gdt-text-muted)] rounded-full opacity-50"
                           style={{ width: `${(competitor.score / 10) * 100}%` }}
@@ -151,17 +151,17 @@ export function ExpandableAnalysis({
 
                 {/* Category average */}
                 {categoryAverage && (
-                  <div className="flex items-center gap-3 pt-2 border-t border-[var(--gdt-border)]">
+                  <div className="flex items-center gap-3 pt-2 border-t gdt-border">
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-1">
-                        <span className="text-sm text-[var(--gdt-text-muted)] italic">
+                        <span className="text-sm gdt-text-muted italic">
                           Category Average
                         </span>
-                        <span className="gdt-mono text-sm text-[var(--gdt-text-muted)]">
+                        <span className="gdt-mono text-sm gdt-text-muted">
                           {categoryAverage.toFixed(1)}
                         </span>
                       </div>
-                      <div className="h-2 bg-[var(--gdt-bg-tertiary)] rounded-full overflow-hidden">
+                      <div className="h-2 gdt-bg-tertiary rounded-full overflow-hidden">
                         <div
                           className="h-full rounded-full border-2 border-dashed border-[var(--gdt-text-muted)]"
                           style={{ width: `${(categoryAverage / 10) * 100}%` }}
@@ -183,7 +183,7 @@ export function ExpandableAnalysis({
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {Object.entries(scoreBreakdown).map(([key, value]) => (
                   <div key={key} className="gdt-card p-3 text-center">
-                    <p className="text-xs text-[var(--gdt-text-muted)] uppercase mb-1">
+                    <p className="text-xs gdt-text-muted uppercase mb-1">
                       {key.replace(/_/g, ' ')}
                     </p>
                     <p className="gdt-mono text-lg gdt-accent-text">
