@@ -12,7 +12,7 @@ export const zynAnalysis: GDTAnalysis = {
     category: 'Nicotine Pouches',
     date: '2025-12-30',
     accentColor: '#7C3AED', // ZYN Purple
-    password: 'nicotine2025'
+    password: 'zyn2026'
   },
   totalScore: 67.1,
   growthSummary: {
