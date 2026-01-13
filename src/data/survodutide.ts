@@ -11,7 +11,7 @@ export const survodutideAnalysis: GDTAnalysis = {
     name: 'Survodutide',
     market: 'USA',
     category: 'GLP-1/Glucagon Dual Agonist',
-    date: '2025-01-02',
+    date: '2026-01-02',
     accentColor: '#FF5A8A',
     password: 'survodutide2026'
   },

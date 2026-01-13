@@ -22,7 +22,8 @@ export const zynAnalysis: GDTAnalysis = {
     summary: 'Zyn created the nicotine pouch category and owns 74% of it. The brand has genuine cultural momentum—memes, influencers, organic word-of-mouth. But it never established a clear reason to choose Zyn over the alternatives. "Tobacco-free" was the position, but now every competitor claims it too. Without a distinctive story, market share becomes a game of distribution and discounts.',
     paradox: 'Zyn is everywhere but stands for nothing specific. On!, Velo, and Rogue are attacking from every direction—price, flavors, convenience. The FDA regulatory moat is closing—On! now has authorization too, and Velo is in the fast-track queue.',
     path: 'Zyn must transition from category creator to category definer—using the FDA authorization window to establish what nicotine pouches mean before competitors write that story instead.',
-    sequence: 'Position → Unlock → Connect'
+    sequence: 'Position → Unlock → Connect',
+    image: 'zyn-growth-summary.png'
   },
   sections: [
     {
@@ -49,7 +50,7 @@ export const zynAnalysis: GDTAnalysis = {
     },
     {
       id: 'C',
-      name: 'Competitive Advantage',
+      name: 'Degree of Transformation',
       score: 23.2,
       tier: 'Progressive',
       components: [

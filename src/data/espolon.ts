@@ -41,7 +41,7 @@ export const espolonAnalysis: GDTAnalysis = {
     },
     {
       id: 'B',
-      name: 'Audience Connection',
+      name: 'Customer Connection',
       score: 18.1,
       tier: 'Functional',
       components: [

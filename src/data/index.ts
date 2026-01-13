@@ -3,12 +3,14 @@ import { zynAnalysis } from './zyn';
 import { espolonAnalysis } from './espolon';
 import { survodutideAnalysis } from './survodutide';
 import { cavaAnalysis } from './cava';
+import { rippleAnalysis } from './ripple';
 
 export const brandAnalyses: Record<string, GDTAnalysis> = {
   zyn: zynAnalysis,
   espolon: espolonAnalysis,
   survodutide: survodutideAnalysis,
   cava: cavaAnalysis,
+  ripple: rippleAnalysis,
 };
 
 export const getBrandAnalysis = (brandId: string): GDTAnalysis | undefined => {

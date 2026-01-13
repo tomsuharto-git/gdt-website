@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { getScoreTier } from '@/lib/types';
 import type { BrandMeta } from '@/data';
+
+type SortOption = 'date' | 'score' | 'brand';
 
 interface HomePageProps {
   brands: BrandMeta[];
@@ -17,6 +19,21 @@ export default function HomePage({ brands }: HomePageProps) {
   const [inputPassword, setInputPassword] = useState('');
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [sortBy, setSortBy] = useState<SortOption>('date');
+
+  const sortedBrands = useMemo(() => {
+    const sorted = [...brands];
+    switch (sortBy) {
+      case 'date':
+        return sorted.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      case 'score':
+        return sorted.sort((a, b) => b.totalScore - a.totalScore);
+      case 'brand':
+        return sorted.sort((a, b) => a.name.localeCompare(b.name));
+      default:
+        return sorted;
+    }
+  }, [brands, sortBy]);
 
   useEffect(() => {
     const stored = sessionStorage.getItem(STORAGE_KEY);
@@ -48,41 +65,47 @@ export default function HomePage({ brands }: HomePageProps) {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen gdt-bg-primary flex items-center justify-center px-4">
-        <div className="max-w-md w-full">
-          <div className="gdt-card p-8">
-            <h1 className="gdt-display text-2xl md:text-3xl text-center mb-2">
-              Growth Diagnosis Tool
-            </h1>
-            <p className="gdt-text-secondary text-center mb-8">
-              Enter password to access brand analyses.
-            </p>
+      <div
+        className="min-h-screen flex items-center justify-center px-4"
+        style={{
+          background: 'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(107, 70, 193, 0.25) 0%, #0C0C0E 70%)',
+        }}
+      >
+        <div className="max-w-md w-full text-center">
+          {/* Branded title */}
+          <h1 className="text-4xl md:text-5xl mb-3 italic" style={{ color: '#6B46C1', fontFamily: 'Georgia, serif' }}>
+            Growth Diagnosis
+          </h1>
+          <p className="text-xs uppercase tracking-[0.3em] gdt-text-muted mb-12">
+            Strategic Brand Analysis
+          </p>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <input
-                  type="password"
-                  value={inputPassword}
-                  onChange={(e) => setInputPassword(e.target.value)}
-                  placeholder="Enter password"
-                  className="w-full px-4 py-3 gdt-bg-secondary border gdt-border rounded-lg gdt-text-primary gdt-placeholder focus:outline-none gdt-focus transition-colors"
-                  autoFocus
-                />
-                {error && (
-                  <p className="text-red-400 text-sm mt-2">
-                    Incorrect password. Please try again.
-                  </p>
-                )}
-              </div>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <input
+                type="password"
+                value={inputPassword}
+                onChange={(e) => setInputPassword(e.target.value)}
+                placeholder="Enter password"
+                className="w-full px-4 py-4 gdt-bg-secondary border-b-2 gdt-text-primary gdt-placeholder focus:outline-none transition-colors rounded-lg"
+                style={{ borderBottomColor: '#6B46C1' }}
+                autoFocus
+              />
+              {error && (
+                <p className="text-red-400 text-sm mt-2">
+                  Incorrect password. Please try again.
+                </p>
+              )}
+            </div>
 
-              <button
-                type="submit"
-                className="w-full px-4 py-3 bg-[var(--gdt-text-primary)] text-[var(--gdt-bg-primary)] font-medium rounded-lg hover:opacity-90 transition-opacity"
-              >
-                Access Hub
-              </button>
-            </form>
-          </div>
+            <button
+              type="submit"
+              className="w-full px-4 py-4 font-medium rounded-lg hover:opacity-90 transition-opacity text-white"
+              style={{ backgroundColor: '#6B46C1' }}
+            >
+              Enter
+            </button>
+          </form>
         </div>
       </div>
     );
@@ -113,12 +136,29 @@ export default function HomePage({ brands }: HomePageProps) {
       {/* Brand Grid */}
       <section className="px-8 md:px-16 lg:px-24 py-16">
         <div className="max-w-6xl mx-auto">
-          <p className="text-sm uppercase tracking-widest gdt-text-muted mb-8">
-            {brands.length} Brand {brands.length === 1 ? 'Analysis' : 'Analyses'}
-          </p>
+          <div className="flex items-center justify-between mb-8">
+            <p className="text-sm uppercase tracking-widest gdt-text-muted">
+              {brands.length} Brand {brands.length === 1 ? 'Analysis' : 'Analyses'}
+            </p>
+            <div className="flex items-center gap-2">
+              {(['date', 'score', 'brand'] as SortOption[]).map((option) => (
+                <button
+                  key={option}
+                  onClick={() => setSortBy(option)}
+                  className={`text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border transition-colors ${
+                    sortBy === option
+                      ? 'border-[var(--gdt-text-primary)] text-[var(--gdt-text-primary)]'
+                      : 'border-[var(--gdt-border)] gdt-text-muted hover:border-[var(--gdt-border-hover)] hover:text-[var(--gdt-text-secondary)]'
+                  }`}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {brands.map((brand) => (
+            {sortedBrands.map((brand) => (
               <Link
                 key={brand.id}
                 href={`/${brand.id}`}
@@ -145,16 +185,11 @@ export default function HomePage({ brands }: HomePageProps) {
                     <div className="flex items-start justify-between mb-4">
                       <div>
                         <h2
-                          className="gdt-display text-2xl md:text-3xl mb-1 transition-colors group-hover:text-[var(--card-accent)]"
+                          className="gdt-display text-2xl md:text-3xl transition-colors group-hover:text-[var(--card-accent)]"
                           style={{ color: 'var(--gdt-text-primary)' }}
                         >
                           {brand.name}
                         </h2>
-                        <div className="flex items-center gap-2 text-sm gdt-text-muted">
-                          <span>{brand.category}</span>
-                          <span>•</span>
-                          <span>{brand.market}</span>
-                        </div>
                       </div>
 
                       {/* Score */}
@@ -171,8 +206,8 @@ export default function HomePage({ brands }: HomePageProps) {
                       </div>
                     </div>
 
-                    {/* Growth Profile pill */}
-                    <div className="flex items-center gap-2">
+                    {/* Category, Market, Date pills */}
+                    <div className="flex items-center gap-2 flex-wrap">
                       <span
                         className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border"
                         style={{
@@ -180,9 +215,24 @@ export default function HomePage({ brands }: HomePageProps) {
                           color: brand.accentColor,
                         }}
                       >
-                        {brand.growthProfile}
+                        {brand.category}
                       </span>
-                      <span className="text-xs gdt-text-muted">
+                      <span
+                        className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border"
+                        style={{
+                          borderColor: brand.accentColor,
+                          color: brand.accentColor,
+                        }}
+                      >
+                        {brand.market}
+                      </span>
+                      <span
+                        className="inline-block text-xs uppercase tracking-widest px-3 py-1.5 rounded-full border"
+                        style={{
+                          borderColor: brand.accentColor,
+                          color: brand.accentColor,
+                        }}
+                      >
                         {brand.date}
                       </span>
                     </div>

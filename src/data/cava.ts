@@ -11,7 +11,7 @@ export const cavaAnalysis: GDTAnalysis = {
     name: 'CAVA',
     market: 'USA',
     category: 'Fast Casual Mediterranean',
-    date: '2025-01-07',
+    date: '2026-01-07',
     accentColor: '#FFD700', // CAVA Yellow
     password: 'cava2026'
   },
@@ -20,7 +20,7 @@ export const cavaAnalysis: GDTAnalysis = {
 
   // Growth Summary - The Mediterranean Chipotle that needs to own more than cuisine
   growthSummary: {
-    headline: 'The Category Creator That Hasn\'t Built Category Lock',
+    headline: 'Chipotle Built a Cult. CAVA Built a Better Bowl.',
     summary: 'CAVA dominates Mediterranean fast-casual with no scaled competitor. Unit economics are exceptional—$2.9M AUV, 25% restaurant margins, 33% revenue growth. The "Chipotle of Mediterranean" positioning delivers instant comprehension. But this tight focus creates a double-edged sword: CAVA owns a cuisine category, not a brand meaning.',
     paradox: 'CAVA\'s biggest strength is its biggest vulnerability. "Mediterranean" does most of the differentiation work—not "CAVA" itself. Brand awareness sits at 67% even in mature DC markets, 20-30% in new markets. No iconic tagline, no sonic identity, no viral moment. Chipotle built a cult; CAVA built a better bowl.',
     path: 'The path forward is transforming from "Mediterranean restaurant" to "Mediterranean-inspired wellness brand." The health positioning is underleveraged—7 years as #1 ranked diet is an emotional territory no competitor owns. Build distinctive assets that travel beyond cuisine before the window closes.',
@@ -35,31 +35,31 @@ export const cavaAnalysis: GDTAnalysis = {
       score: 24.0,
       tier: 'Strong',
       components: [
-        { id: 'a1', name: 'Positioning White Space', score: 7.5, tier: 'Strong', section: 'A' },
-        { id: 'a2', name: 'Pricing Strategy', score: 7.8, tier: 'Strong', section: 'A' },
-        { id: 'a3', name: 'Market Opportunity', score: 8.7, tier: 'Strong', section: 'A' }
+        { id: 'a1', name: 'Brand Positioning', score: 7.5, tier: 'Strong', section: 'A' },
+        { id: 'a2', name: 'Pricing Power', score: 7.8, tier: 'Strong', section: 'A' },
+        { id: 'a3', name: 'Business Growth', score: 8.7, tier: 'Strong', section: 'A' }
       ]
     },
     {
       id: 'B',
-      name: 'Audience Connection',
+      name: 'Customer Connection',
       score: 19.3,
       tier: 'Moderate',
       components: [
-        { id: 'b1', name: 'Emotional Territory', score: 6.0, tier: 'Moderate', section: 'B' },
-        { id: 'b2', name: 'Cultural Landscape', score: 6.4, tier: 'Moderate', section: 'B' },
-        { id: 'b3', name: 'Experience Design', score: 6.9, tier: 'Moderate', section: 'B' }
+        { id: 'b1', name: 'Emotional Connection', score: 6.0, tier: 'Moderate', section: 'B' },
+        { id: 'b2', name: 'Cultural Relevance', score: 6.4, tier: 'Moderate', section: 'B' },
+        { id: 'b3', name: 'Experience Excellence', score: 6.9, tier: 'Moderate', section: 'B' }
       ]
     },
     {
       id: 'C',
-      name: 'Competitive Transformation',
+      name: 'Degree of Transformation',
       score: 20.4,
       tier: 'Moderate',
       components: [
-        { id: 'c1', name: 'Asset Recognition', score: 5.8, tier: 'Vulnerable', section: 'C' },
-        { id: 'c2', name: 'Innovation Platform', score: 7.8, tier: 'Strong', section: 'C' },
-        { id: 'c3', name: 'Competitive Pressure', score: 6.8, tier: 'Moderate', section: 'C' }
+        { id: 'c1', name: 'Distinctive Assets', score: 5.8, tier: 'Vulnerable', section: 'C' },
+        { id: 'c2', name: 'Brand Innovation', score: 7.8, tier: 'Strong', section: 'C' },
+        { id: 'c3', name: 'Market Disruption', score: 6.8, tier: 'Moderate', section: 'C' }
       ]
     }
   ],
@@ -117,14 +117,14 @@ export const cavaAnalysis: GDTAnalysis = {
             name: 'Strategic Brand Platform',
             score: 8.2,
             purpose: 'Define brand meaning beyond cuisine category—capture wellness, Mediterranean lifestyle, and authentic transformation',
-            componentsAddressed: ['Positioning White Space', 'Emotional Territory'],
+            componentsAddressed: ['Brand Positioning', 'Emotional Connection'],
             deliverables: ['Brand architecture refresh', 'Wellness positioning framework', 'Heritage storytelling strategy', 'Competitive differentiation map']
           },
           {
             name: 'Category Leadership',
             score: 8.5,
             purpose: 'Establish CAVA as the Mediterranean category definer, not just leader',
-            componentsAddressed: ['Positioning White Space', 'Market Opportunity'],
+            componentsAddressed: ['Brand Positioning', 'Business Growth'],
             deliverables: ['Category narrative ownership', 'TAM expansion strategy', 'Mediterranean wellness thought leadership', 'Investor story refinement']
           }
         ]
@@ -137,14 +137,14 @@ export const cavaAnalysis: GDTAnalysis = {
             name: 'Distinctive Assets System',
             score: 9.0,
             purpose: 'Create ownable brand elements that build mental availability as CAVA scales nationally',
-            componentsAddressed: ['Asset Recognition', 'Emotional Territory'],
+            componentsAddressed: ['Distinctive Assets', 'Emotional Connection'],
             deliverables: ['Verbal identity (tagline, brand language)', 'Sonic branding development', 'Visual system evolution', 'App/digital experience redesign']
           },
           {
             name: 'Innovation Acceleration',
             score: 8.0,
             purpose: 'Leverage Connected Kitchen and menu innovation to reinforce brand differentiation',
-            componentsAddressed: ['Innovation Platform', 'Experience Design'],
+            componentsAddressed: ['Brand Innovation', 'Experience Excellence'],
             deliverables: ['Menu innovation roadmap', 'Technology experience strategy', 'Project Soul store rollout', 'Digital experience fixes']
           }
         ]
@@ -157,14 +157,14 @@ export const cavaAnalysis: GDTAnalysis = {
             name: 'Culture Strategy',
             score: 8.8,
             purpose: 'Create breakthrough cultural moments that establish CAVA as cultural force, not trend beneficiary',
-            componentsAddressed: ['Cultural Landscape', 'Emotional Territory'],
+            componentsAddressed: ['Cultural Relevance', 'Emotional Connection'],
             deliverables: ['Signature campaign development', 'Creator/influencer strategy', 'Cultural programming calendar', 'Heritage activation playbook']
           },
           {
             name: 'Experience Excellence',
             score: 8.3,
             purpose: 'Systematize the hospitality that drives loyalty across all channels and markets',
-            componentsAddressed: ['Experience Design', 'Emotional Territory'],
+            componentsAddressed: ['Experience Excellence', 'Emotional Connection'],
             deliverables: ['Love Button program scale', 'Digital experience remediation', 'Service consistency standards', 'Loyalty program optimization']
           }
         ]
@@ -177,7 +177,7 @@ export const cavaAnalysis: GDTAnalysis = {
   components: [
     {
       id: 'a1',
-      name: 'Positioning White Space',
+      name: 'Brand Positioning',
       section: 'A',
       score: 7.5,
       tier: 'Strong',
@@ -204,11 +204,16 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 8.5 },
         { name: 'Sweetgreen', score: 6.5 },
         { name: 'Panera', score: 5.5 }
-      ]
+      ],
+      scoreBreakdown: {
+        meaningfulScore: 7.8,
+        differentScore: 7.2,
+        mdiScore: 5.6
+      }
     },
     {
       id: 'a2',
-      name: 'Pricing Strategy',
+      name: 'Pricing Power',
       section: 'A',
       score: 7.8,
       tier: 'Strong',
@@ -235,11 +240,16 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 7.5 },
         { name: 'Sweetgreen', score: 5.5 },
         { name: 'Panera', score: 5.0 }
-      ]
+      ],
+      scoreBreakdown: {
+        pricePremiumScore: 8.2,
+        elasticityScore: 7.5,
+        valuePerceptionScore: 7.8
+      }
     },
     {
       id: 'a3',
-      name: 'Market Opportunity',
+      name: 'Business Growth',
       section: 'A',
       score: 8.7,
       tier: 'Strong',
@@ -266,11 +276,16 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 7.5 },
         { name: 'Sweetgreen', score: 6.2 },
         { name: 'Panera', score: 4.3 }
-      ]
+      ],
+      scoreBreakdown: {
+        growthPerformance: 9.0,
+        strategyExecution: 8.5,
+        competitivePosition: 8.5
+      }
     },
     {
       id: 'b1',
-      name: 'Emotional Territory',
+      name: 'Emotional Connection',
       section: 'B',
       score: 6.0,
       tier: 'Moderate',
@@ -297,11 +312,16 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 7.8 },
         { name: 'Sweetgreen', score: 6.4 },
         { name: 'Panera', score: 5.2 }
-      ]
+      ],
+      scoreBreakdown: {
+        iatScore: 5.5,
+        affinityScore: 6.5,
+        loyaltyScore: 6.0
+      }
     },
     {
       id: 'b2',
-      name: 'Cultural Landscape',
+      name: 'Cultural Relevance',
       section: 'B',
       score: 6.4,
       tier: 'Moderate',
@@ -328,11 +348,18 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 8.7 },
         { name: 'Sweetgreen', score: 7.4 },
         { name: 'Panera', score: 5.8 }
-      ]
+      ],
+      scoreBreakdown: {
+        presence: 6.0,
+        impact: 6.0,
+        authenticity: 7.5,
+        timing: 7.0,
+        resonance: 5.5
+      }
     },
     {
       id: 'b3',
-      name: 'Experience Design',
+      name: 'Experience Excellence',
       section: 'B',
       score: 6.9,
       tier: 'Moderate',
@@ -359,11 +386,18 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 6.8 },
         { name: 'Sweetgreen', score: 7.2 },
         { name: 'Panera', score: 5.4 }
-      ]
+      ],
+      scoreBreakdown: {
+        communication: 6.5,
+        engagement: 7.2,
+        purchase: 6.5,
+        usage: 7.4,
+        loyalty: 7.0
+      }
     },
     {
       id: 'c1',
-      name: 'Asset Recognition',
+      name: 'Distinctive Assets',
       section: 'C',
       score: 5.8,
       tier: 'Vulnerable',
@@ -390,11 +424,17 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 8.5 },
         { name: 'Sweetgreen', score: 7.2 },
         { name: 'Panera', score: 7.8 }
-      ]
+      ],
+      scoreBreakdown: {
+        uniqueness: 7.0,
+        fame: 4.8,
+        attribution: 5.5,
+        entryPoint: 5.8
+      }
     },
     {
       id: 'c2',
-      name: 'Innovation Platform',
+      name: 'Brand Innovation',
       section: 'C',
       score: 7.8,
       tier: 'Strong',
@@ -421,11 +461,16 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 9.0 },
         { name: 'Sweetgreen', score: 6.5 },
         { name: 'Panera', score: 5.5 }
-      ]
+      ],
+      scoreBreakdown: {
+        trackRecord: 8.0,
+        capability: 7.8,
+        businessModel: 7.5
+      }
     },
     {
       id: 'c3',
-      name: 'Competitive Pressure',
+      name: 'Market Disruption',
       section: 'C',
       score: 6.8,
       tier: 'Moderate',
@@ -452,7 +497,12 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Chipotle', score: 9.2 },
         { name: 'Sweetgreen', score: 4.5 },
         { name: 'Panera', score: 5.2 }
-      ]
+      ],
+      scoreBreakdown: {
+        categoryDisruption: 7.5,
+        competitiveThreat: 6.5,
+        consumerBehavior: 6.5
+      }
     }
   ]
 };

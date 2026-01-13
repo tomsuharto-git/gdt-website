@@ -593,9 +593,6 @@ export default function BrandPage({ data }: BrandPageProps) {
                           <div className="gdt-card p-5">
                             <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">What</p>
                             <p className="gdt-text-primary leading-relaxed">{component.wsn.what}</p>
-                            {component.wsn.evidence && (
-                              <p className="text-sm gdt-text-secondary mt-2 leading-relaxed">{component.wsn.evidence}</p>
-                            )}
                           </div>
 
                           <div className="gdt-card p-5">
