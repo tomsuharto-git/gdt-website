@@ -454,55 +454,5 @@ export const cavaAnalysis: GDTAnalysis = {
         { name: 'Panera', score: 5.2 }
       ]
     }
-  ],
-
-  // Growth Opportunities & Challenges
-  growthFactors: {
-    opportunities: [
-      {
-        component: 'A3',
-        name: 'Market Opportunity',
-        score: 8.7,
-        headline: 'Exceptional Growth Runway',
-        summary: '33% revenue growth, $2.9M AUV, 50% Year-1 cash-on-cash returns. With only 415 locations vs 2,000 potential, CAVA has 5x runway remaining. Unit economics are best-in-class in fast-casual.'
-      },
-      {
-        component: 'A2',
-        name: 'Pricing Strategy',
-        score: 7.8,
-        headline: 'Earned Permission to Charge More',
-        summary: 'Below-inflation pricing discipline (12-15% vs 23% CPI) creates sustainable value perception advantage and future pricing headroom. Traffic growth proves the price-value equation works.'
-      },
-      {
-        component: 'C2',
-        name: 'Innovation Platform',
-        score: 7.8,
-        headline: 'Fast Company Top 15 Innovation',
-        summary: 'Innovation Kitchen, Connected Kitchen AI, and Project Soul redesign demonstrate systematic innovation capability. Fast Company #13 Most Innovative Company 2025 validates culture.'
-      }
-    ],
-    challenges: [
-      {
-        component: 'C1',
-        name: 'Asset Recognition',
-        score: 5.8,
-        headline: 'Brand Awareness Lags 50%+',
-        summary: 'CAVA Yellow is emerging but awareness drops to 20-30% in new markets vs near-universal Chipotle recognition. No tagline, no sonic identity, no breakthrough cultural asset. "Mediterranean" does more brand work than "CAVA."'
-      },
-      {
-        component: 'B1',
-        name: 'Emotional Territory',
-        score: 6.0,
-        headline: 'Enthusiasts Without a Cult',
-        summary: 'Passionate fans exist but represent a minority in established markets. 40% awareness in new markets limits emotional connection at scale. No equivalent to Chipotle\'s ordering hack culture or tribal devotion.'
-      },
-      {
-        component: 'B2',
-        name: 'Cultural Landscape',
-        score: 6.4,
-        headline: 'Riding the Wave, Not Making It',
-        summary: 'CAVA benefits from Mediterranean wellness tailwind but hasn\'t created cultural moments. 156K TikTok followers vs Chipotle\'s 4.6M. No viral campaign, no celebrity partnership, no breakthrough cultural programming.'
-      }
-    ]
-  }
+  ]
 };
