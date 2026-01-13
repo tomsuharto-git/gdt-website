@@ -20,9 +20,9 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
   growthProfile: {
     id: 'market-acceleration',
     name: 'Market Acceleration',
-    sequence: 'Strategic Brand Platform → Community Over-service → Market Growth Roadmap',
+    sequence: 'Strategic Brand Platform → Community Engagement Platform → Market Growth Roadmap',
     definition: 'Strong business fundamentals with exceptional short-term performance require strategic direction and business model evolution to sustain growth momentum and establish long-term franchise viability in rapidly changing market conditions.',
-    implications: 'Hogwarts Legacy\'s $1.3 billion success proves the foundation works, but growth ceiling emerges from single-player limitations (A3: 6.8) and post-completion engagement gaps (B3 loyalty: 4.6). The brand needs hybrid positioning combining story-driven excellence with ongoing social features to capture sustained value from its proven market appeal.',
+    implications: 'Hogwarts Legacy\'s $1.3 billion success proves the foundation works, but growth ceiling emerges from single-player limitations and post-completion engagement gaps. The brand needs to combine story-driven excellence with ongoing social features to capture sustained value from its proven market appeal.',
     shortDefinition: 'Strong fundamentals need business model evolution to sustain momentum'
   },
   sections: [
@@ -125,7 +125,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
         headline: '',
         subline: '',
         what: '',
-        evidence: 'Score: 73%',
+        evidence: '',
         soWhat: '',
         nowWhat: ''
       },
@@ -228,7 +228,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
         headline: '',
         subline: '',
         what: '',
-        evidence: 'Score: scores 6.6',
+        evidence: '',
         soWhat: '',
         nowWhat: ''
       }
@@ -306,7 +306,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
             score: 8.2,
             purpose: 'Redefine positioning from finite Potter experience to ongoing magical platform combining premium storytelling with live service engagement',
             componentsAddressed: ['A1R'],
-            deliverables: ['Hybrid positioning architecture', 'Service model definition', 'Potter-to-platform evolution roadmap']
+            deliverables: ['Brand platform strategy', 'Service model definition', 'Platform evolution roadmap']
           }
         ]
       },
@@ -328,7 +328,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
         description: 'Build sustainable community engagement',
         outputs: [
           {
-            name: 'Community Over-service',
+            name: 'Community Engagement Platform',
             score: 7.4,
             purpose: 'Transform nostalgic affection into ongoing community engagement through persistent social features and collaborative content',
             componentsAddressed: ['B1R', 'B2R'],
@@ -339,12 +339,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
             score: 6.9,
             purpose: 'Maintain cultural relevance beyond launch hype through ongoing narrative that bridges Potter nostalgia with gaming community',
             componentsAddressed: ['A1R', 'B1R', 'B2R'],
-            deliverables: ['Community communication strategy', 'Cultural moment activation', 'Ongoing narrative framework']
+            deliverables: ['Community communication strategy', 'Cultural moment calendar', 'Content narrative plan']
           }
         ]
       }
     ],
-    criticalPath: 'Strategic Brand Platform → Community Over-service → Market Growth Roadmap',
+    criticalPath: 'Strategic Brand Platform → Community Engagement Platform → Market Growth Roadmap',
     implementationNotes: 'Phase 1 repositioning unlocks Phase 2 expansion - hybrid positioning makes platform scaling credible to stakeholders and sustainable for players. Community development parallels expansion to ensure new audiences find engaged ecosystems rather than empty servers. Critical timing: implement within 6 months before next major Potter property launch creates competitive pressure. Resource focus: technical infrastructure for live services requires significant backend investment, but proven revenue model ($1.3B) justifies platform evolution costs. Success metrics: monthly active user retention over 50% and recurring revenue capturing 25% of player base within 12 months.'
   }
 };
