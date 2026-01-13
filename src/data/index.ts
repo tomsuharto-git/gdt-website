@@ -33,7 +33,8 @@ export interface BrandMeta {
   date: string;
   accentColor: string;
   totalScore: number;
-  growthHeadline: string;
+  growthProfile: string;
+  coverImage: string;
 }
 
 export const getAllBrandsMeta = (): BrandMeta[] => {
@@ -45,6 +46,7 @@ export const getAllBrandsMeta = (): BrandMeta[] => {
     date: analysis.brand.date,
     accentColor: analysis.brand.accentColor,
     totalScore: analysis.totalScore,
-    growthHeadline: analysis.growthSummary.headline,
+    growthProfile: analysis.growthProfile?.name || analysis.growthSummary?.sequence?.split(' → ')[0] || 'Analysis',
+    coverImage: `/brands/${analysis.brand.id}-cover.jpg`,
   }));
 };

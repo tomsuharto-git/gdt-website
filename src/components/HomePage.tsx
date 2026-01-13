@@ -3,18 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getScoreTier } from '@/lib/types';
-
-interface BrandMeta {
-  id: string;
-  name: string;
-  category: string;
-  market: string;
-  date: string;
-  accentColor: string;
-  totalScore: number;
-  growthProfile: string;
-  coverImage: string;
-}
+import type { BrandMeta } from '@/data';
 
 interface HomePageProps {
   brands: BrandMeta[];

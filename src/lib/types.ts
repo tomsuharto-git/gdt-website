@@ -22,13 +22,19 @@ export interface ComponentScore {
   section: 'A' | 'B' | 'C';
 }
 
-// Section aggregate
+// Section aggregate (supports multiple formats)
 export interface SectionScore {
   id: 'A' | 'B' | 'C';
   name: string;
-  score: number;
-  tier: string;
-  components: ComponentScore[];
+  // New format (CAVA style)
+  score?: number;
+  tier?: string;
+  components?: ComponentScore[];
+  // Legacy format (Espolon/Zyn style)
+  totalScore?: number;
+  descriptor?: string;
+  headline?: string;
+  summary?: string;
 }
 
 // What/So What/Now What structure
@@ -47,14 +53,15 @@ export interface CompetitorScore {
   score: number;
 }
 
-// Component deep dive data
+// Component deep dive data (supports multiple formats)
 export interface ComponentData {
-  id: string;
   name: string;
-  section: 'A' | 'B' | 'C';
-  score: number;
-  tier: string;
-  wsn: WSNContent;
+  // New format (CAVA style)
+  id?: string;
+  section?: 'A' | 'B' | 'C';
+  score?: number;
+  tier?: string;
+  wsn?: WSNContent;
   strengths?: string[];
   weaknesses?: string[];
   competitiveContext?: string;
@@ -63,6 +70,12 @@ export interface ComponentData {
   scoreBreakdown?: Record<string, number>;
   competitorScores?: CompetitorScore[];
   categoryAverage?: number;
+  // Legacy format (Espolon/Zyn style)
+  code?: string;
+  rating?: number;
+  descriptor?: string;
+  headline?: string;
+  summaryBullets?: string[];
 }
 
 // Growth Profile (legacy - for backward compatibility)
@@ -75,76 +88,118 @@ export interface GrowthProfile {
   shortDefinition: string; // One-line definition for the footnote
 }
 
-// Growth Summary (new format - brand-specific, not GDT system-referential)
+// Growth Summary (supports multiple formats for backward compatibility)
 export interface GrowthSummary {
   headline: string; // e.g., "The Category Creator That Needs to Define Itself"
-  summary: string; // The situation - what's happening
-  paradox: string; // The tension that must be resolved
-  path: string; // The strategic path forward (human-synthesized)
   sequence: string; // e.g., "Position → Unlock → Connect"
-  image?: string; // Image filename in /growth-systems/ (e.g., "zyn-foundation-reinforcement.png")
+  // New format fields (CAVA style)
+  summary?: string; // The situation - what's happening
+  paradox?: string; // The tension that must be resolved
+  path?: string; // The strategic path forward (human-synthesized)
+  image?: string; // Image filename in /growth-systems/
+  // Legacy format fields (Espolon/Zyn style)
+  strategicNarrative?: string;
+  keyInsight?: string;
+  strategicImperative?: string;
+  timelineContext?: string;
 }
 
-// Growth Barrier item
+// Growth Barrier item (supports multiple formats)
 export interface GrowthBarrierItem {
   constraint: string;
-  component: string;
   score: number;
   evidence: string;
+  // New format
+  component?: string;
+  // Legacy format
+  componentCode?: string;
 }
 
-// Growth Barrier section
+// Growth Barrier section (supports multiple formats)
 export interface GrowthBarrier {
   headline: string;
-  description: string;
-  items: GrowthBarrierItem[];
+  // New format
+  description?: string;
+  items?: GrowthBarrierItem[];
+  // Legacy format
+  problemStatement?: string;
+  constraints?: GrowthBarrierItem[];
 }
 
-// Growth Solution section
+// Growth Solution unlock (legacy format)
+export interface GrowthSolutionUnlock {
+  name: string;
+  description: string;
+}
+
+// Growth Solution section (supports multiple formats)
 export interface GrowthSolution {
   headline: string;
-  description: string;
-  actions: string[];
+  // New format
+  description?: string;
+  actions?: string[];
+  // Legacy format
+  solutionStatement?: string;
+  unlocks?: GrowthSolutionUnlock[];
 }
 
-// Growth System output
+// Growth System output (supports multiple formats)
 export interface GrowthSystemOutput {
   name: string;
-  score: number;
   purpose: string;
-  componentsAddressed: string[];
-  deliverables: string[];
+  // New format
+  score?: number;
+  componentsAddressed?: string[];
+  deliverables?: string[];
+  // Legacy format
+  relevanceScore?: number;
+  criticalComponents?: string[];
+  keyDeliverables?: string[];
 }
 
-// Growth System phase
+// Growth System phase (supports multiple formats)
 export interface GrowthSystemPhase {
-  phase: 'Position' | 'Unlock' | 'Connect' | 'Hijack' | 'Launch';
-  description: string;
-  outputs: GrowthSystemOutput[];
+  phase: string; // Flexible to support various phase names (Position, Unlock, Connect, Stabilize, Differentiate, Defend, etc.)
+  // New format
+  description?: string;
+  outputs?: GrowthSystemOutput[];
+  // Legacy format
+  focus?: string;
+  products?: GrowthSystemOutput[];
 }
 
-// Growth System section
+// Growth System section (supports multiple formats)
 export interface GrowthSystem {
   headline: string;
-  description: string;
   phases: GrowthSystemPhase[];
-  criticalPath: string;
-  implementationNotes: string;
+  // New format
+  description?: string;
+  criticalPath?: string;
+  implementationNotes?: string;
+  // Legacy format
+  systemDescription?: string;
 }
 
-// Growth Opportunity/Challenge item
+// Growth Opportunity/Challenge item (supports multiple formats)
 export interface GrowthFactorItem {
-  component: string;
-  name: string;
-  score: number;
-  headline: string;
-  summary: string;
+  // New format (CAVA style)
+  component?: string;
+  name?: string;
+  score?: number;
+  headline?: string;
+  summary?: string;
+  // Legacy format (Espolon/Zyn style)
+  factor?: string;
+  componentCode?: string;
+  evidence?: string;
 }
 
-// Growth Opportunities & Challenges section
+// Growth Opportunities & Challenges section (supports multiple formats)
 export interface GrowthFactors {
   opportunities: GrowthFactorItem[];
   challenges: GrowthFactorItem[];
+  // Legacy format also has strengths
+  strengths?: GrowthFactorItem[];
 }
 
 // Complete GDT analysis data

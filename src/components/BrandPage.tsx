@@ -192,8 +192,8 @@ export default function BrandPage({ data }: BrandPageProps) {
           <div className="grid gap-6 md:grid-cols-3" style={{ alignItems: 'start' }}>
             {['A', 'B', 'C'].map((sectionId) => {
               const sectionComponents = data.components
-                .filter((c) => c.section === sectionId)
-                .sort((a, b) => a.id.localeCompare(b.id));
+                .filter((c) => (c.section || c.code?.charAt(0)) === sectionId)
+                .sort((a, b) => (a.id || a.code || '').localeCompare(b.id || b.code || ''));
 
               const sectionInfo = {
                 A: { name: 'Brand & Business\nAlignment', desc: 'Evaluates how effectively your brand positioning creates financial value' },
@@ -218,19 +218,19 @@ export default function BrandPage({ data }: BrandPageProps) {
                   <div className="gdt-card flex flex-col">
                     {sectionComponents.map((component, idx) => (
                       <div
-                        key={component.id}
+                        key={component.id || component.code}
                         className={`grid grid-cols-[4px_1fr] ${idx !== sectionComponents.length - 1 ? 'border-b border-b-[var(--gdt-border)]' : ''}`}
                         style={{ minHeight: '220px' }}
                       >
-                        <div style={{ backgroundColor: getScoreColor(component.score) }} />
+                        <div style={{ backgroundColor: getScoreColor(component.score ?? component.rating ?? 0) }} />
                         <Link
-                          href={`#${component.id}`}
+                          href={`#${component.id || component.code}`}
                           className="flex flex-col p-5 hover:gdt-bg-tertiary transition-colors group"
                         >
                           <div className="flex justify-between mb-5">
                             <div className="flex flex-col justify-between">
                               {(() => {
-                                const IconComponent = componentIcons[component.id.toLowerCase()];
+                                const IconComponent = componentIcons[(component.id || component.code || '').toLowerCase()];
                                 return IconComponent ? (
                                   <IconComponent className="gdt-accent-text" size={36} />
                                 ) : null;
@@ -241,21 +241,21 @@ export default function BrandPage({ data }: BrandPageProps) {
                             </div>
                             <div className="flex flex-col items-end justify-between">
                               <div className="flex items-baseline gap-1">
-                                <span className={`gdt-mono score-${getScoreTier(component.score)}`} style={{ fontSize: '2rem', lineHeight: '1' }}>
-                                  {component.score.toFixed(1)}
+                                <span className={`gdt-mono score-${getScoreTier(component.score ?? component.rating ?? 0)}`} style={{ fontSize: '2rem', lineHeight: '1' }}>
+                                  {(component.score ?? component.rating ?? 0).toFixed(1)}
                                 </span>
                                 <span className="gdt-text-muted" style={{ fontSize: '1rem' }}>/10</span>
                               </div>
-                              <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(component.score)}`}>
-                                {component.tier}
+                              <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(component.score ?? component.rating ?? 0)}`}>
+                                {component.tier ?? component.descriptor}
                               </span>
                             </div>
                           </div>
                           <p className="text-base gdt-text-primary font-medium leading-snug">
-                            {component.wsn.headline}
+                            {component.wsn?.headline ?? component.headline}
                           </p>
                           <p className="text-sm gdt-text-secondary mt-1 leading-snug">
-                            {component.wsn.subline}
+                            {component.wsn?.subline ?? component.summaryBullets?.[0] ?? ''}
                           </p>
                         </Link>
                       </div>
@@ -295,21 +295,23 @@ export default function BrandPage({ data }: BrandPageProps) {
                       <div
                         key={index}
                         className="gdt-card p-5 border-l-4"
-                        style={{ borderLeftColor: getScoreColor(item.score) }}
+                        style={{ borderLeftColor: item.score !== undefined ? getScoreColor(item.score) : 'var(--gdt-score-high)' }}
                       >
                         <div className="flex items-start justify-between mb-2">
-                          <p className="text-xs uppercase tracking-widest" style={{ color: getScoreColor(item.score) }}>
-                            {item.name}
+                          <p className="text-xs uppercase tracking-widest" style={{ color: item.score !== undefined ? getScoreColor(item.score) : 'var(--gdt-score-high)' }}>
+                            {item.name ?? item.componentCode ?? item.component ?? ''}
                           </p>
-                          <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
-                            {item.score.toFixed(1)}
-                          </span>
+                          {item.score !== undefined && (
+                            <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
+                              {item.score.toFixed(1)}
+                            </span>
+                          )}
                         </div>
                         <h3 className="gdt-display text-xl gdt-text-primary mb-2">
-                          {item.headline}
+                          {item.headline ?? item.factor ?? ''}
                         </h3>
                         <p className="text-sm gdt-text-secondary leading-relaxed">
-                          {item.summary}
+                          {item.summary ?? item.evidence ?? ''}
                         </p>
                       </div>
                     ))}
@@ -329,21 +331,23 @@ export default function BrandPage({ data }: BrandPageProps) {
                       <div
                         key={index}
                         className="gdt-card p-5 border-l-4"
-                        style={{ borderLeftColor: getScoreColor(item.score) }}
+                        style={{ borderLeftColor: item.score !== undefined ? getScoreColor(item.score) : 'var(--gdt-score-low)' }}
                       >
                         <div className="flex items-start justify-between mb-2">
-                          <p className="text-xs uppercase tracking-widest" style={{ color: getScoreColor(item.score) }}>
-                            {item.name}
+                          <p className="text-xs uppercase tracking-widest" style={{ color: item.score !== undefined ? getScoreColor(item.score) : 'var(--gdt-score-low)' }}>
+                            {item.name ?? item.componentCode ?? item.component ?? ''}
                           </p>
-                          <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
-                            {item.score.toFixed(1)}
-                          </span>
+                          {item.score !== undefined && (
+                            <span className={`gdt-mono text-lg score-${getScoreTier(item.score)}`}>
+                              {item.score.toFixed(1)}
+                            </span>
+                          )}
                         </div>
                         <h3 className="gdt-display text-xl gdt-text-primary mb-2">
-                          {item.headline}
+                          {item.headline ?? item.factor ?? ''}
                         </h3>
                         <p className="text-sm gdt-text-secondary leading-relaxed">
-                          {item.summary}
+                          {item.summary ?? item.evidence ?? ''}
                         </p>
                       </div>
                     ))}
@@ -372,11 +376,11 @@ export default function BrandPage({ data }: BrandPageProps) {
             {data.growthBarrier.headline}
           </h2>
           <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
-            {data.growthBarrier.description}
+            {data.growthBarrier.description ?? data.growthBarrier.problemStatement}
           </p>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {data.growthBarrier.items.map((item, index) => (
+            {(data.growthBarrier.items ?? data.growthBarrier.constraints ?? []).map((item, index) => (
               <div
                 key={index}
                 className="gdt-card p-5 border-l-4 border-l-red-500/50"
@@ -410,27 +414,43 @@ export default function BrandPage({ data }: BrandPageProps) {
             {data.growthSolution.headline}
           </h2>
           <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
-            {data.growthSolution.description}
+            {data.growthSolution.description ?? data.growthSolution.solutionStatement}
           </p>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {data.growthSolution.actions.map((action, index) => {
-              const [title, ...rest] = action.split(':');
-              const description = rest.join(':').trim();
-              return (
+            {data.growthSolution.actions ? (
+              data.growthSolution.actions.map((action, index) => {
+                const [title, ...rest] = action.split(':');
+                const description = rest.join(':').trim();
+                return (
+                  <div
+                    key={index}
+                    className="gdt-card p-5 border-l-4 border-l-[var(--gdt-accent)]"
+                  >
+                    <h3 className="font-semibold gdt-text-primary mb-2">
+                      {title}
+                    </h3>
+                    <p className="text-sm gdt-text-secondary leading-relaxed">
+                      {description}
+                    </p>
+                  </div>
+                );
+              })
+            ) : data.growthSolution.unlocks ? (
+              data.growthSolution.unlocks.map((unlock, index) => (
                 <div
                   key={index}
                   className="gdt-card p-5 border-l-4 border-l-[var(--gdt-accent)]"
                 >
                   <h3 className="font-semibold gdt-text-primary mb-2">
-                    {title}
+                    {unlock.name}
                   </h3>
                   <p className="text-sm gdt-text-secondary leading-relaxed">
-                    {description}
+                    {unlock.description}
                   </p>
                 </div>
-              );
-            })}
+              ))
+            ) : null}
           </div>
         </div>
       </section>
@@ -452,7 +472,7 @@ export default function BrandPage({ data }: BrandPageProps) {
             {data.growthSystem.headline}
           </h2>
           <p className="text-lg gdt-text-secondary mb-8 max-w-3xl">
-            {data.growthSystem.description}
+            {data.growthSystem.description ?? data.growthSystem.systemDescription}
           </p>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -460,15 +480,15 @@ export default function BrandPage({ data }: BrandPageProps) {
               <div key={phase.phase} className="flex flex-col">
                 <div className="mb-4">
                   <span className="gdt-display text-2xl gdt-accent-text">{index + 1}. {phase.phase}</span>
-                  <p className="text-sm gdt-text-secondary mt-1">{phase.description}</p>
+                  <p className="text-sm gdt-text-secondary mt-1">{phase.description ?? phase.focus}</p>
                 </div>
 
                 <div className="space-y-4 flex-1">
-                  {phase.outputs.map((output) => (
+                  {(phase.outputs ?? phase.products ?? []).map((output) => (
                     <div key={output.name} className="gdt-card p-5 border-l-4 border-l-[var(--gdt-accent)]" style={{ minHeight: '120px' }}>
                       <div className="flex items-start justify-between mb-2">
                         <h4 className="font-semibold gdt-text-primary">{output.name}</h4>
-                        <span className="gdt-mono text-xs gdt-accent-text">{Math.round(output.score * 10)}%</span>
+                        <span className="gdt-mono text-xs gdt-accent-text">{Math.round((output.score ?? output.relevanceScore ?? 0) * 10)}%</span>
                       </div>
                       <p className="text-sm gdt-text-secondary">
                         {output.purpose}
@@ -516,11 +536,14 @@ export default function BrandPage({ data }: BrandPageProps) {
 
             <div className="space-y-12">
               {data.components
-                .filter((c) => c.section === section.id)
-                .map((component) => (
+                .filter((c) => (c.section || c.code?.charAt(0)) === section.id)
+                .map((component) => {
+                  const compId = (component.id || component.code || '').toLowerCase();
+                  const compScore = component.score ?? component.rating ?? 0;
+                  return (
                   <article
-                    key={component.id}
-                    id={component.id}
+                    key={component.id || component.code}
+                    id={component.id || component.code}
                     className="gdt-card p-6"
                   >
                     <div className="mb-8">
@@ -528,7 +551,7 @@ export default function BrandPage({ data }: BrandPageProps) {
                         <div>
                           <div className="flex items-center gap-3">
                             {(() => {
-                              const IconComponent = componentIcons[component.id.toLowerCase()];
+                              const IconComponent = componentIcons[compId];
                               return IconComponent ? (
                                 <IconComponent className="gdt-accent-text" size={28} />
                               ) : null;
@@ -536,26 +559,26 @@ export default function BrandPage({ data }: BrandPageProps) {
                             <h3 className="gdt-display text-3xl md:text-4xl leading-none">{component.name}</h3>
                           </div>
                           <p className="text-sm gdt-text-secondary mt-2 md:mt-1 md:ml-10">
-                            {component.id === 'a1' && "Measures your brand's Meaningful Difference vs. competitors"}
-                            {component.id === 'a2' && "Evaluates your ability to command premium prices"}
-                            {component.id === 'a3' && "Assesses revenue and market share trajectory"}
-                            {component.id === 'b1' && "Measures the depth of emotional bonds with consumers"}
-                            {component.id === 'b2' && "Evaluates your brand's role in cultural conversations"}
-                            {component.id === 'b3' && "Assesses quality and consistency of brand touchpoints"}
-                            {component.id === 'c1' && "Measures recognizability of your brand assets"}
-                            {component.id === 'c2' && "Evaluates your track record of meaningful innovation"}
-                            {component.id === 'c3' && "Assesses external pressures requiring brand response"}
+                            {compId === 'a1' && "Measures your brand's Meaningful Difference vs. competitors"}
+                            {compId === 'a2' && "Evaluates your ability to command premium prices"}
+                            {compId === 'a3' && "Assesses revenue and market share trajectory"}
+                            {compId === 'b1' && "Measures the depth of emotional bonds with consumers"}
+                            {compId === 'b2' && "Evaluates your brand's role in cultural conversations"}
+                            {compId === 'b3' && "Assesses quality and consistency of brand touchpoints"}
+                            {compId === 'c1' && "Measures recognizability of your brand assets"}
+                            {compId === 'c2' && "Evaluates your track record of meaningful innovation"}
+                            {compId === 'c3' && "Assesses external pressures requiring brand response"}
                           </p>
                         </div>
                         <div className="flex items-center gap-3 md:flex-col md:items-end">
                           <div className="flex items-baseline gap-1">
-                            <span className={`gdt-mono score-${getScoreTier(component.score)}`} style={{ fontSize: '2rem' }}>
-                              {component.score.toFixed(1)}
+                            <span className={`gdt-mono score-${getScoreTier(compScore)}`} style={{ fontSize: '2rem' }}>
+                              {compScore.toFixed(1)}
                             </span>
                             <span className="gdt-text-muted" style={{ fontSize: '1rem' }}>/10</span>
                           </div>
-                          <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(component.score)}`}>
-                            {component.tier}
+                          <span className={`inline-block text-xs px-2.5 py-1 rounded-full tier-badge-${getScoreTier(compScore)}`}>
+                            {component.tier ?? component.descriptor}
                           </span>
                         </div>
                       </div>
@@ -564,36 +587,47 @@ export default function BrandPage({ data }: BrandPageProps) {
                     <div className="space-y-5">
                       <div>
                         <h4 className="gdt-display text-2xl md:text-3xl mb-1">
-                          {component.wsn.headline}
+                          {component.wsn?.headline ?? component.headline}
                         </h4>
                         <p className="text-base gdt-text-secondary">
-                          {component.wsn.subline}
+                          {component.wsn?.subline ?? component.summaryBullets?.[0] ?? ''}
                         </p>
                       </div>
 
-                      <div className="grid gap-4 md:grid-cols-3">
-                        <div className="gdt-card p-5">
-                          <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">What</p>
-                          <p className="gdt-text-primary leading-relaxed">{component.wsn.what}</p>
-                          {component.wsn.evidence && (
-                            <p className="text-sm gdt-text-secondary mt-2 leading-relaxed">{component.wsn.evidence}</p>
-                          )}
-                        </div>
+                      {component.wsn ? (
+                        <div className="grid gap-4 md:grid-cols-3">
+                          <div className="gdt-card p-5">
+                            <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">What</p>
+                            <p className="gdt-text-primary leading-relaxed">{component.wsn.what}</p>
+                            {component.wsn.evidence && (
+                              <p className="text-sm gdt-text-secondary mt-2 leading-relaxed">{component.wsn.evidence}</p>
+                            )}
+                          </div>
 
-                        <div className="gdt-card p-5">
-                          <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">So What</p>
-                          <p className="gdt-text-primary leading-relaxed">{component.wsn.soWhat}</p>
-                        </div>
+                          <div className="gdt-card p-5">
+                            <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">So What</p>
+                            <p className="gdt-text-primary leading-relaxed">{component.wsn.soWhat}</p>
+                          </div>
 
-                        <div className="gdt-card p-5">
-                          <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">Now What</p>
-                          <p className="gdt-text-primary leading-relaxed">{component.wsn.nowWhat}</p>
+                          <div className="gdt-card p-5">
+                            <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">Now What</p>
+                            <p className="gdt-text-primary leading-relaxed">{component.wsn.nowWhat}</p>
+                          </div>
                         </div>
-                      </div>
+                      ) : component.summaryBullets ? (
+                        <div className="gdt-card p-5">
+                          <p className="text-sm uppercase tracking-widest gdt-accent-text mb-3">Key Insights</p>
+                          <ul className="space-y-2">
+                            {component.summaryBullets.map((bullet, i) => (
+                              <li key={i} className="gdt-text-primary leading-relaxed">• {bullet}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : null}
 
                       <ExpandableAnalysis
                         brandName={data.brand.name}
-                        brandScore={component.score}
+                        brandScore={compScore}
                         strengths={component.strengths}
                         weaknesses={component.weaknesses}
                         competitiveContext={component.competitiveContext}
@@ -603,7 +637,8 @@ export default function BrandPage({ data }: BrandPageProps) {
                       />
                     </div>
                   </article>
-                ))}
+                  );
+                })}
             </div>
           </div>
 

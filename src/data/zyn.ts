@@ -142,7 +142,7 @@ export const zynAnalysis: GDTAnalysis = {
       headline: 'Category Creator with Stagnating Product Line',
       summaryBullets: [
         'Category creation represents exceptional innovation - Zyn invented the US nicotine pouch market.',
-        'Product-level innovation has stagnated: still only 10 flavors and 2 strength levels vs On!\\'s 8 strengths.',
+        'Product-level innovation has stagnated: still only 10 flavors and 2 strength levels vs On! 8 strengths.',
         'Competitors advancing faster: Velo Plus synthetic nicotine, Rogue multiple formats, On! strength variety.'
       ]
     },
