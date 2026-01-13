@@ -47,6 +47,6 @@ export const getAllBrandsMeta = (): BrandMeta[] => {
     accentColor: analysis.brand.accentColor,
     totalScore: analysis.totalScore,
     growthProfile: analysis.growthProfile?.name || analysis.growthSummary?.sequence?.split(' → ')[0] || 'Analysis',
-    coverImage: `/brands/${analysis.brand.id}-cover.jpg`,
+    coverImage: `/${analysis.brand.id}-cover.png`,
   }));
 };
