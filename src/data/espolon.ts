@@ -12,7 +12,7 @@ export const espolonAnalysis: GDTAnalysis = {
     category: 'Premium Tequila',
     date: '2025-12-22',
     accentColor: '#C8102E', // Espolon Red
-    password: 'tequila2025'
+    password: 'espolon2026'
   },
   totalScore: 53.6,
   growthSummary: {

@@ -13,7 +13,7 @@ export const cavaAnalysis: GDTAnalysis = {
     category: 'Fast Casual Mediterranean',
     date: '2025-01-07',
     accentColor: '#FFD700', // CAVA Yellow
-    password: 'mediterranean2025'
+    password: 'cava2026'
   },
 
   totalScore: 63.7,
