@@ -30,12 +30,6 @@ const componentIcons: Record<string, React.ComponentType<{ className?: string; s
   c3: Zap,
 };
 
-const sectionNames: Record<string, string> = {
-  A: 'Brand & Business Alignment',
-  B: 'Audience Connection',
-  C: 'Degree of Transformation',
-};
-
 interface BrandPageProps {
   data: GDTAnalysis;
 }
@@ -525,12 +519,12 @@ export default function BrandPage({ data }: BrandPageProps) {
                 Section {section.id}
               </p>
               <h2 className="gdt-display text-3xl md:text-4xl mb-3">
-                {sectionNames[section.id] || section.name}
+                {section.name}
               </h2>
               <p className="gdt-text-secondary">
                 {section.id === 'A' && 'Evaluates how effectively your brand positioning creates financial value'}
                 {section.id === 'B' && 'Evaluates the strength of connection between your brand and audience'}
-                {section.id === 'C' && 'Evaluates how much change is needed and your readiness for transformation'}
+                {section.id === 'C' && 'Evaluates your competitive position and ability to transform the market'}
               </p>
             </div>
 
