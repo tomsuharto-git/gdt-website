@@ -2,54 +2,49 @@ import { GDTAnalysis } from '@/lib/types';
 import { zynAnalysis } from './zyn';
 import { espolonAnalysis } from './espolon';
 import { survodutideAnalysis } from './survodutide';
+import { cavaAnalysis } from './cava';
 
-// All available brand analyses
 export const brandAnalyses: Record<string, GDTAnalysis> = {
   zyn: zynAnalysis,
   espolon: espolonAnalysis,
   survodutide: survodutideAnalysis,
+  cava: cavaAnalysis,
 };
 
-// Brand metadata for hub page
+export const getBrandAnalysis = (brandId: string): GDTAnalysis | undefined => {
+  return brandAnalyses[brandId];
+};
+
+export const getAllBrands = (): GDTAnalysis[] => {
+  return Object.values(brandAnalyses);
+};
+
+export const getBrandIds = (): string[] => {
+  return Object.keys(brandAnalyses);
+};
+
+export const getAllBrandIds = getBrandIds;
+
 export interface BrandMeta {
   id: string;
   name: string;
-  category: string;
   market: string;
+  category: string;
   date: string;
   accentColor: string;
   totalScore: number;
-  growthProfile: string;
-  coverImage: string;
+  growthHeadline: string;
 }
 
-export function getBrandMeta(analysis: GDTAnalysis): BrandMeta {
-  // Use growthSummary headline (new format) or growthProfile name (legacy)
-  const growthHeadline = analysis.growthSummary?.headline
-    ?? analysis.growthProfile?.name
-    ?? 'Growth Analysis';
-
-  return {
+export const getAllBrandsMeta = (): BrandMeta[] => {
+  return Object.values(brandAnalyses).map(analysis => ({
     id: analysis.brand.id,
     name: analysis.brand.name,
-    category: analysis.brand.category,
     market: analysis.brand.market,
+    category: analysis.brand.category,
     date: analysis.brand.date,
     accentColor: analysis.brand.accentColor,
     totalScore: analysis.totalScore,
-    growthProfile: growthHeadline,
-    coverImage: `/${analysis.brand.id}-cover.png`,
-  };
-}
-
-export function getAllBrandsMeta(): BrandMeta[] {
-  return Object.values(brandAnalyses).map(getBrandMeta);
-}
-
-export function getBrandAnalysis(brandId: string): GDTAnalysis | undefined {
-  return brandAnalyses[brandId];
-}
-
-export function getAllBrandIds(): string[] {
-  return Object.keys(brandAnalyses);
-}
+    growthHeadline: analysis.growthSummary.headline,
+  }));
+};
