@@ -23,7 +23,7 @@ export const rippleAnalysis: GDTAnalysis = {
     paradox: 'XRP has genuine technical innovation (fast, cheap, energy-efficient) and 300+ institutional partnerships, but can\'t resolve whether it\'s serving banks seeking stability or crypto investors demanding returns. The SEC lawsuit created regulatory clarity that competitors don\'t have, but the brand never capitalized on it.',
     path: 'Transform from regulatory-uncertain infrastructure into the "FDA-approved crypto"—the regulated bridge that makes blockchain accessible for mainstream finance adoption.',
     sequence: 'Reinvent → Connect → Create',
-    image: undefined // TODO: Generate cover image
+    image: 'ripple-growth-summary.png'
   },
   sections: [
     {
