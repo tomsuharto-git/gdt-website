@@ -4,6 +4,7 @@ import { espolonAnalysis } from './espolon';
 import { survodutideAnalysis } from './survodutide';
 import { cavaAnalysis } from './cava';
 import { rippleAnalysis } from './ripple';
+import { hogwartsLegacyAnalysis } from './hogwarts-legacy';
 
 export const brandAnalyses: Record<string, GDTAnalysis> = {
   zyn: zynAnalysis,
@@ -11,6 +12,7 @@ export const brandAnalyses: Record<string, GDTAnalysis> = {
   survodutide: survodutideAnalysis,
   cava: cavaAnalysis,
   ripple: rippleAnalysis,
+  'hogwarts-legacy': hogwartsLegacyAnalysis,
 };
 
 export const getBrandAnalysis = (brandId: string): GDTAnalysis | undefined => {
