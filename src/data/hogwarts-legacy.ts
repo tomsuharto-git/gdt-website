@@ -17,13 +17,13 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
     password: 'hogwarts2026'
   },
   totalScore: 63.7,
-  growthProfile: {
-    id: 'market-acceleration',
-    name: 'Market Acceleration',
-    sequence: 'Strategic Brand Platform → Community Engagement Platform → Market Growth Roadmap',
-    definition: 'Strong business fundamentals with exceptional short-term performance require strategic direction and business model evolution to sustain growth momentum and establish long-term franchise viability in rapidly changing market conditions.',
-    implications: 'Hogwarts Legacy\'s $1.3 billion success proves the foundation works, but growth ceiling emerges from single-player limitations and post-completion engagement gaps. The brand needs to combine story-driven excellence with ongoing social features to capture sustained value from its proven market appeal.',
-    shortDefinition: 'Strong fundamentals need business model evolution to sustain momentum'
+  growthSummary: {
+    headline: 'The Billion-Dollar Memory That Needs to Become a Living World',
+    summary: 'Hogwarts Legacy delivered $1.3 billion in its first year—proof that 25 years of Harry Potter nostalgia translates into massive purchase intent. The game nailed the core fantasy: wand combat, spell-casting, Hogwarts exploration. But after 40-60 hours, players finish and leave. The brand created a beautiful moment, not an ongoing relationship.',
+    paradox: 'Hogwarts Legacy proved players will pay premium prices for authentic wizarding world experiences, yet the single-player model means revenue stops when the story ends. Competitors like Fortnite and Call of Duty generate billions annually from ongoing engagement. The magic fades because there\'s no reason to return.',
+    path: 'Transform from finite Potter experience to persistent magical platform. Combine premium story campaigns with live service elements—seasonal content, social features, community challenges. The nostalgia foundation is proven; now build the engagement systems that turn one-time buyers into ongoing participants.',
+    sequence: 'Position → Connect → Expand',
+    image: 'hogwarts-legacy-growth-summary.png'
   },
   sections: [
     {
