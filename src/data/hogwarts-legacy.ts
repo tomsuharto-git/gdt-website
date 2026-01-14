@@ -340,7 +340,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
     },
     {
       id: 'c1',
-      name: 'Distinctive Assets',
+      name: 'Brand Distinctiveness',
       section: 'C',
       score: 6.5,
       tier: 'Distinctive',
@@ -413,7 +413,7 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
     },
     {
       id: 'c3',
-      name: 'Market Disruption',
+      name: 'Disruption Urgency',
       section: 'C',
       score: 7.8,
       tier: 'Transforming',
