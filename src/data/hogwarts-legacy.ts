@@ -122,12 +122,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 6.3,
       tier: 'Distinctive',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Strong emotional connection through Harry Potter IP, but gameplay differentiation lags behind category leaders.',
+        subline: 'The brand leverages unmatched nostalgia while following conventional open-world mechanics.',
+        what: 'Exceptional meaningful connection driven by Harry Potter emotional resonance, but differentiation suffers from conventional open-world execution.',
+        evidence: '73% of respondents cite emotional connection as primary appeal; meaningful score 8.2 vs differentiation score 6.4',
+        soWhat: 'Success depends heavily on Potter cultural currency rather than standalone gaming merit, creating both opportunity and vulnerability.',
+        nowWhat: 'Develop standalone gaming differentiation through innovative mechanics while continuing to leverage the powerful IP emotional connection.'
       },
       strengths: ['{\'description\': \'Unmatched IP emotional connection drives purchase intent across demographics\', \'priority\': \'high\'}', '{\'description\': \'Unique magical gameplay mechanics differentiate from combat-focused AAA competitors\', \'priority\': \'high\'}', '{\'description\': \'Cross-generational appeal bridges casual and dedicated gaming audiences\', \'priority\': \'medium\'}'],
       weaknesses: ['{\'description\': \'Heavy IP dependence creates vulnerability if Potter cultural relevance wanes\', \'priority\': \'high\'}', '{\'description\': \'Limited replayability compared to multiplayer-focused competitors reduces long-term engagement\', \'priority\': \'high\'}', '{\'description\': \'Open-world structure follows predictable conventions, limiting gameplay innovation\', \'priority\': \'medium\'}']
@@ -139,12 +139,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 7.9,
       tier: 'Premium-Command',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Commanding launch pricing through exceptional IP leverage, but faces standard industry depreciation.',
+        subline: 'Harry Potter brand equity enabled full $70 premium with sustained sales, yet long-term pricing follows typical patterns.',
+        what: 'Strong short-term pricing power anchored by IP strength, with consumers showing high willingness to pay for authentic magical experiences.',
+        evidence: 'Optimal price point of $65, with consumers accepting prices up to $80; maintained $70 pricing for months post-launch',
+        soWhat: 'Performs above category average but below franchise juggernauts like GTA V—strong but not revolutionary pricing command.',
+        nowWhat: 'Develop premium content tiers and ongoing value propositions to sustain pricing power beyond the initial launch window.'
       }
     },
     {
@@ -154,12 +154,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 6.8,
       tier: 'Above-Category',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: 'While proving single-player viability, the game needs franchise evolution—multiplayer elements, expanded content pipeline, or platform transformation—to sustain growth momentum.'
+        headline: 'Record-breaking launch success masks concerning sustainability challenges.',
+        subline: 'Over 22 million copies and $1.3 billion revenue, but growth momentum shows dramatic deceleration after month three.',
+        what: 'Explosive initial sales with sharp post-launch decline and no recurring revenue streams to sustain long-term growth.',
+        evidence: '22 million copies sold, $1.3B revenue in first year—but sales dropped dramatically after month three with no DLC or live-service revenue',
+        soWhat: 'Strong IP foundation but insufficient business model innovation for sustained competitive advantage against live-service competitors.',
+        nowWhat: 'Evolve from single-purchase to hybrid model with multiplayer elements, expanded content pipeline, or platform transformation to sustain growth momentum.'
       }
     },
     {
@@ -195,12 +195,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 6.9,
       tier: 'Influential',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Unprecedented mainstream cultural crossover, but declining relevance after launch hype.',
+        subline: 'Achieved rare cultural penetration beyond gaming audiences, yet lacks sustained engagement mechanisms.',
+        what: 'Gaming phenomenon that transcended its medium to become a cultural touchstone, shadowed by creator controversies and declining post-launch conversation.',
+        evidence: '12+ million launch copies, weeks of Twitch dominance, mainstream media coverage; timing score 8.2 reflecting perfect nostalgia alignment',
+        soWhat: 'Superior cultural penetration compared to traditional AAA games, but impact was event-driven rather than sustained.',
+        nowWhat: 'Build sustained cultural engagement through regular content drops and community building while strategically navigating IP controversies.'
       }
     },
     {
@@ -210,12 +210,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 7.8,
       tier: 'Enhanced',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Exceptional single-player excellence with catastrophic loyalty stage collapse.',
+        subline: 'World-class gameplay execution through immersive spell-casting and exploration, undermined by post-completion engagement failure.',
+        what: 'Masterful core gameplay with intuitive spell-casting and immersive world exploration, but minimal meaningful content after completing the main story.',
+        evidence: 'Usage stage scores 9.3/10, but loyalty stage crashes to 4.6/10 after 40-60 hours of play',
+        soWhat: 'Excellence in core gameplay cannot compensate for loyalty-stage deficiencies in modern gaming where competitors maintain 7.5+ through continuous updates.',
+        nowWhat: 'Launch immediate post-game content roadmap including seasonal events, house competitions, and cooperative multiplayer modes to address loyalty collapse.'
       }
     },
     {
@@ -225,12 +225,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 6.5,
       tier: 'Distinctive',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Universal Harry Potter recognition masks weak game-specific identity.',
+        subline: 'Instant fame through borrowed IP assets, but generic naming and lack of unique gaming signatures limit franchise potential.',
+        what: 'Strong foundational recognition through Hogwarts castle and magical creatures, but the brand lacks unique gaming assets that differentiate from other Potter properties.',
+        evidence: 'Fame score 8.1/10 through IP recognition, but uniqueness only 6.2/10 due to reliance on borrowed assets; generic "Legacy" naming provides no differentiation',
+        soWhat: 'The brand rents distinctiveness from external IP rather than building independent gaming franchise assets.',
+        nowWhat: 'Develop game-specific distinctive assets—unique characters, visual signatures, and experiential innovations—that complement rather than depend on Harry Potter.'
       }
     },
     {
@@ -240,12 +240,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 7.1,
       tier: 'Progressive',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'Exceptional technical innovation within conservative business model constraints.',
+        subline: 'Breakthrough world-building and immersive magic systems, limited by traditional single-purchase approach.',
+        what: 'Outstanding technical execution with unprecedented Hogwarts recreation and seamless magic systems, but minimal post-launch innovation or live service evolution.',
+        evidence: '30 million copies through innovative magic systems; track record score 7.2 but business model innovation only 4.8',
+        soWhat: 'Strong technical innovator within traditional AAA framework, but lags behind service-model innovators like Fortnite and category-defining experiences like Elden Ring.',
+        nowWhat: 'Transform technical excellence into business model innovation through live service experimentation and ongoing content development.'
       }
     },
     {
@@ -255,12 +255,12 @@ export const hogwartsLegacyAnalysis: GDTAnalysis = {
       score: 7.8,
       tier: 'Transforming',
       wsn: {
-        headline: '',
-        subline: '',
-        what: '',
-        evidence: '',
-        soWhat: '',
-        nowWhat: ''
+        headline: 'AAA gaming faces radical transformation requiring urgent adaptation.',
+        subline: 'Cloud gaming, mobile dominance, and live service expectations fundamentally reshape competitive landscape.',
+        what: 'Traditional $70 single-player experiences compete against infinite free-to-play content, subscription libraries, and persistent virtual worlds.',
+        evidence: 'Subscription services like Game Pass challenge purchase models; mobile gaming revenue exceeds console and PC combined; Gen Z expects continuous content updates',
+        soWhat: 'Single-player success proves narrative demand exists, but future growth requires hybrid models combining story-driven content with social features.',
+        nowWhat: 'Integrate live service elements, develop cross-platform accessibility, and establish content pipeline within 3-6 months before competitive gap widens.'
       }
     }
   ],
