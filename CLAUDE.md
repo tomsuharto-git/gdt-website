@@ -67,7 +67,7 @@ All brands require passwords. Format: `{brand}2026`
 All images use `images.edit` with **Espolon as the style reference**:
 ```python
 response = client.images.edit(
-    model="gpt-image-1",
+    model="gpt-image-1.5",
     image=open("espolon-cover.png", "rb"),  # STYLE REFERENCE
     prompt=BASE_STYLE + BRAND_SUBJECT_MATTER,
     size="1024x1024"

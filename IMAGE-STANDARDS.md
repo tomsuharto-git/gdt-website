@@ -23,7 +23,7 @@ All information must be communicated through VISUAL SYMBOLS ONLY.
 ```python
 # Use images.edit, NOT images.generate
 response = client.images.edit(
-    model="gpt-image-1",
+    model="gpt-image-1.5",
     image=open("espolon-cover.png", "rb"),  # STYLE REFERENCE
     prompt=BASE_STYLE + BRAND_SUBJECT_MATTER,
     size="1024x1024"

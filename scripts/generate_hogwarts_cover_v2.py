@@ -55,7 +55,7 @@ print("Generating Hogwarts Legacy cover - LINE ART STYLE...")
 print(f"Output: {OUTPUT}")
 
 response = client.images.generate(
-    model="gpt-image-1",
+    model="gpt-image-1.5",
     prompt=PROMPT,
     size="1024x1024",
     quality="high",

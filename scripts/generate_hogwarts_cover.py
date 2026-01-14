@@ -45,7 +45,7 @@ print(f"\nPrompt:\n{FULL_PROMPT[:200]}...")
 # Use images.edit with style reference
 with open(STYLE_REF, 'rb') as img_file:
     response = client.images.edit(
-        model="gpt-image-1",
+        model="gpt-image-1.5",
         image=img_file,
         prompt=FULL_PROMPT,
         size="1024x1024"

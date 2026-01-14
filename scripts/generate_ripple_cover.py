@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate Ripple (XRP) GDT cover illustration in mono-line art style.
-Uses gpt-image-1 images.edit with Espolon cover as style reference.
+Uses gpt-image-1.5 images.edit with Espolon cover as style reference.
 """
 
 from openai import OpenAI
@@ -80,7 +80,7 @@ The feeling should be: global institutional finance, cross-border bridge, speed 
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):
-    """Generate an image using gpt-image-1 images.edit with style reference."""
+    """Generate an image using gpt-image-1.5 images.edit with style reference."""
 
     full_prompt = BASE_STYLE + "\n\n" + subject_prompt
 
@@ -93,7 +93,7 @@ def generate_image(prompt_name, subject_prompt, output_filename):
     try:
         with open(STYLE_REF, "rb") as f:
             response = client.images.edit(
-                model="gpt-image-1",
+                model="gpt-image-1.5",
                 image=f,
                 prompt=full_prompt,
                 size="1024x1024"
