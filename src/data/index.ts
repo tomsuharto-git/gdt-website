@@ -6,6 +6,7 @@ import { cavaAnalysis } from './cava';
 import { rippleAnalysis } from './ripple';
 import { hogwartsLegacyAnalysis } from './hogwarts-legacy';
 import { adobeCreativeCloudAnalysis } from './adobe-creative-cloud';
+import { geicoAnalysis } from './geico';
 
 export const brandAnalyses: Record<string, GDTAnalysis> = {
   zyn: zynAnalysis,
@@ -15,6 +16,7 @@ export const brandAnalyses: Record<string, GDTAnalysis> = {
   ripple: rippleAnalysis,
   'hogwarts-legacy': hogwartsLegacyAnalysis,
   'adobe-creative-cloud': adobeCreativeCloudAnalysis,
+  geico: geicoAnalysis,
 };
 
 export const getBrandAnalysis = (brandId: string): GDTAnalysis | undefined => {
