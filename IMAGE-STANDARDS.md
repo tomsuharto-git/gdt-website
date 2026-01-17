@@ -38,11 +38,18 @@ response = client.images.edit(
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
-- Same density of decorative elements filling the space
-- Same corner flourishes and border treatment
+- Same dark charcoal background
+- Same off-white cream linework
+
+COMPOSITION - CRITICAL:
+- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
+- Large clear CENTRAL FOCAL POINT with generous space around it
+- Elements should be BOLD and CHUNKY, not thin and intricate
+- Plenty of BREATHING ROOM between elements - no visual clutter
+- Simple corner flourishes only - don't fill edges with many small icons
 
 COLOR PALETTE (match the reference):
-- Background: Site background (#0C0C0E) - MUST MATCH EXACTLY for seamless blend
+- Background: Site background (#0C0C0E for cover, #141418 for growth summary)
 - Primary lines: Off-white cream (#EDE8DF)
 - Accent color: {BRAND_ACCENT} for select highlights (10-15% of elements)
 
@@ -51,7 +58,7 @@ CRITICAL - NO TEXT WHATSOEVER:
 - NO labels, captions, taglines, or text of any kind
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Keep the EXACT same line weight, density, and style as the reference.
+Keep the EXACT same line weight and style as the reference. Match the CLEAN, SIMPLE aesthetic of CAVA and Ripple examples.
 ```
 
 ---
@@ -64,23 +71,27 @@ Keep the EXACT same line weight, density, and style as the reference.
 ```
 SUBJECT MATTER - Zyn Brand Identity (Category Creator in Nicotine Pouches):
 
-Central focal point: A stylized POUCH or CAN shape at center - clean, modern, geometric. The can radiates energy lines outward showing category dominance.
+SIMPLE COMPOSITION with only these key elements:
 
-Upper area: Crown or leadership symbol above the can representing market leadership. Small icons of lifestyle elements (gym weights, laptop, coffee cup) floating around representing usage occasions.
+CENTER (large, prominent - ~30% of composition):
+- Bold CAN shape with radiating lines - the main focal point
+- Clean, modern, geometric
 
-Middle elements: Network connections radiating outward from the can to reach different user silhouettes. Manufacturing/production elements (factory, conveyor belts) integrated into the background. Lightning bolt energy symbols showing nicotine delivery.
+SURROUNDING (well-spaced, 6-8 icons total):
+- One CROWN symbol (market leadership)
+- One LIGHTNING BOLT (energy/nicotine)
+- One LABORATORY BEAKER (tobacco-free innovation)
+- One NORDIC/SWEDISH design element
+- Simple geometric flourishes in corners
 
-Lower elements: Laboratory/science symbols representing tobacco-free innovation. Swedish flag or Nordic design elements (Swedish heritage). Clean, premium aesthetic throughout.
+DO NOT INCLUDE:
+- Multiple small lifestyle icons (gym, laptop, coffee)
+- Factory/production elements
+- Network diagrams with user silhouettes
+- Podcast/finance/fitness symbols scattered around
+- Edge-to-edge social/cultural icons
 
-Around the edges: Small social/cultural icons (podcasts, finance graphs, fitness symbols) representing the "Zynfluencer" culture. Subtle regulatory warning symbol partially visible (nod to controversy). Stars and success indicators.
-
-Style notes:
-- Modern, tech-forward aesthetic (like a premium tech product)
-- Clean geometric forms
-- No skulls, no tequila imagery - this is a health-conscious nicotine product
-- Convey: innovation, premium, category leadership, cultural phenomenon
-
-The feeling should be: modern category pioneer, premium innovation, dominant market leader, cultural phenomenon, clean and elevated
+The feeling should be: clean category pioneer, premium innovation, elevated aesthetic
 ```
 
 ### Espolón (Premium Tequila)
@@ -112,23 +123,27 @@ Style notes:
 ```
 SUBJECT MATTER - Survodutide (GLP-1/Glucagon Dual Agonist Pharmaceutical):
 
-Central focal point: Medical/pharmaceutical innovation symbol - could be stylized molecule, medical cross, or transformation symbol
+SIMPLE COMPOSITION with only these key elements:
 
-Upper area: Scientific/laboratory elements (beakers, molecules, DNA helix), innovation symbols
+CENTER (large, prominent - ~30% of composition):
+- Bold MOLECULE or TRANSFORMATION symbol - the main focal point
+- Clean, modern, scientific aesthetic
 
-Middle elements: Human digestive system (stylized), weight/scale transformation, medical breakthrough indicators. Pill/capsule shapes.
+SURROUNDING (well-spaced, 6-8 icons total):
+- One DNA HELIX symbol (innovation)
+- One SCALE/TRANSFORMATION indicator
+- One MEDICAL CROSS or shield
+- One BEAKER/LABORATORY element
+- Simple geometric flourishes in corners
 
-Lower elements: Clinical/research foundation elements, pharmaceutical precision symbols, Boehringer Ingelheim heritage nods
+DO NOT INCLUDE:
+- Complex digestive system diagrams
+- Multiple pill/capsule shapes
+- Many scattered medical icons
+- Edge-to-edge wellness indicators
+- Patient journey timelines
 
-Around the edges: Medical icons, patient transformation journey, wellness indicators
-
-Style notes:
-- Medical innovation aesthetic
-- Scientific precision meets hopeful transformation
-- No food imagery - this is pharmaceutical
-- Convey: breakthrough science, transformation potential, clinical rigor
-
-The feeling should be: medical innovation, transformation hope, scientific breakthrough, patient-centered design
+The feeling should be: clean medical innovation, scientific breakthrough, transformation hope
 ```
 
 ### CAVA (Fast Casual Mediterranean)
@@ -137,23 +152,27 @@ The feeling should be: medical innovation, transformation hope, scientific break
 ```
 SUBJECT MATTER - CAVA Brand Identity (Fast Casual Mediterranean / USA):
 
-Central focal point: A stylized Mediterranean BOWL or PITA at center - clean, modern, geometric. The bowl radiates energy lines outward showing category ownership.
+SIMPLE COMPOSITION with only these key elements:
 
-Upper area: Crown or leadership symbol above the bowl representing category leadership. Small icons of Mediterranean ingredients (olives, herbs, chickpeas, tomatoes) floating around representing the cuisine. Health/wellness symbols (heart, leaf).
+CENTER (large, prominent - ~30% of composition):
+- Bold BOWL shape with radiating lines - the main focal point
+- Clean, modern, geometric
 
-Middle elements: Greek key pattern borders integrated throughout. Fresh ingredients visualized: feta cubes, cucumber slices, olive branches, herb sprigs (rosemary, parsley). Grain/wheat stalks. Lemon/citrus slices. The customization concept shown through flowing assembly lines.
+SURROUNDING (well-spaced, 6-8 icons total):
+- One OLIVE BRANCH symbol
+- One WHEAT/GRAIN stalk
+- One LEMON slice
+- One HEART/LEAF health symbol
+- Simple Greek key pattern in corners only
 
-Lower elements: Mediterranean heritage symbols - Greek columns, amphora shapes, olive trees. The Mediterranean sea waves. Authentic craftsmanship symbols.
+DO NOT INCLUDE:
+- Dozens of ingredient icons floating everywhere
+- Multiple assembly line elements
+- Many small location pins
+- Greek columns AND amphora AND olive trees (pick one)
+- Edge-to-edge decoration
 
-Around the edges: Lifestyle icons (gym, health, vitality) representing the wellness positioning. Small location pins suggesting expansion. Stars and freshness indicators. Bowl assembly stations.
-
-Style notes:
-- Fresh, modern, health-conscious aesthetic
-- Clean geometric forms balanced with organic food elements
-- No skulls, no tequila imagery - this is Mediterranean fast-casual
-- Convey: category ownership, Mediterranean authenticity, fresh customization, wellness
-
-The feeling should be: Mediterranean category definer, fresh and healthy, customizable experience, Greek heritage with modern execution
+The feeling should be: clean, fresh, healthy - category definer with breathing room
 ```
 
 ---
@@ -181,13 +200,55 @@ python scripts/generate_brand_assets.py \
 
 ## Quality Checklist
 
+### Visual Style
 - [ ] Generated using `images.edit` with Espolon as style reference
 - [ ] Uses BASE_STYLE prompt verbatim
 - [ ] Brand accent color specified (10-15% of elements)
-- [ ] Dark charcoal background (#141418)
+- [ ] Dark charcoal background (#0C0C0E for cover, #141418 for growth summary)
 - [ ] Off-white cream lines (#EDE8DF)
 - [ ] Bold confident strokes (matches Espolon weight)
-- [ ] Dense decorative elements filling space
-- [ ] Corner flourishes present
+
+### Composition (Critical)
+- [ ] **8-12 total icons maximum** - not dozens of scattered elements
+- [ ] **Clear central focal point** taking ~30% of composition
+- [ ] **Breathing room** between elements - can see background clearly
+- [ ] **Simple corner flourishes** - not edge-to-edge clutter
+- [ ] Icons are BOLD and CHUNKY, not thin and intricate
+- [ ] Matches clean aesthetic of CAVA and Ripple examples
+
+### Content
 - [ ] Category-appropriate subject matter
-- [ ] No text in image
+- [ ] No text, words, numbers, or labels in image
+- [ ] Post-processed with `fix_image_background.py` for seamless blend
+
+---
+
+## Common Mistakes to Avoid
+
+### ❌ Too Busy / Cluttered
+- Dozens of tiny icons scattered everywhere
+- Multiple small vehicles, ingredients, or symbols
+- Edge-to-edge decoration with no breathing room
+- Intricate, thin linework filling space
+
+### ✅ Clean / Effective
+- 8-12 well-spaced, bold icons
+- Clear hierarchy with central focal point
+- Generous negative space between elements
+- Simple corner flourishes only
+- Bold, chunky line weight
+
+### Reference Examples
+- **Good**: CAVA, Ripple - clean composition, breathing room, clear focal point
+- **Bad**: Early Geico attempts - too many elements, no breathing room, cluttered
+
+### "DO NOT INCLUDE" List Pattern
+When writing brand prompts, always include explicit exclusions:
+```
+DO NOT INCLUDE:
+- Multiple small versions of same element (cars, bottles, etc.)
+- Dozens of scattered icons
+- Complex overlapping elements
+- Intricate decorative patterns
+- Edge-to-edge clutter
+```

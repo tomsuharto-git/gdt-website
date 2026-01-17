@@ -21,65 +21,57 @@ BASE_STYLE = f"""
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
-- Same density of decorative elements filling the space
-- Same corner flourishes and border treatment
 - Same dark charcoal background
 - Same off-white cream linework
+
+COMPOSITION - CRITICAL:
+- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
+- Large clear CENTRAL FOCAL POINT with generous space around it
+- Elements should be BOLD and CHUNKY, not thin and intricate
+- Plenty of BREATHING ROOM between elements - no visual clutter
+- Simple corner flourishes only - don't fill edges with many small icons
 
 COLOR PALETTE - CRITICAL:
 - Background: Dark charcoal (#0C0C0E)
 - Primary lines: Off-white cream (#EDE8DF)
 - Accent color: GEICO BLUE {BRAND_ACCENT} - use this vibrant blue for 10-15% of elements
 - DO NOT USE RED, GREEN, ORANGE, OR PINK - the accent MUST be GEICO BLUE
-- The blue accents should POP against the dark background
 
 CRITICAL - NO TEXT WHATSOEVER:
 - NO words, letters, numbers, percentages, or any typography
-- NO labels, captions, taglines, or text of any kind
 - NO "Geico" or "15 minutes" text
-- NO gecko mascot character - this is abstract/symbolic
+- NO gecko mascot character
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Keep the EXACT same line weight, density, and style as the reference. Square format.
+Square format.
 """
 
 # Geico Cover - Auto Insurance Industry Leader
 COVER_PROMPT = """
 SUBJECT MATTER - Geico (US Auto Insurance Leader):
 
-Central focal point: A stylized UMBRELLA or SHIELD at center - clean, protective, geometric. This represents insurance protection without showing the gecko mascot. Around it, radiating lines suggesting coverage and security.
+SIMPLE COMPOSITION with only these key elements:
 
-Upper area: A CLOCK or TIMER symbol representing speed and efficiency (the "15 minutes" promise without text). Small icons representing different coverage types floating around: car silhouettes, house shapes, motorcycle outlines.
+CENTER (large, prominent):
+- Bold SHIELD shape with radiating lines - the main focal point
+- Takes up approximately 30% of the composition
 
-Middle elements:
-- The shield/umbrella prominently displayed with vehicles underneath
-- Stylized cars, trucks, motorcycles as simple geometric shapes
-- Highway or road ribbons flowing through the composition
-- Dollar signs or coins (geometric, not text) representing savings
-- Digital device silhouettes showing online/app purchasing
-- Speed lines and efficiency symbols (lightning bolts, arrows)
+SURROUNDING (well-spaced, 6-8 icons total):
+- One stylized CAR silhouette (simple, geometric)
+- One CLOCK symbol representing speed
+- One stack of COINS representing savings
+- One HOUSE icon for coverage
+- One SMARTPHONE silhouette for digital convenience
+- Simple corner flourishes with Greek key or simple geometric pattern
 
-Lower elements:
-- A FOUNDATION or PLATFORM base representing financial strength
-- Stacked coins or bars representing savings and value
-- Network/connection lines showing digital infrastructure
-- Small house and vehicle icons showing coverage breadth
+DO NOT INCLUDE:
+- Multiple vehicles scattered everywhere
+- Lightning bolts everywhere
+- Dozens of small scattered icons
+- Intricate road/highway ribbons
+- Complex overlapping elements
 
-Around the edges:
-- Corner flourishes with automotive and protection motifs
-- Small icons: steering wheels, keys, road signs, safety symbols
-- Stars and excellence indicators
-- Connecting lines showing speed and efficiency
-- Timer/clock elements
-
-Style notes:
-- Modern, approachable, digital-first aesthetic
-- Clean geometric forms with insurance/automotive motifs
-- No gecko, no mascot characters - purely symbolic
-- Convey: speed, savings, protection, digital convenience, trust
-- The protective shield and vehicles should be prominent
-
-The feeling should be: fast, affordable, protective, trustworthy, digital-native, efficient savings
+The feeling should be: clean, protective, trustworthy - like the CAVA or Ripple examples with simple bold icons and breathing room
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):

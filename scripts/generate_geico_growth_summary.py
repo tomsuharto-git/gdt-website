@@ -22,26 +22,29 @@ BASE_STYLE = f"""
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
-- Same density of decorative elements filling the space
-- Same corner flourishes and border treatment
 - Same dark charcoal background (#141418 specifically for growth summary)
 - Same off-white cream linework
 
+COMPOSITION - CRITICAL:
+- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
+- Large clear CENTRAL FOCAL POINT with generous space around it
+- Elements should be BOLD and CHUNKY, not thin and intricate
+- Plenty of BREATHING ROOM between elements - no visual clutter
+- Simple corner flourishes only
+
 COLOR PALETTE - CRITICAL:
-- Background: Dark charcoal (#141418) - slightly lighter than cover
+- Background: Dark charcoal (#141418)
 - Primary lines: Off-white cream (#EDE8DF)
 - Accent color: GEICO BLUE {BRAND_ACCENT} - use this vibrant blue for 10-15% of elements
 - DO NOT USE RED, GREEN, ORANGE, OR PINK - the accent MUST be GEICO BLUE
-- The blue accents should POP against the dark background
 
 CRITICAL - NO TEXT WHATSOEVER:
 - NO words, letters, numbers, percentages, or any typography
-- NO labels, captions, taglines, or text of any kind
 - NO "Connect", "Create", "Reinvent" text
 - NO gecko mascot character
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Keep the EXACT same line weight, density, and style as the reference. Square format.
+Square format.
 """
 
 # Growth Summary: "Gecko Genius Meets Innovation Desert"
@@ -50,52 +53,34 @@ Keep the EXACT same line weight, density, and style as the reference. Square for
 GROWTH_PROMPT = """
 SUBJECT MATTER - Growth System: Experience Transformation (Connect → Create → Reinvent):
 
-This illustration represents the strategic journey from marketing brilliance to operational excellence.
+SIMPLE COMPOSITION showing transformation journey with only these key elements:
 
-LEFT SIDE - CURRENT STATE (Marketing Marvel):
-- A brilliant MEGAPHONE or BROADCAST tower with radiating signal waves
-- Entertainment/comedy symbols (theater masks, spotlight)
-- Strong awareness indicators (eye symbols, spotlight beams)
-- But beneath: CRACKS in a foundation, a platform showing gaps
-- Customer frustration symbols (disconnected lines, broken paths)
-- A DESERT landscape at the bottom - parched, cracked earth
+LEFT SIDE (2-3 icons):
+- One bold MEGAPHONE symbol (marketing/awareness)
+- Below it: cracked/parched earth pattern (desert/stagnation)
 
-CENTER - THE TRANSFORMATION BRIDGE:
-- A bridge or pathway spanning from left to right
-- Three ascending LEVELS or STEPS representing the phases:
-  - First step: Connection/network symbols (linked nodes)
-  - Second step: Innovation/creation symbols (lightbulb, gears, tools)
-  - Third step: Transformation/reinvention symbols (butterfly, phoenix rising)
-- The journey upward from desert to oasis
+CENTER (main focal point):
+- A prominent BRIDGE or ASCENDING STAIRCASE spanning the composition
+- Simple three-step progression going upward from left to right
+- This is the HERO element - make it large and prominent
 
-RIGHT SIDE - FUTURE STATE (Experience Excellence):
-- A SEAMLESS FLOW of connected elements
-- Satisfied customer journey (smooth pathways, completed circuits)
-- Digital innovation symbols (data streams, telematics waves, sensors)
-- Autonomous vehicle silhouettes (futuristic cars)
-- An OASIS or flourishing garden - lush, growing
-- Clock/timer symbols showing speed and efficiency delivered
+RIGHT SIDE (2-3 icons):
+- One GEAR or LIGHTBULB symbol (innovation)
+- Below it: flowing water/wave pattern (oasis/flourishing)
+- One futuristic CAR silhouette (autonomous future)
 
-VISUAL METAPHORS:
-- The DESERT represents current innovation stagnation
-- The OASIS represents the experience excellence destination
-- The BRIDGE shows the strategic pathway
-- Water/irrigation channels represent the new customer experience flows
+SIMPLE CORNER FLOURISHES:
+- Minimal decorative elements in corners
+- Do NOT fill the space with dozens of small scattered icons
 
-Around the edges:
-- Corner flourishes connecting old and new
-- Small transformation symbols: caterpillar to butterfly, seed to tree
-- Speed and efficiency indicators
-- Connection lines showing integrated experience
+DO NOT INCLUDE:
+- Theater masks, spotlights, butterflies
+- Complex irrigation channels
+- Multiple small transformation symbols
+- Densely packed elements
+- Eye symbols, sensor graphics everywhere
 
-Style notes:
-- Journey/transformation narrative from left to right
-- Clear visual distinction between current struggles and future success
-- The bridge/pathway should be prominent
-- No gecko or mascot characters
-- Convey: transformation journey, experience innovation, technology adoption, customer-centric future
-
-The feeling should be: urgent transformation, from advertising to operations, from awareness to experience, from desert to oasis
+The feeling should be: simple transformation journey, clean visual narrative, breathing room between elements - like the CAVA or Ripple style
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):
