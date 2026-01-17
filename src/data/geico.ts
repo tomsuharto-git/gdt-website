@@ -129,6 +129,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'A',
       score: 5.4,
       tier: 'Established',
+      categoryAverage: 5.1,
+      competitorScores: [
+        { name: 'Progressive', score: 5.0 },
+        { name: 'State Farm', score: 4.6 },
+        { name: 'Allstate', score: 4.7 }
+      ],
       wsn: {
         headline: 'Category Pioneer Without A Clear Map Forward',
         subline: 'Geico owns \'savings in 15 minutes\' but struggles to evolve beyond price-focused messaging as competitors match digital efficiency.',
@@ -146,6 +152,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'A',
       score: 4.2,
       tier: 'Limited Premium',
+      categoryAverage: 5.8,
+      competitorScores: [
+        { name: 'State Farm', score: 6.2 },
+        { name: 'Allstate', score: 5.4 },
+        { name: 'Progressive', score: 4.6 }
+      ],
       wsn: {
         headline: 'Price Leader Trapped In Own Success',
         subline: 'Geico prices 15-20% below category average by necessity, not choice—narrow price acceptance range limits premium expansion.',
@@ -161,6 +173,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'A',
       score: 7.7,
       tier: 'Accelerating',
+      categoryAverage: 5.6,
+      competitorScores: [
+        { name: 'Progressive', score: 7.9 },
+        { name: 'State Farm', score: 6.2 },
+        { name: 'Allstate', score: 5.8 }
+      ],
       wsn: {
         headline: 'Growth Machine Running At Maximum Speed',
         subline: 'Revenue growing 8.2% annually versus 4.1% category average, but customer retention declining 4.2% signals quality concerns.',
@@ -175,12 +193,18 @@ export const geicoAnalysis: GDTAnalysis = {
       name: 'Emotional Connection',
       section: 'B',
       score: 6.1,
-      tier: '',
+      tier: 'Moderate',
+      categoryAverage: 6.4,
+      competitorScores: [
+        { name: 'State Farm', score: 7.2 },
+        { name: 'Allstate', score: 6.8 },
+        { name: 'Progressive', score: 5.9 }
+      ],
       wsn: {
-        headline: 'Geico achieves moderate emotional connection (6.1) built on humor and familiarity rather than trust or protection.',
+        headline: 'Humor Without Heart In Crisis Moments',
         subline: 'The gecko creates awareness and memorability, but the brand struggles to forge deeper emotional bonds around life security—the core reason people buy insurance.',
         what: 'Most customers view Geico as \'good enough\' savings, not emotional security.',
-        evidence: '',
+        evidence: 'IAT reveals strong joy associations (7.8) from gecko advertising but weak trust scores (5.1)—problematic for insurance.',
         soWhat: 'Geico ranks third in emotional connection behind State Farm (7.2) and Allstate (6.8) but ahead of Progressive (5.9). While Geico wins on humor and value perception, it lags significantly on trust dimensions where traditional insurers excel through agent relationships and decades of brand building around protection.',
         nowWhat: 'Transform from entertainment brand to trusted protector through claims experience excellence, security-focused messaging, and selective human touchpoints. Maintain cost advantages while building confidence through transparent processes, proactive communication, and demonstrated care during customer crises. Consider premium service tiers that provide agent relationships for customers seeking deeper security bonds.'
       },
@@ -202,6 +226,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'B',
       score: 6.2,
       tier: 'Present',
+      categoryAverage: 4.2,
+      competitorScores: [
+        { name: 'Progressive', score: 6.8 },
+        { name: 'State Farm', score: 5.1 },
+        { name: 'Allstate', score: 4.7 }
+      ],
       wsn: {
         headline: 'Pop Culture King Of Boring Category',
         subline: 'Geico dominates insurance conversation through entertainment excellence but faces adaptation challenges in digital-native cultural spaces.',
@@ -219,6 +249,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'B',
       score: 5.9,
       tier: 'Reliable',
+      categoryAverage: 5.4,
+      competitorScores: [
+        { name: 'Progressive', score: 6.8 },
+        { name: 'State Farm', score: 6.5 },
+        { name: 'Allstate', score: 5.6 }
+      ],
       wsn: {
         headline: 'Promise Speed, Deliver Bureaucracy',
         subline: 'Gecko-powered messaging cuts through complexity beautifully, but purchase flows feel engineer-designed and claims remain painfully bureaucratic.',
@@ -236,6 +272,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'C',
       score: 8.1,
       tier: 'Highly Distinctive',
+      categoryAverage: 5.8,
+      competitorScores: [
+        { name: 'Progressive', score: 7.2 },
+        { name: 'State Farm', score: 6.4 },
+        { name: 'Allstate', score: 5.9 }
+      ],
       wsn: {
         headline: 'Asset Arsenal Built For Different War',
         subline: 'Gecko mascot and \'15 minutes\' tagline create unmatched mental availability, but distinctive assets serve a commoditizing business model.',
@@ -253,6 +295,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'C',
       score: 3.5,
       tier: 'Incremental',
+      categoryAverage: 5.2,
+      competitorScores: [
+        { name: 'Progressive', score: 7.2 },
+        { name: 'Allstate', score: 5.5 },
+        { name: 'State Farm', score: 4.8 }
+      ],
       wsn: {
         headline: 'Revolutionary Past, Reactionary Present',
         subline: 'Direct-to-consumer model once revolutionized insurance, but current innovation capability lags 1.7 points below category average.',
@@ -270,6 +318,12 @@ export const geicoAnalysis: GDTAnalysis = {
       section: 'C',
       score: 11.2,
       tier: 'Transforming',
+      categoryAverage: 7.2,
+      competitorScores: [
+        { name: 'State Farm', score: 8.1 },
+        { name: 'Allstate', score: 7.9 },
+        { name: 'Progressive', score: 6.8 }
+      ],
       wsn: {
         headline: 'Category Earthquake While Gecko Sleeps',
         subline: 'Usage-based insurance accelerating 45% annually while autonomous vehicles compress traditional business model timeline to 6-12 months.',
