@@ -22,15 +22,10 @@ BASE_STYLE = f"""
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
+- Same density of decorative elements filling the space
+- Same corner flourishes and border treatment
 - Same dark charcoal background (#141418 specifically for growth summary)
 - Same off-white cream linework
-
-COMPOSITION - CRITICAL:
-- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
-- Large clear CENTRAL FOCAL POINT with generous space around it
-- Elements should be BOLD and CHUNKY, not thin and intricate
-- Plenty of BREATHING ROOM between elements - no visual clutter
-- Simple corner flourishes only
 
 COLOR PALETTE - CRITICAL:
 - Background: Dark charcoal (#141418)
@@ -44,7 +39,7 @@ CRITICAL - NO TEXT WHATSOEVER:
 - NO gecko mascot character
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Square format.
+Keep the EXACT same line weight, density, and style as the reference. Square format.
 """
 
 # Growth Summary: "Gecko Genius Meets Innovation Desert"
@@ -53,34 +48,46 @@ Square format.
 GROWTH_PROMPT = """
 SUBJECT MATTER - Growth System: Experience Transformation (Connect → Create → Reinvent):
 
-SIMPLE COMPOSITION showing transformation journey with only these key elements:
+Central focal point: A prominent ASCENDING BRIDGE or STAIRCASE spanning the composition - representing the transformation journey from marketing excellence to experience excellence. The bridge connects two worlds.
 
-LEFT SIDE (2-3 icons):
-- One bold MEGAPHONE symbol (marketing/awareness)
-- Below it: cracked/parched earth pattern (desert/stagnation)
+Upper area:
+- MEGAPHONE and broadcasting tower on the left (marketing dominance)
+- LIGHTBULB and gear cluster on the right (innovation future)
+- Stars and achievement symbols scattered between
+- Ascending arrows showing upward trajectory
+- Clouds and sky elements suggesting aspiration
 
-CENTER (main focal point):
-- A prominent BRIDGE or ASCENDING STAIRCASE spanning the composition
-- Simple three-step progression going upward from left to right
-- This is the HERO element - make it large and prominent
+Middle elements:
+- The BRIDGE/STAIRCASE as the hero element connecting left to right
+- Left side: Television/screens, audience silhouettes, broadcast waves (advertising empire)
+- Right side: Smartphone screens, digital interfaces, data streams (digital transformation)
+- CLOCK symbols showing the "15 minutes" speed promise
+- SPEEDOMETER gauges representing efficiency
+- Connection nodes and network lines flowing across
+- Lightning bolts for speed and energy
 
-RIGHT SIDE (2-3 icons):
-- One GEAR or LIGHTBULB symbol (innovation)
-- Below it: flowing water/wave pattern (oasis/flourishing)
-- One futuristic CAR silhouette (autonomous future)
+Lower elements:
+- Left: Cracked/dry earth patterns (innovation desert, stagnation)
+- Right: Flowing water waves, flourishing patterns (oasis, renewal)
+- VEHICLE silhouettes (traditional business) transforming into futuristic car shapes (autonomous future)
+- Foundation elements showing business stability
+- Road patterns weaving through
 
-SIMPLE CORNER FLOURISHES:
-- Minimal decorative elements in corners
-- Do NOT fill the space with dozens of small scattered icons
+Around the edges:
+- Corner flourishes with geometric insurance patterns
+- Small technology icons: sensors, chips, data points
+- Stars and progress indicators throughout
+- Decorative wave motifs connecting all sections
+- Border treatment with speed lines
 
-DO NOT INCLUDE:
-- Theater masks, spotlights, butterflies
-- Complex irrigation channels
-- Multiple small transformation symbols
-- Densely packed elements
-- Eye symbols, sensor graphics everywhere
+Style notes:
+- Transformation journey aesthetic - from old to new
+- Left side slightly more static, right side more dynamic
+- The bridge is the HERO connecting two worlds
+- Convey: marketing genius, innovation gap, transformation path, digital future
+- Bold, cohesive, filled composition like CAVA and Ripple examples
 
-The feeling should be: simple transformation journey, clean visual narrative, breathing room between elements - like the CAVA or Ripple style
+The feeling should be: transformation from advertising excellence to experience excellence, crossing the innovation desert, the bridge to digital future
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):

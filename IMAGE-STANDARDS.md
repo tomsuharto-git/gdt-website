@@ -38,18 +38,13 @@ response = client.images.edit(
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
+- Same density of decorative elements filling the space
+- Same corner flourishes and border treatment
 - Same dark charcoal background
 - Same off-white cream linework
 
-COMPOSITION - CRITICAL:
-- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
-- Large clear CENTRAL FOCAL POINT with generous space around it
-- Elements should be BOLD and CHUNKY, not thin and intricate
-- Plenty of BREATHING ROOM between elements - no visual clutter
-- Simple corner flourishes only - don't fill edges with many small icons
-
 COLOR PALETTE (match the reference):
-- Background: Site background (#0C0C0E for cover, #141418 for growth summary)
+- Background: Dark charcoal (#0C0C0E for cover, #141418 for growth summary)
 - Primary lines: Off-white cream (#EDE8DF)
 - Accent color: {BRAND_ACCENT} for select highlights (10-15% of elements)
 
@@ -58,142 +53,80 @@ CRITICAL - NO TEXT WHATSOEVER:
 - NO labels, captions, taglines, or text of any kind
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Keep the EXACT same line weight and style as the reference. Match the CLEAN, SIMPLE aesthetic of CAVA and Ripple examples.
+Keep the EXACT same line weight, density, and style as the reference. Square format.
 ```
 
 ---
 
-## Brand Subject Matter Prompts
+## Brand Subject Matter Prompt Structure
 
-### ZYN (Nicotine Pouches)
-**Accent Color**: #6B46C1 (Purple)
-
-```
-SUBJECT MATTER - Zyn Brand Identity (Category Creator in Nicotine Pouches):
-
-SIMPLE COMPOSITION with only these key elements:
-
-CENTER (large, prominent - ~30% of composition):
-- Bold CAN shape with radiating lines - the main focal point
-- Clean, modern, geometric
-
-SURROUNDING (well-spaced, 6-8 icons total):
-- One CROWN symbol (market leadership)
-- One LIGHTNING BOLT (energy/nicotine)
-- One LABORATORY BEAKER (tobacco-free innovation)
-- One NORDIC/SWEDISH design element
-- Simple geometric flourishes in corners
-
-DO NOT INCLUDE:
-- Multiple small lifestyle icons (gym, laptop, coffee)
-- Factory/production elements
-- Network diagrams with user silhouettes
-- Podcast/finance/fitness symbols scattered around
-- Edge-to-edge social/cultural icons
-
-The feeling should be: clean category pioneer, premium innovation, elevated aesthetic
-```
-
-### Espolón (Premium Tequila)
-**Accent Color**: #E85D04 (Orange/Red)
-**Note**: This is the MASTER style reference. Other images copy its visual style.
+**CRITICAL**: Follow this layered structure for rich, cohesive compositions like CAVA and Ripple:
 
 ```
-SUBJECT MATTER - Espolón Tequila:
+SUBJECT MATTER - [Brand] ([Category]):
 
-Central focal point: Day of the Dead skull (calavera) - bold, decorated, celebratory
+Central focal point: [Main visual element] - bold, decorated, prominent
 
-Upper area: Agave plants radiating outward, Mexican folk art elements
+Upper area: [2-4 elements related to brand theme]
 
-Middle elements: Tequila bottles, shot glasses, lime/citrus slices, Mexican cultural symbols
+Middle elements:
+- [Element 1 with description]
+- [Element 2 with description]
+- [Element 3 with description]
+- [Connection/flow elements between icons]
 
-Lower elements: Agave fields, distillery elements, Mexican heritage imagery
+Lower elements:
+- [Foundation/heritage elements]
+- [Supporting symbols]
 
-Around the edges: Stars, diamonds, celebration elements, border flourishes
+Around the edges:
+- Corner flourishes with [pattern type]
+- Small [category] symbols
+- Stars and [quality] indicators
+- [Connecting motifs]
 
 Style notes:
-- Mexican folk art meets modern design
-- Day of the Dead aesthetic
-- Bold, celebratory, cultural
-```
+- [Aesthetic description]
+- [Cultural/category references]
+- [What NOT to include]
+- Convey: [key brand attributes]
 
-### Survodutide (GLP-1 Pharma)
-**Accent Color**: #FF69B4 (Pink)
-
-```
-SUBJECT MATTER - Survodutide (GLP-1/Glucagon Dual Agonist Pharmaceutical):
-
-SIMPLE COMPOSITION with only these key elements:
-
-CENTER (large, prominent - ~30% of composition):
-- Bold MOLECULE or TRANSFORMATION symbol - the main focal point
-- Clean, modern, scientific aesthetic
-
-SURROUNDING (well-spaced, 6-8 icons total):
-- One DNA HELIX symbol (innovation)
-- One SCALE/TRANSFORMATION indicator
-- One MEDICAL CROSS or shield
-- One BEAKER/LABORATORY element
-- Simple geometric flourishes in corners
-
-DO NOT INCLUDE:
-- Complex digestive system diagrams
-- Multiple pill/capsule shapes
-- Many scattered medical icons
-- Edge-to-edge wellness indicators
-- Patient journey timelines
-
-The feeling should be: clean medical innovation, scientific breakthrough, transformation hope
-```
-
-### CAVA (Fast Casual Mediterranean)
-**Accent Color**: #FFD700 (Gold)
-
-```
-SUBJECT MATTER - CAVA Brand Identity (Fast Casual Mediterranean / USA):
-
-SIMPLE COMPOSITION with only these key elements:
-
-CENTER (large, prominent - ~30% of composition):
-- Bold BOWL shape with radiating lines - the main focal point
-- Clean, modern, geometric
-
-SURROUNDING (well-spaced, 6-8 icons total):
-- One OLIVE BRANCH symbol
-- One WHEAT/GRAIN stalk
-- One LEMON slice
-- One HEART/LEAF health symbol
-- Simple Greek key pattern in corners only
-
-DO NOT INCLUDE:
-- Dozens of ingredient icons floating everywhere
-- Multiple assembly line elements
-- Many small location pins
-- Greek columns AND amphora AND olive trees (pick one)
-- Edge-to-edge decoration
-
-The feeling should be: clean, fresh, healthy - category definer with breathing room
+The feeling should be: [emotional summary]
 ```
 
 ---
 
-## Generation Script
+## Reference Examples (Gold Standard)
 
-Use the existing script: `scripts/generate_brand_assets.py`
+### Ripple Cover Prompt (Example of correct density)
+```
+Central focal point: A stylized RIPPLE WAVE PATTERN or WATER DROPLET at center
 
-```bash
-# Generate cover from Agent 10 output
-python scripts/generate_brand_assets.py --from-json outputs/brand-usa/agent-10-output.json
+Upper area: GLOBE or WORLD MAP with connection points. Bank silhouettes connected by flowing lines. Lightning bolts showing speed.
 
-# Generate cover manually
-python scripts/generate_brand_assets.py \
-  --brand cava \
-  --name "CAVA" \
-  --category "Fast Casual Mediterranean" \
-  --market "USA" \
-  --profile position \
-  --color "#FFD700" \
-  --cover-only
+Middle elements:
+- BRIDGE imagery connecting two landmasses
+- Binary/blockchain chain links flowing like water
+- Institutional symbols: Bank columns, financial towers, corporate shields
+- Transaction flow arrows moving between nodes
+- Clock/speed symbols showing settlement
+
+Lower elements:
+- Network nodes and connection points spreading globally
+- Currency symbols ($ € ¥ icons stylized as geometric shapes)
+- Regulatory scales/balance imagery
+- Foundation of institutional credibility
+
+Around the edges:
+- Corner flourishes with blockchain hexagonal patterns
+- Small financial symbols: ledgers, contracts, handshakes
+- Stars and trust indicators
+- Flowing water/wave motifs connecting all elements
+
+Style notes:
+- Institutional, sophisticated, global financial aesthetic
+- Clean geometric forms with flowing water/ripple motifs
+- Convey: institutional trust, global reach, speed, cross-border efficiency
 ```
 
 ---
@@ -208,13 +141,13 @@ python scripts/generate_brand_assets.py \
 - [ ] Off-white cream lines (#EDE8DF)
 - [ ] Bold confident strokes (matches Espolon weight)
 
-### Composition (Critical)
-- [ ] **8-12 total icons maximum** - not dozens of scattered elements
-- [ ] **Clear central focal point** taking ~30% of composition
-- [ ] **Breathing room** between elements - can see background clearly
-- [ ] **Simple corner flourishes** - not edge-to-edge clutter
-- [ ] Icons are BOLD and CHUNKY, not thin and intricate
-- [ ] Matches clean aesthetic of CAVA and Ripple examples
+### Composition
+- [ ] **Dense decorative elements** filling the space (like CAVA/Ripple)
+- [ ] **Clear central focal point** that anchors the composition
+- [ ] **Layered structure**: Upper, Middle, Lower, Edges all populated
+- [ ] Corner flourishes present
+- [ ] Elements connected by flowing motifs/patterns
+- [ ] Rich visual tapestry, NOT sparse/empty
 
 ### Content
 - [ ] Category-appropriate subject matter
@@ -223,32 +156,23 @@ python scripts/generate_brand_assets.py \
 
 ---
 
-## Common Mistakes to Avoid
+## Common Mistakes
 
-### ❌ Too Busy / Cluttered
-- Dozens of tiny icons scattered everywhere
-- Multiple small vehicles, ingredients, or symbols
-- Edge-to-edge decoration with no breathing room
-- Intricate, thin linework filling space
+### ❌ Too Sparse / Empty
+- Only 6-8 icons floating in space
+- Large empty areas with no decoration
+- Missing corner flourishes
+- No connecting elements between icons
+- Looks unfinished
 
-### ✅ Clean / Effective
-- 8-12 well-spaced, bold icons
-- Clear hierarchy with central focal point
-- Generous negative space between elements
-- Simple corner flourishes only
-- Bold, chunky line weight
+### ✅ Rich / Cohesive (CAVA/Ripple style)
+- Dense decorative elements filling the composition
+- Clear focal point with supporting layers
+- Upper/Middle/Lower/Edge zones all populated
+- Flowing motifs connecting elements
+- Corner flourishes and border treatment
+- Visual tapestry effect
 
-### Reference Examples
-- **Good**: CAVA, Ripple - clean composition, breathing room, clear focal point
-- **Bad**: Early Geico attempts - too many elements, no breathing room, cluttered
-
-### "DO NOT INCLUDE" List Pattern
-When writing brand prompts, always include explicit exclusions:
-```
-DO NOT INCLUDE:
-- Multiple small versions of same element (cars, bottles, etc.)
-- Dozens of scattered icons
-- Complex overlapping elements
-- Intricate decorative patterns
-- Edge-to-edge clutter
-```
+### Reference
+- **Gold Standard**: CAVA cover, Ripple cover - rich, layered, cohesive
+- **Too Sparse**: Minimalist compositions with few elements

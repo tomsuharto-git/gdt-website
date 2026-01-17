@@ -17,6 +17,16 @@ export default function PasswordGate({ brandId, password, children }: PasswordGa
   const storageKey = `gdt-auth-${brandId}`;
 
   useEffect(() => {
+    // Check for bypass token from parent site (e.g., Ripple agent iframe)
+    const urlParams = new URLSearchParams(window.location.search);
+    const bypassToken = urlParams.get('token');
+    if (bypassToken === 'hecho-agent-2026') {
+      sessionStorage.setItem(storageKey, 'true');
+      setIsAuthenticated(true);
+      setIsLoading(false);
+      return;
+    }
+
     // Check if already authenticated in this session
     const stored = sessionStorage.getItem(storageKey);
     if (stored === 'true') {

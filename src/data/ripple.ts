@@ -14,7 +14,7 @@ export const rippleAnalysis: GDTAnalysis = {
     category: 'Cryptocurrency',
     date: '2026-01-13',
     accentColor: '#0096E4', // Ripple electric blue
-    password: 'ripple2026'
+    // password removed - embedded in project agent which has its own auth
   },
   totalScore: 41.2,
   growthSummary: {

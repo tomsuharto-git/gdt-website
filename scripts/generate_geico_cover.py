@@ -21,15 +21,10 @@ BASE_STYLE = f"""
 Create an illustration in EXACTLY the same artistic style as this reference image:
 - Same LINE WEIGHT - bold, confident strokes (not ultra-thin)
 - Same flat, graphic illustration approach
+- Same density of decorative elements filling the space
+- Same corner flourishes and border treatment
 - Same dark charcoal background
 - Same off-white cream linework
-
-COMPOSITION - CRITICAL:
-- KEEP IT SIMPLE - use 8-12 well-spaced large icons, NOT dozens of tiny scattered elements
-- Large clear CENTRAL FOCAL POINT with generous space around it
-- Elements should be BOLD and CHUNKY, not thin and intricate
-- Plenty of BREATHING ROOM between elements - no visual clutter
-- Simple corner flourishes only - don't fill edges with many small icons
 
 COLOR PALETTE - CRITICAL:
 - Background: Dark charcoal (#0C0C0E)
@@ -43,35 +38,45 @@ CRITICAL - NO TEXT WHATSOEVER:
 - NO gecko mascot character
 - Communicate ALL information through VISUAL SYMBOLS ONLY
 
-Square format.
+Keep the EXACT same line weight, density, and style as the reference. Square format.
 """
 
 # Geico Cover - Auto Insurance Industry Leader
 COVER_PROMPT = """
 SUBJECT MATTER - Geico (US Auto Insurance Leader):
 
-SIMPLE COMPOSITION with only these key elements:
+Central focal point: A stylized SHIELD shape at center - bold, protective, radiating confidence. The shield has decorative internal patterns and radiates protective energy lines outward.
 
-CENTER (large, prominent):
-- Bold SHIELD shape with radiating lines - the main focal point
-- Takes up approximately 30% of the composition
+Upper area: CLOCK symbols showing speed/efficiency on both sides. Small CAR silhouettes (sedan, SUV shapes) floating with motion lines. Lightning bolts representing quick service. Stars indicating quality and trust.
 
-SURROUNDING (well-spaced, 6-8 icons total):
-- One stylized CAR silhouette (simple, geometric)
-- One CLOCK symbol representing speed
-- One stack of COINS representing savings
-- One HOUSE icon for coverage
-- One SMARTPHONE silhouette for digital convenience
-- Simple corner flourishes with Greek key or simple geometric pattern
+Middle elements:
+- Multiple stylized VEHICLE silhouettes (cars, motorcycles) arranged around the shield
+- UMBRELLA shapes representing coverage and protection
+- KEY symbols showing ownership/access
+- DOCUMENT/policy scroll shapes
+- Flowing connection lines between insurance elements
+- Dollar signs and coin stacks representing savings (geometric, not text)
 
-DO NOT INCLUDE:
-- Multiple vehicles scattered everywhere
-- Lightning bolts everywhere
-- Dozens of small scattered icons
-- Intricate road/highway ribbons
-- Complex overlapping elements
+Lower elements:
+- HOUSE silhouettes representing home insurance bundling
+- Family/people silhouettes showing who's protected
+- Foundation of stability - solid geometric base patterns
+- Road/highway ribbon patterns weaving through
 
-The feeling should be: clean, protective, trustworthy - like the CAVA or Ripple examples with simple bold icons and breathing room
+Around the edges:
+- Corner flourishes with geometric patterns (hexagons, diamonds)
+- Small transportation icons: boats, RVs, motorcycles
+- Stars and trust indicators scattered throughout
+- Decorative borders with speed lines and protection motifs
+
+Style notes:
+- Clean, trustworthy, protective aesthetic
+- Modern insurance iconography
+- Bold geometric forms with flowing connection elements
+- No gecko mascot - use shield and protection imagery instead
+- Convey: protection, savings, speed, reliability, comprehensive coverage
+
+The feeling should be: protective shield, fast and efficient, trustworthy insurance leader, comprehensive coverage for everything you own
 """
 
 def generate_image(prompt_name, subject_prompt, output_filename):
